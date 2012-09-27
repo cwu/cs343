@@ -1,0 +1,31 @@
+2b) i)
+q2 with throw without optimisations
+times   (seconds) - 69.06, 69.43, 69.67, 69.49
+average (seconds) - 69.41
+
+q2 with longjmp without optimisations
+times   (seconds) - 0.29, 0.29, 0.29, 0.29
+average (seconds) - 0.29
+
+q2 with throw with optimisations
+times   (seconds) - 58.04, 58.90, 58.88, 58.92
+average (seconds) - 58.68
+
+q2 with longjmp with optimisations
+times   (seconds) - 0.25, 0.25, 0.25, 0.25
+average (seconds) - 0.25
+
+2b) ii)
+
+In both the optimized and unoptimized versions the original was much slower
+than the longjmp version. In the optimized case it was 234.72 times faster
+while the unoptimized case it was 239.34 times faster. In either case the
+longjmp version of the program was much faster (2 orders of magnitude).
+
+2b) iii)
+The difference is due probably because longjmp does not perform stack unwinding.
+It merely needs to jump back to the instruction left off at the jump buffer and
+reset the stack pointer back to the stack frame when the buffer was set. This
+is also indicated since the constructor to the object T was not called when
+using longjmp, indicating the stack was not unwinded. Skipping this process
+lets the longjmp version run much faster (however it functions differently).

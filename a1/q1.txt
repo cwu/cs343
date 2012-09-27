@@ -1,0 +1,60 @@
+1a)
+
+q1 without EXCEPT defined, unoptimized
+4 timings (seconds) - 0.11, 0.12, 0.11, 0.11
+average   (seconds) - 0.11
+
+q1 with    EXCEPT defined, unoptimized
+4 timings (seconds) - 34.75, 33.45, 33.76, 34.16
+average   (seconds) - 34.03
+
+q1 without EXCEPT defined, optimized
+4 timings (seconds) - 0.02, 0.02, 0.02, 0.02
+average   (seconds) - 0.02
+note: timings are below 0.1s so they are not accurate.
+
+q1 with    EXCEPT defined, optimized
+4 timings (seconds) - 38.34, 38.29, 37.73, 38.72
+average   (seconds) - 38.27
+
+The relative time differences between the static vs dynamic multi level exit is
+that the static exit is 309 times faster. This is two orders of magnitudes
+faster and can be explained by the administrative costs of a dynamic exit. This
+includes propgating through blocks until the catch block is found and matching
+to the catch block. This is espcially true because compilers tend to optimise
+for the case where exceptions are not thrown since they should be 'exceptional'.
+With this in mind compilers tend to make tradeoffs in matching to catch blocks
+which are favor cases when nothing is thrown.
+
+The performance differnce when EXCEPT not being defined is that the time reduces to around 20ms (althouhg timings of this scale are not accurate). This is roughly a 50x improvement. However for the case where EXCEPT was defined and exceptions were used, the program acutally slowed down by 12%.
+
+1b)
+
+recurse =  2 - time 0.61s
+recurse =  4 - time 0.77s
+recurse =  6 - time 0.99
+recurse =  8 - time 1.14s
+recurse = 10 - time 1.30s
+
+This shows that as the number of times that the program needs to recurse
+before throwing increases the time that the program takes. This is primarily
+due to the work needed to stack unwinding during the recursive calls to get
+to the top level. As can be seen by the times for each iteration there is an
+average of 85ms needed for each recursion.
+
+1c)
+
+Dynamic multi-level exit is nessesary when the an error occurs in a function
+the function does not have enough context to handle the error. This occurs
+often in library functions where the library merely provides a certain
+funcitonality but since it does not know how it is applied it does, the correct
+error handling logic is not known and would be known by the code calling the
+library. This is also nessesary when the error handling function is separately
+compiled from the function throwing the exception. This occurs in libraries as
+well and static exits are not possible in this case.
+
+Dynamic multi-level exits are not nessesary when the handler is known ahead of
+time, where a static funciton call or goto may suffice to handle errors. This
+allows for the right control flow without the overhead of dynamic multi-level
+exits.
+

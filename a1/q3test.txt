@@ -1,0 +1,51 @@
+Script started on Sun 23 Sep 2012 10:52:40 PM EDT
+]2;c27wu@linux024: ~/cs343]1;~/cs343[1m[7m%[27m[1m[0m                                                                                        [0m[27m[24m[J[01;36m☁ [01;32m [32mcs343 [01;36m[32m[[36mmaster[32m] [33m⚡[00m[00m[01;34m [00m[Kccat test
+]2;cat test]1;catabd
+abbcd
+abbbccd
+abbbccdab 
+
+acd
+abcd
+ad
+ab
+abd 
+]2;c27wu@linux024: ~/cs343]1;~/cs343[1m[7m%[27m[1m[0m                                                                                        [0m[27m[24m[J[01;36m☁ [01;32m [32mcs343 [01;36m[32m[[36mmaster[32m] [33m⚡[00m[00m[01;34m [00m[Kccat test | ,.  ./grammar 
+]2;cat test | ./grammar]1;cat"abd" : "abd" yes
+"abbcd" : "abbcd" yes
+"abbbccd" : "abbbccd" yes
+"abbbccdab " : "abbbccd" yes -- extraneous characters "ab "
+"" : Warning! Blank line.
+"acd" : "ac" no -- extraneous characters "d"
+"abcd" : "abc" no -- extraneous characters "d"
+"ad" : "ad" no
+"ab" : "ab" no
+"abd " : "abd" yes -- extraneous characters " "
+]2;c27wu@linux024: ~/cs343]1;~/cs343[1m[7m%[27m[1m[0m                                                                                        [0m[27m[24m[J[01;36m☁ [01;32m [32mcs343 [01;36m[32m[[36mmaster[32m] [33m⚡[00m[00m[01;34m [00m[Kggrammar test
+]2;grammar test]1;grammarzsh: command not found: grammar
+]2;c27wu@linux024: ~/cs343]1;~/cs343[1m[7m%[27m[1m[0m                                                                                        [0m[27m[24m[J[01;36m☁ [01;32m [32mcs343 [01;36m[32m[[36mmaster[32m] [33m⚡[00m[00m[01;34m [00m[K../grammar test
+]2;./grammar test]1;./grammar"abd" : "abd" yes
+"abbcd" : "abbcd" yes
+"abbbccd" : "abbbccd" yes
+"abbbccdab " : "abbbccd" yes -- extraneous characters "ab "
+"" : Warning! Blank line.
+"acd" : "ac" no -- extraneous characters "d"
+"abcd" : "abc" no -- extraneous characters "d"
+"ad" : "ad" no
+"ab" : "ab" no
+"abd " : "abd" yes -- extraneous characters " "
+]2;c27wu@linux024: ~/cs343]1;~/cs343[1m[7m%[27m[1m[0m                                                                                        [0m[27m[24m[J[01;36m☁ [01;32m [32mcs343 [01;36m[32m[[36mmaster[32m] [33m⚡[00m[00m[01;34m [00m[K
+
+Script done on Sun 23 Sep 2012 10:53:26 PM EDT
+
+Testcases:
+abd - simplest case that passes
+abbcd - simplest case that includes a c
+abbbccd - another case to test multiples of b and c
+abbbccdab - correct case with extra characters
+ - testing blank line
+acd - should be invalid since no b
+abcd - should be invalid since number of b's is not 1 more than number of c's
+ad - does not include c or b
+ab - coroutine should be in CONT mode instead of ERROR or MATCH but the output should still be no
+abd  - test with extra whitespace character
