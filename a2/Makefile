@@ -4,10 +4,10 @@ CXX = u++										# compiler
 CXXFLAGS = -g -multi -Wall -Wno-unused-label -MMD ${OPT} # compiler flags
 MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
 
-OBJECTS1 = # object files forming 1st executable with prefix "q1"
+OBJECTS1 = q1station.o
 EXEC1 = tokenring								# 1st executable name
 
-OBJECTS2 = # object files forming 2nd executable with prefix "q2"
+OBJECTS2 = q2matrixmultiply.o
 EXEC2 = matrixmultiply								# 2nd executable name
 
 OBJECTS = ${OBJECTS1} ${OBJECTS2}				# all object files
