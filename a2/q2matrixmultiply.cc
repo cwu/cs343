@@ -155,9 +155,7 @@ void uMain::main() {
         Y = generateMatrix(yrows, ycols);
     }
 
-#ifdef PARALLEL
     uProcessor p[xrows - 1] __attribute__((unused)); // number of CPUs
-#endif
 
     int **Z = newMatrix(xrows, ycols);
     matrixmultiply(Z, X, xrows, xcols, Y, ycols);
