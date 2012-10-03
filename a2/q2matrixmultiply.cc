@@ -7,6 +7,9 @@
 using namespace std;
 #include <cstdlib>
 
+/**
+ * This class acts as a task to multiply a row of a matrix.
+ */
 _Task RowMultiplier {
     private:
         int *xRow;
@@ -15,6 +18,9 @@ _Task RowMultiplier {
         int xcyr;
         int ycols;
 
+    /**
+     * Calculates the row in the zRow based on the xRow and Y matrix.
+     */
     void main() {
         for (int c = 0; c < ycols; c++) {
             zRow[c] = 0;
@@ -29,12 +35,27 @@ _Task RowMultiplier {
             xRow(xRow), Y(Y), zRow(zRow), xcyr(xcyr), ycols(ycols) {}
 };
 
+/**
+ * prints program usage and exits as a failure.
+ *
+ * argv - the arguments fed into the program
+ */
 void usage(char **argv) {
     cerr << "Usage: " << argv[0] << " xrows xcols-yrows ycols "
          << " [ X-matrix-file Y-matrix-file ]" << endl;
     exit(EXIT_FAILURE);
 }
 
+/**
+ * Performs a matrix multiplication (X * Y = Z)
+ *
+ * Z - output matrix
+ * X - first input matrix
+ * xr - number of rows of matrix X
+ * xc - number of columns of matrix X and rows of matrix Y
+ * Y - second input matrix
+ * yc - number of columns of matrix Y
+ */
 void matrixmultiply( int *Z[ ], int *X[ ], int xr, int xc, int *Y[ ], int yc ) {
     RowMultiplier *multipliers[xr];
     for (int r = 0; r < xr; r++) {
@@ -46,6 +67,14 @@ void matrixmultiply( int *Z[ ], int *X[ ], int xr, int xc, int *Y[ ], int yc ) {
     }
 }
 
+/**
+ * Allocates a new matrix
+ *
+ * rows - number of rows the matrix should have
+ * cols - number of columns the matrix should have
+ *
+ * returns the matrix
+ */
 int** newMatrix(int rows, int cols) {
     int ** matrix = new int*[rows];
     for (int r = 0; r < rows; r++) {
@@ -54,6 +83,11 @@ int** newMatrix(int rows, int cols) {
     return matrix;
 }
 
+/**
+ * Frees a matrix
+ *
+ * rows - number of rows the matrix has
+ */
 void freeMatrix(int **matrix, int rows) {
     for (int r = 0; r < rows; r++) {
         delete [] matrix[r];
@@ -61,6 +95,14 @@ void freeMatrix(int **matrix, int rows) {
     delete [] matrix;
 }
 
+/**
+ * Generates a new matrix with 37 as all of its elements
+ *
+ * rows - number of rows the matrix should have
+ * cols - number of columns the matrix should have
+ *
+ * returns the matrix
+ */
 int** generateMatrix(int rows, int cols) {
     int **matrix = newMatrix(rows, cols);
     for (int r = 0; r < rows; r++) {
@@ -71,6 +113,15 @@ int** generateMatrix(int rows, int cols) {
     return matrix;
 }
 
+/**
+ * Reads a matrix from a file.
+ *
+ * matrixFile - the ifstream pointing to the file to read from
+ * rows - number of rows the matrix should have
+ * cols - number of columns the matrix should have
+ *
+ * returns the matrix
+ */
 int** readMatrix(ifstream &matrixFile, int rows, int cols) {
     int **matrix = newMatrix(rows, cols);
     for (int r = 0; r < rows; r++) {
@@ -81,9 +132,20 @@ int** readMatrix(ifstream &matrixFile, int rows, int cols) {
     return matrix;
 }
 
+/**
+ * Prints the multiplicaiton of two matricies (X*Y=Z).
+ *
+ * X - 1st input matrix
+ * Y - 2nd input matrix
+ * Z - output matrix
+ * xrows - number of rows of X
+ * xcols - number of columns of X and number of rows of Y
+ * ycols - number of columns of Y
+ */
 void printMatricies(int *X[], int *Y[], int *Z[], int xrows, int xcols, int ycols) {
     const int cellSize = 8;
 
+    // print the top half with the matrix Y
     int yrows = xcols;
     int marginY = (cellSize + 1) * xcols + 4;
     for (int r = 0; r < yrows; r++) {
@@ -94,6 +156,7 @@ void printMatricies(int *X[], int *Y[], int *Z[], int xrows, int xcols, int ycol
         cout << endl;
     }
 
+    // print the divider
     for (int i = 0; i < marginY - 1; i++) {
         cout << '-';
     }
@@ -103,6 +166,7 @@ void printMatricies(int *X[], int *Y[], int *Z[], int xrows, int xcols, int ycol
     }
     cout << endl;
 
+    // print the bottom half with X | Z
     for (int r = 0; r < xrows; r++) {
         for (int c = 0; c < xcols; c++) {
             cout << setw(cellSize) << X[r][c] << " ";
@@ -118,8 +182,9 @@ void printMatricies(int *X[], int *Y[], int *Z[], int xrows, int xcols, int ycol
 void uMain::main() {
     if (argc < 4 || argc > 6 || argc == 5) {
         usage(argv);
-    } // if
+    }
 
+    // read in the matrix sizes
     int xrows = atoi(argv[1]);
     int xcols = atoi(argv[2]);
     int yrows = xcols;
@@ -131,9 +196,10 @@ void uMain::main() {
 
     int **X;
     int **Y;
-    bool specifiedMatrixFiles;
-    if (argc == 6) {
-        specifiedMatrixFiles = true;
+    bool specifiedMatrixFiles = argc == 6;
+
+    // If matrix files are specified then read from the files
+    if (specifiedMatrixFiles) {
         try {
             ifstream matrixFile(argv[4]);
             X = readMatrix(matrixFile, xrows, xcols);
@@ -150,11 +216,11 @@ void uMain::main() {
             usage(argv);
         }
     } else {
-        specifiedMatrixFiles = false;
         X = generateMatrix(xrows, xcols);
         Y = generateMatrix(yrows, ycols);
     }
 
+    // setup for parallize
     uProcessor p[xrows - 1] __attribute__((unused)); // number of CPUs
 
     int **Z = newMatrix(xrows, ycols);
@@ -164,6 +230,7 @@ void uMain::main() {
         printMatricies(X, Y, Z, xrows, xcols, ycols);
     }
 
+    // cleanup
     freeMatrix(X, xrows);
     freeMatrix(Y, yrows);
     freeMatrix(Z, xrows);

@@ -1,0 +1,26 @@
+2b) i)
+
+./matrixmultiply 1  5000 10000  3.17s user   0.10s system 92%   cpu 3.531 total
+./matrixmultiply 2  5000 10000  6.94s user   0.11s system 184%  cpu 3.830 total
+./matrixmultiply 4  5000 10000  16.24s user  0.15s system 327%  cpu 4.998 total
+./matrixmultiply 8  5000 10000  34.51s user  0.28s system 638%  cpu 5.449 total
+./matrixmultiply 16 5000 10000  102.07s user 0.45s system 1400% cpu 7.319 total
+
+
+ii)
+
+The user times seem to scale a little bit above linearly in terms of user time
+with respects to the xrows specified. This is expected since the workload is
+linearly proportional to the xrows so the processing work in terms of calculations
+scales linearly with this command line parameter. The extra time indicates there
+is an overhead to using multiple virtual cpu's and the overhead increases as more
+cpus are used.
+
+Meanwhile the real times do not scale linearly with xrows. They also are much
+different than the user time specified except in the 1 row case. This indicates
+that the parallization from the virtual cpus are used effectively to parallize
+the tasks and although the same user time is spent calculating the multiplication
+the time taken after distributing the work over multiple cpu's is divided. However,
+the growing real times still indicate there is an overhead with each virtual cpu
+which manfests in an increasing real times despite the same workload per cpu that
+each test case is running.

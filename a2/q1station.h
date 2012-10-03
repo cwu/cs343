@@ -14,9 +14,33 @@ _Coroutine Station {
         unsigned int prio;
     } frame; // Frame
 
+    /**
+     * Accepts a frame from another station.
+     *
+     * frame - the frame that was sent
+     */
     void data( Frame frame );				// pass frame
+
+    /**
+     * The main coroutine to process frames.
+     */
     void main();
+
+    /**
+     * Checks if there is still any pending requests held by this station.
+     *
+     * round - the current round.
+     *
+     * returns true if there is a pending request, false otherwise.
+     */
     bool hasPendingRequest( unsigned int round );
+
+    /**
+     * Checks if we should still keep passing frames around. Essentially
+     * acts to determine when to terminate.
+     *
+     * returns true if the frame should be kept passing on. false otherwise.
+     */
     bool keepPassingFrame();
 
     unsigned int id_;

@@ -61,11 +61,14 @@ void Station::main() {
                 }
                 break;
             case Frame::Data:
+                // check if the data has reached its destination
                 if (frame.dst == id_) {
                     frame.type = Frame::Ack;
                     frame.dst = frame.src;
                     frame.src = id_;
                 }
+
+                // swap priorities if nessesary
                 if (hasPendingRequest(round)) {
                     SendRequest& request = sendRequests_.front();
                     if (frame.prio < request.prio) {
@@ -75,9 +78,11 @@ void Station::main() {
                 }
                 break;
             case Frame::Ack:
+                // if the ack has reached its destination, pass a frame
                 if (frame.dst == id_) {
                     frame.type = Frame::Token;
                 } else if (hasPendingRequest(round)) {
+                    // swap priorities if nessesary
                     SendRequest& request = sendRequests_.front();
                     if (frame.prio < request.prio) {
                         savedPrio = frame.prio;
@@ -107,6 +112,11 @@ void Station::main() {
     }
 }
 
+/**
+ * Prints the usage and exits the program.
+ *
+ * argv - the program argument values
+ */
 static void usage(char **argv) {
     cerr << "Usage: " << argv[0] << " <stations (1-100)> [input-file]" << endl;
     exit(EXIT_FAILURE);
