@@ -132,7 +132,7 @@ void uMain::main() {
 
     // check for valid number of stations
     unsigned int numStations = atoi(argv[1]);
-    if (numStations <= 0) {
+    if (numStations <= 0 || numStations > 100) {
         usage(argv);
     } // if
 
@@ -158,7 +158,8 @@ void uMain::main() {
     // read in all of the instructions
     unsigned int round, src, dst, prio;
     while (*input >> round >> src >> dst >> prio) {
-        if (src < stations.size() && dst < stations.size()) {
+        // make sure the test case is valid
+        if (src < stations.size() && dst < stations.size() && src != dst) {
             stations[src]->sendreq(round, dst, prio);
         }
     }

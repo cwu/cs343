@@ -1,0 +1,1449 @@
+Script started on Wed 03 Oct 2012 07:18:06 PM EDT
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test invalid parameters"
+]2;echo "test invalid parameters"]1;echotest invalid parameters
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring[1m [0m[0m 
+]2;./tokenring]1;./tokenringUsage: ./tokenring <stations (1-100)> [input-file]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./tokenring 10 10 10
+]2;./tokenring 10 10 10]1;./tokenringUsage: ./tokenring <stations (1-100)> [input-file]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test file does not exist"
+]2;echo "test file does not exist"]1;echotest file does not exist
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Klls test
+]2;ls --color=tty test]1;lsls: cannot access test: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring 5 test
+]2;./tokenring 5 test]1;./tokenringError! Could not open file "test"
+Usage: ./tokenring <stations (1-100)> [input-file]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "simple tests  case ignoring          with stations that     in file that do not exist"
+]2;echo "simple test case with stations in file that do not exist"]1;echosimple test case with stations in file that do not exist
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests/test-with-priority[1m [0m[0m 
+]2;cat tests/test-with-priority]1;cat1 1 3 1
+1 2 1 1
+1 3 1 4
+10 4 2 7
+[1m[7m%[27m[1m[0m                                                                                                                                                                                    ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring[1m [0m[0m 4 tests/test-with-priority[1m [0m[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m./tokenring 4 tests/test-with-priority[1m [0m[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m./tokenring 4 tests/test-with-priority[K
+]2;./tokenring 4 tests/test-with-priority]1;./tokenringround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 1 station 0 sends with prio 0 token
+round 1 station 1 sends with prio 0 data from 1 to 3
+round 1 station 2 sends with prio 1 data from 1 to 3
+round 1 station 3 sends with prio 4 ack from 3 to 1
+round 2 station 0 sends with prio 4 ack from 3 to 1
+round 2 station 1 sends with prio 4 token
+round 2 station 2 sends with prio 4 token
+round 2 station 3 sends with prio 1 data from 3 to 1
+round 3 station 0 sends with prio 1 data from 3 to 1
+round 3 station 1 sends with prio 1 ack from 1 to 3
+round 3 station 2 sends with prio 1 ack from 1 to 3
+round 3 station 3 sends with prio 1 token
+round 4 station 0 sends with prio 1 token
+round 4 station 1 sends with prio 1 token
+round 4 station 2 sends with prio 0 data from 2 to 1
+round 4 station 3 sends with prio 0 data from 2 to 1
+round 5 station 0 sends with prio 0 data from 2 to 1
+round 5 station 1 sends with prio 0 ack from 1 to 2
+round 5 station 2 sends with prio 0 token
+round 5 station 3 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "simple test case that includes priority swap with all stations [K  mentioned in the input file"
+]2;echo ]1;echosimple test case that includes priority swap with all stations mentioned in the input file
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests/test-with-priority[1m [0m[0m 
+]2;cat tests/test-with-priority]1;cat1 1 3 1
+1 2 1 1
+1 3 1 4
+10 4 2 7
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring[1m [0m[0m 5 tests/test-with-priority[1m [0m[0m 
+]2;./tokenring 5 tests/test-with-priority]1;./tokenringround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 0 station 4 sends with prio 0 token
+round 1 station 0 sends with prio 0 token
+round 1 station 1 sends with prio 0 data from 1 to 3
+round 1 station 2 sends with prio 1 data from 1 to 3
+round 1 station 3 sends with prio 4 ack from 3 to 1
+round 1 station 4 sends with prio 4 ack from 3 to 1
+round 2 station 0 sends with prio 4 ack from 3 to 1
+round 2 station 1 sends with prio 4 token
+round 2 station 2 sends with prio 4 token
+round 2 station 3 sends with prio 1 data from 3 to 1
+round 2 station 4 sends with prio 1 data from 3 to 1
+round 3 station 0 sends with prio 1 data from 3 to 1
+round 3 station 1 sends with prio 1 ack from 1 to 3
+round 3 station 2 sends with prio 1 ack from 1 to 3
+round 3 station 3 sends with prio 1 token
+round 3 station 4 sends with prio 1 token
+round 4 station 0 sends with prio 1 token
+round 4 station 1 sends with prio 1 token
+round 4 station 2 sends with prio 0 data from 2 to 1
+round 4 station 3 sends with prio 0 data from 2 to 1
+round 4 station 4 sends with prio 0 data from 2 to 1
+round 5 station 0 sends with prio 0 data from 2 to 1
+round 5 station 1 sends with prio 0 ack from 1 to 2
+round 5 station 2 sends with prio 0 token
+round 5 station 3 sends with prio 0 token
+round 5 station 4 sends with prio 0 token
+round 6 station 0 sends with prio 0 token
+round 6 station 1 sends with prio 0 token
+round 6 station 2 sends with prio 0 token
+round 6 station 3 sends with prio 0 token
+round 6 station 4 sends with prio 0 token
+round 7 station 0 sends with prio 0 token
+round 7 station 1 sends with prio 0 token
+round 7 station 2 sends with prio 0 token
+round 7 station 3 sends with prio 0 token
+round 7 station 4 sends with prio 0 token
+round 8 station 0 sends with prio 0 token
+round 8 station 1 sends with prio 0 token
+round 8 station 2 sends with prio 0 token
+round 8 station 3 sends with prio 0 token
+round 8 station 4 sends with prio 0 token
+round 9 station 0 sends with prio 0 token
+round 9 station 1 sends with prio 0 token
+round 9 station 2 sends with prio 0 token
+round 9 station 3 sends with prio 0 token
+round 9 station 4 sends with prio 0 token
+round 10 station 0 sends with prio 0 token
+round 10 station 1 sends with prio 0 token
+round 10 station 2 sends with prio 0 token
+round 10 station 3 sends with prio 0 token
+round 10 station 4 sends with prio 0 data from 4 to 2
+round 11 station 0 sends with prio 0 data from 4 to 2
+round 11 station 1 sends with prio 0 data from 4 to 2
+round 11 station 2 sends with prio 0 ack from 2 to 4
+round 11 station 3 sends with prio 0 ack from 2 to 4
+round 11 station 4 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test that sending ot self        to self gets ignored"
+]2;echo "test that sending to self gets ignored"]1;echotest that sending to self gets ignored
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring 5 tests/send-to-self[1m [0m[0m [33Dc./tokenring 5 tests/send-to-self[32Dca./tokenring 5 tests/send-to-self[32Dt./tokenring 5 tests/send-to-self[32D ./tokenring 5 tests/send-to-self[32Ds./tokenring 5 tests/send-to-self[32De./tokenring 5 tests/send-to-self[32Dn./tokenring 5 tests/send-to-self[32Dd./tokenring 5 tests/send-to-self[32D-./tokenring 5 tests/send-to-self[32Dt./tokenring 5 tests/send-to-self[32Do./tokenring 5 tests/send-to-self[32D-./tokenring 5 tests/send-to-self[32Ds./tokenring 5 tests/send-to-self[32De./tokenring 5 tests/send-to-self[32Dl./tokenring 5 tests/send-to-self[32Df./tokenring 5 tests/send-to-self[32D[P[31C [32D[P[30C [31D[P[29C [30D[P[28C [29D[P[27C [28D[P[26C [27D[P[25C [26D[P[24C [25D[P[23C [24D[P[22C [23D[P[21C [22D[P[20C [21D[P[19C [20D[P[18C [19D[P[17C [18D[P[16C [17D[P[15C [16D[P[14C [15D[P[13C [14D[P[12C [13D[P[11C [12D[P[10C [11D[P[9C [10D-to-self [9Dto-self [8Do-self -self self elf lf f  [1Ctsend-to-self[12Desend-to-self[12D[1Csend-to-self[12Dtsend-to-self[12Desend-to-self[12D[1Csend-to-self[12D/send-to-self[12D[P[12C [13D[P[11C [13D[P[12C [13D[1Csend-to-self[12D/send-to-self[12D
+]2;cat tests/send-to-self]1;cat1 0 0 1
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tokenring[1m [0m[0m 5 tests/send-to-self[1m [0m[0m 
+]2;./tokenring 5 tests/send-to-self]1;./tokenring[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test ending when sending ack back to 0"  station 0"
+]2;echo "test ending when sending ack back to station 0"]1;echotest ending when sending ack back to station 0
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests/ends-by-ack-to-0[1m [0m[0m 
+]2;cat tests/ends-by-ack-to-0]1;cat1 0 4 5
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../.  ttests   t  ../tokenring[1m [0m[0m 5 tests/ends-by-ack-to-0[1m [0m[0m 
+]2;./tokenring 5 tests/ends-by-ack-to-0]1;./tokenringround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 0 station 4 sends with prio 0 token
+round 1 station 0 sends with prio 0 data from 0 to 4
+round 1 station 1 sends with prio 0 data from 0 to 4
+round 1 station 2 sends with prio 0 data from 0 to 4
+round 1 station 3 sends with prio 0 data from 0 to 4
+round 1 station 4 sends with prio 0 ack from 4 to 0
+round 2 station 0 sends with prio 0 token
+round 2 station 1 sends with prio 0 token
+round 2 station 2 sends with prio 0 token
+round 2 station 3 sends with prio 0 token
+round 2 station 4 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "Test a case where sending        a station tries to send bu  during an ack but ge [Ktts overriden by   v priorities via    by another station"
+]2;echo ]1;echoTest a case where a station tries to send during an ack but gets overriden priorities by another station
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests/test-with-higher-priority-override[1m [0m[0m 
+]2;cat tests/test-with-higher-priority-override]1;cat1 0 4 0
+1 3 2 3
+2 4 1 9
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kcat tests/test-with-higher-priority-override[44D[1C[1C[1C[P[41C [42Dc[P[41C [42D[P[41C [42D. tests/test-with-higher-priority-override[41D./ tests/test-with-higher-priority-override[41Dt tests/test-with-higher-priority-override[41Do tests/test-with-higher-priority-override[41Dk tests/test-with-higher-priority-override[41Denring[1m [0m tests/test-with-higher-priority-override[41D[0m 5 tests/test-with-higher-priority-override[41D
+]2;./tokenring 5 tests/test-with-higher-priority-override]1;./tokenringround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 0 station 4 sends with prio 0 token
+round 1 station 0 sends with prio 0 data from 0 to 4
+round 1 station 1 sends with prio 0 data from 0 to 4
+round 1 station 2 sends with prio 0 data from 0 to 4
+round 1 station 3 sends with prio 3 data from 0 to 4
+round 1 station 4 sends with prio 3 ack from 4 to 0
+round 2 station 0 sends with prio 3 token
+round 2 station 1 sends with prio 3 token
+round 2 station 2 sends with prio 3 token
+round 2 station 3 sends with prio 0 data from 3 to 2
+round 2 station 4 sends with prio 9 data from 3 to 2
+round 3 station 0 sends with prio 9 data from 3 to 2
+round 3 station 1 sends with prio 9 data from 3 to 2
+round 3 station 2 sends with prio 9 ack from 2 to 3
+round 3 station 3 sends with prio 9 token
+round 3 station 4 sends with prio 0 data from 4 to 1
+round 4 station 0 sends with prio 0 data from 4 to 1
+round 4 station 1 sends with prio 0 ack from 1 to 4
+round 4 station 2 sends with prio 0 ack from 1 to 4
+round 4 station 3 sends with prio 0 ack from 1 to 4
+round 4 station 4 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test a the simple case with 1000  stations"
+]2;echo "test the simple case with 100 stations"]1;echotest the simple case with 100 stations
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests/test-with-priority[1m [0m[0m 
+]2;cat tests/test-with-priority]1;cat1 1 3 1
+1 2 1 1
+1 3 1 4
+10 4 2 7
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kcat tests/test-with-priority[28D[1C[1C[1C[P[25C [26Dc[P[25C [26D[P[25C [26D. tests/test-with-priority[25D./ tests/test-with-priority[25Dr tests/test-with-priority[25Di tests/test-with-priority[25Dn tests/test-with-priority[25Dg tests/test-with-priority[25Dtoken[1m [0m [4Cs/test-with-priority[25D[0m 1 tests/test-with-priority[25D0 tests/test-with-priority[25D0 tests/test-with-priority[25D0 tests/test-with-priority[25D[P[25C [26D
+]2;./ringtoken 100 tests/test-with-priority]1;./ringtokenround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 0 station 4 sends with prio 0 token
+round 0 station 5 sends with prio 0 token
+round 0 station 6 sends with prio 0 token
+round 0 station 7 sends with prio 0 token
+round 0 station 8 sends with prio 0 token
+round 0 station 9 sends with prio 0 token
+round 0 station 10 sends with prio 0 token
+round 0 station 11 sends with prio 0 token
+round 0 station 12 sends with prio 0 token
+round 0 station 13 sends with prio 0 token
+round 0 station 14 sends with prio 0 token
+round 0 station 15 sends with prio 0 token
+round 0 station 16 sends with prio 0 token
+round 0 station 17 sends with prio 0 token
+round 0 station 18 sends with prio 0 token
+round 0 station 19 sends with prio 0 token
+round 0 station 20 sends with prio 0 token
+round 0 station 21 sends with prio 0 token
+round 0 station 22 sends with prio 0 token
+round 0 station 23 sends with prio 0 token
+round 0 station 24 sends with prio 0 token
+round 0 station 25 sends with prio 0 token
+round 0 station 26 sends with prio 0 token
+round 0 station 27 sends with prio 0 token
+round 0 station 28 sends with prio 0 token
+round 0 station 29 sends with prio 0 token
+round 0 station 30 sends with prio 0 token
+round 0 station 31 sends with prio 0 token
+round 0 station 32 sends with prio 0 token
+round 0 station 33 sends with prio 0 token
+round 0 station 34 sends with prio 0 token
+round 0 station 35 sends with prio 0 token
+round 0 station 36 sends with prio 0 token
+round 0 station 37 sends with prio 0 token
+round 0 station 38 sends with prio 0 token
+round 0 station 39 sends with prio 0 token
+round 0 station 40 sends with prio 0 token
+round 0 station 41 sends with prio 0 token
+round 0 station 42 sends with prio 0 token
+round 0 station 43 sends with prio 0 token
+round 0 station 44 sends with prio 0 token
+round 0 station 45 sends with prio 0 token
+round 0 station 46 sends with prio 0 token
+round 0 station 47 sends with prio 0 token
+round 0 station 48 sends with prio 0 token
+round 0 station 49 sends with prio 0 token
+round 0 station 50 sends with prio 0 token
+round 0 station 51 sends with prio 0 token
+round 0 station 52 sends with prio 0 token
+round 0 station 53 sends with prio 0 token
+round 0 station 54 sends with prio 0 token
+round 0 station 55 sends with prio 0 token
+round 0 station 56 sends with prio 0 token
+round 0 station 57 sends with prio 0 token
+round 0 station 58 sends with prio 0 token
+round 0 station 59 sends with prio 0 token
+round 0 station 60 sends with prio 0 token
+round 0 station 61 sends with prio 0 token
+round 0 station 62 sends with prio 0 token
+round 0 station 63 sends with prio 0 token
+round 0 station 64 sends with prio 0 token
+round 0 station 65 sends with prio 0 token
+round 0 station 66 sends with prio 0 token
+round 0 station 67 sends with prio 0 token
+round 0 station 68 sends with prio 0 token
+round 0 station 69 sends with prio 0 token
+round 0 station 70 sends with prio 0 token
+round 0 station 71 sends with prio 0 token
+round 0 station 72 sends with prio 0 token
+round 0 station 73 sends with prio 0 token
+round 0 station 74 sends with prio 0 token
+round 0 station 75 sends with prio 0 token
+round 0 station 76 sends with prio 0 token
+round 0 station 77 sends with prio 0 token
+round 0 station 78 sends with prio 0 token
+round 0 station 79 sends with prio 0 token
+round 0 station 80 sends with prio 0 token
+round 0 station 81 sends with prio 0 token
+round 0 station 82 sends with prio 0 token
+round 0 station 83 sends with prio 0 token
+round 0 station 84 sends with prio 0 token
+round 0 station 85 sends with prio 0 token
+round 0 station 86 sends with prio 0 token
+round 0 station 87 sends with prio 0 token
+round 0 station 88 sends with prio 0 token
+round 0 station 89 sends with prio 0 token
+round 0 station 90 sends with prio 0 token
+round 0 station 91 sends with prio 0 token
+round 0 station 92 sends with prio 0 token
+round 0 station 93 sends with prio 0 token
+round 0 station 94 sends with prio 0 token
+round 0 station 95 sends with prio 0 token
+round 0 station 96 sends with prio 0 token
+round 0 station 97 sends with prio 0 token
+round 0 station 98 sends with prio 0 token
+round 0 station 99 sends with prio 0 token
+round 1 station 0 sends with prio 0 token
+round 1 station 1 sends with prio 0 data from 1 to 3
+round 1 station 2 sends with prio 1 data from 1 to 3
+round 1 station 3 sends with prio 4 ack from 3 to 1
+round 1 station 4 sends with prio 4 ack from 3 to 1
+round 1 station 5 sends with prio 4 ack from 3 to 1
+round 1 station 6 sends with prio 4 ack from 3 to 1
+round 1 station 7 sends with prio 4 ack from 3 to 1
+round 1 station 8 sends with prio 4 ack from 3 to 1
+round 1 station 9 sends with prio 4 ack from 3 to 1
+round 1 station 10 sends with prio 4 ack from 3 to 1
+round 1 station 11 sends with prio 4 ack from 3 to 1
+round 1 station 12 sends with prio 4 ack from 3 to 1
+round 1 station 13 sends with prio 4 ack from 3 to 1
+round 1 station 14 sends with prio 4 ack from 3 to 1
+round 1 station 15 sends with prio 4 ack from 3 to 1
+round 1 station 16 sends with prio 4 ack from 3 to 1
+round 1 station 17 sends with prio 4 ack from 3 to 1
+round 1 station 18 sends with prio 4 ack from 3 to 1
+round 1 station 19 sends with prio 4 ack from 3 to 1
+round 1 station 20 sends with prio 4 ack from 3 to 1
+round 1 station 21 sends with prio 4 ack from 3 to 1
+round 1 station 22 sends with prio 4 ack from 3 to 1
+round 1 station 23 sends with prio 4 ack from 3 to 1
+round 1 station 24 sends with prio 4 ack from 3 to 1
+round 1 station 25 sends with prio 4 ack from 3 to 1
+round 1 station 26 sends with prio 4 ack from 3 to 1
+round 1 station 27 sends with prio 4 ack from 3 to 1
+round 1 station 28 sends with prio 4 ack from 3 to 1
+round 1 station 29 sends with prio 4 ack from 3 to 1
+round 1 station 30 sends with prio 4 ack from 3 to 1
+round 1 station 31 sends with prio 4 ack from 3 to 1
+round 1 station 32 sends with prio 4 ack from 3 to 1
+round 1 station 33 sends with prio 4 ack from 3 to 1
+round 1 station 34 sends with prio 4 ack from 3 to 1
+round 1 station 35 sends with prio 4 ack from 3 to 1
+round 1 station 36 sends with prio 4 ack from 3 to 1
+round 1 station 37 sends with prio 4 ack from 3 to 1
+round 1 station 38 sends with prio 4 ack from 3 to 1
+round 1 station 39 sends with prio 4 ack from 3 to 1
+round 1 station 40 sends with prio 4 ack from 3 to 1
+round 1 station 41 sends with prio 4 ack from 3 to 1
+round 1 station 42 sends with prio 4 ack from 3 to 1
+round 1 station 43 sends with prio 4 ack from 3 to 1
+round 1 station 44 sends with prio 4 ack from 3 to 1
+round 1 station 45 sends with prio 4 ack from 3 to 1
+round 1 station 46 sends with prio 4 ack from 3 to 1
+round 1 station 47 sends with prio 4 ack from 3 to 1
+round 1 station 48 sends with prio 4 ack from 3 to 1
+round 1 station 49 sends with prio 4 ack from 3 to 1
+round 1 station 50 sends with prio 4 ack from 3 to 1
+round 1 station 51 sends with prio 4 ack from 3 to 1
+round 1 station 52 sends with prio 4 ack from 3 to 1
+round 1 station 53 sends with prio 4 ack from 3 to 1
+round 1 station 54 sends with prio 4 ack from 3 to 1
+round 1 station 55 sends with prio 4 ack from 3 to 1
+round 1 station 56 sends with prio 4 ack from 3 to 1
+round 1 station 57 sends with prio 4 ack from 3 to 1
+round 1 station 58 sends with prio 4 ack from 3 to 1
+round 1 station 59 sends with prio 4 ack from 3 to 1
+round 1 station 60 sends with prio 4 ack from 3 to 1
+round 1 station 61 sends with prio 4 ack from 3 to 1
+round 1 station 62 sends with prio 4 ack from 3 to 1
+round 1 station 63 sends with prio 4 ack from 3 to 1
+round 1 station 64 sends with prio 4 ack from 3 to 1
+round 1 station 65 sends with prio 4 ack from 3 to 1
+round 1 station 66 sends with prio 4 ack from 3 to 1
+round 1 station 67 sends with prio 4 ack from 3 to 1
+round 1 station 68 sends with prio 4 ack from 3 to 1
+round 1 station 69 sends with prio 4 ack from 3 to 1
+round 1 station 70 sends with prio 4 ack from 3 to 1
+round 1 station 71 sends with prio 4 ack from 3 to 1
+round 1 station 72 sends with prio 4 ack from 3 to 1
+round 1 station 73 sends with prio 4 ack from 3 to 1
+round 1 station 74 sends with prio 4 ack from 3 to 1
+round 1 station 75 sends with prio 4 ack from 3 to 1
+round 1 station 76 sends with prio 4 ack from 3 to 1
+round 1 station 77 sends with prio 4 ack from 3 to 1
+round 1 station 78 sends with prio 4 ack from 3 to 1
+round 1 station 79 sends with prio 4 ack from 3 to 1
+round 1 station 80 sends with prio 4 ack from 3 to 1
+round 1 station 81 sends with prio 4 ack from 3 to 1
+round 1 station 82 sends with prio 4 ack from 3 to 1
+round 1 station 83 sends with prio 4 ack from 3 to 1
+round 1 station 84 sends with prio 4 ack from 3 to 1
+round 1 station 85 sends with prio 4 ack from 3 to 1
+round 1 station 86 sends with prio 4 ack from 3 to 1
+round 1 station 87 sends with prio 4 ack from 3 to 1
+round 1 station 88 sends with prio 4 ack from 3 to 1
+round 1 station 89 sends with prio 4 ack from 3 to 1
+round 1 station 90 sends with prio 4 ack from 3 to 1
+round 1 station 91 sends with prio 4 ack from 3 to 1
+round 1 station 92 sends with prio 4 ack from 3 to 1
+round 1 station 93 sends with prio 4 ack from 3 to 1
+round 1 station 94 sends with prio 4 ack from 3 to 1
+round 1 station 95 sends with prio 4 ack from 3 to 1
+round 1 station 96 sends with prio 4 ack from 3 to 1
+round 1 station 97 sends with prio 4 ack from 3 to 1
+round 1 station 98 sends with prio 4 ack from 3 to 1
+round 1 station 99 sends with prio 4 ack from 3 to 1
+round 2 station 0 sends with prio 4 ack from 3 to 1
+round 2 station 1 sends with prio 4 token
+round 2 station 2 sends with prio 4 token
+round 2 station 3 sends with prio 1 data from 3 to 1
+round 2 station 4 sends with prio 1 data from 3 to 1
+round 2 station 5 sends with prio 1 data from 3 to 1
+round 2 station 6 sends with prio 1 data from 3 to 1
+round 2 station 7 sends with prio 1 data from 3 to 1
+round 2 station 8 sends with prio 1 data from 3 to 1
+round 2 station 9 sends with prio 1 data from 3 to 1
+round 2 station 10 sends with prio 1 data from 3 to 1
+round 2 station 11 sends with prio 1 data from 3 to 1
+round 2 station 12 sends with prio 1 data from 3 to 1
+round 2 station 13 sends with prio 1 data from 3 to 1
+round 2 station 14 sends with prio 1 data from 3 to 1
+round 2 station 15 sends with prio 1 data from 3 to 1
+round 2 station 16 sends with prio 1 data from 3 to 1
+round 2 station 17 sends with prio 1 data from 3 to 1
+round 2 station 18 sends with prio 1 data from 3 to 1
+round 2 station 19 sends with prio 1 data from 3 to 1
+round 2 station 20 sends with prio 1 data from 3 to 1
+round 2 station 21 sends with prio 1 data from 3 to 1
+round 2 station 22 sends with prio 1 data from 3 to 1
+round 2 station 23 sends with prio 1 data from 3 to 1
+round 2 station 24 sends with prio 1 data from 3 to 1
+round 2 station 25 sends with prio 1 data from 3 to 1
+round 2 station 26 sends with prio 1 data from 3 to 1
+round 2 station 27 sends with prio 1 data from 3 to 1
+round 2 station 28 sends with prio 1 data from 3 to 1
+round 2 station 29 sends with prio 1 data from 3 to 1
+round 2 station 30 sends with prio 1 data from 3 to 1
+round 2 station 31 sends with prio 1 data from 3 to 1
+round 2 station 32 sends with prio 1 data from 3 to 1
+round 2 station 33 sends with prio 1 data from 3 to 1
+round 2 station 34 sends with prio 1 data from 3 to 1
+round 2 station 35 sends with prio 1 data from 3 to 1
+round 2 station 36 sends with prio 1 data from 3 to 1
+round 2 station 37 sends with prio 1 data from 3 to 1
+round 2 station 38 sends with prio 1 data from 3 to 1
+round 2 station 39 sends with prio 1 data from 3 to 1
+round 2 station 40 sends with prio 1 data from 3 to 1
+round 2 station 41 sends with prio 1 data from 3 to 1
+round 2 station 42 sends with prio 1 data from 3 to 1
+round 2 station 43 sends with prio 1 data from 3 to 1
+round 2 station 44 sends with prio 1 data from 3 to 1
+round 2 station 45 sends with prio 1 data from 3 to 1
+round 2 station 46 sends with prio 1 data from 3 to 1
+round 2 station 47 sends with prio 1 data from 3 to 1
+round 2 station 48 sends with prio 1 data from 3 to 1
+round 2 station 49 sends with prio 1 data from 3 to 1
+round 2 station 50 sends with prio 1 data from 3 to 1
+round 2 station 51 sends with prio 1 data from 3 to 1
+round 2 station 52 sends with prio 1 data from 3 to 1
+round 2 station 53 sends with prio 1 data from 3 to 1
+round 2 station 54 sends with prio 1 data from 3 to 1
+round 2 station 55 sends with prio 1 data from 3 to 1
+round 2 station 56 sends with prio 1 data from 3 to 1
+round 2 station 57 sends with prio 1 data from 3 to 1
+round 2 station 58 sends with prio 1 data from 3 to 1
+round 2 station 59 sends with prio 1 data from 3 to 1
+round 2 station 60 sends with prio 1 data from 3 to 1
+round 2 station 61 sends with prio 1 data from 3 to 1
+round 2 station 62 sends with prio 1 data from 3 to 1
+round 2 station 63 sends with prio 1 data from 3 to 1
+round 2 station 64 sends with prio 1 data from 3 to 1
+round 2 station 65 sends with prio 1 data from 3 to 1
+round 2 station 66 sends with prio 1 data from 3 to 1
+round 2 station 67 sends with prio 1 data from 3 to 1
+round 2 station 68 sends with prio 1 data from 3 to 1
+round 2 station 69 sends with prio 1 data from 3 to 1
+round 2 station 70 sends with prio 1 data from 3 to 1
+round 2 station 71 sends with prio 1 data from 3 to 1
+round 2 station 72 sends with prio 1 data from 3 to 1
+round 2 station 73 sends with prio 1 data from 3 to 1
+round 2 station 74 sends with prio 1 data from 3 to 1
+round 2 station 75 sends with prio 1 data from 3 to 1
+round 2 station 76 sends with prio 1 data from 3 to 1
+round 2 station 77 sends with prio 1 data from 3 to 1
+round 2 station 78 sends with prio 1 data from 3 to 1
+round 2 station 79 sends with prio 1 data from 3 to 1
+round 2 station 80 sends with prio 1 data from 3 to 1
+round 2 station 81 sends with prio 1 data from 3 to 1
+round 2 station 82 sends with prio 1 data from 3 to 1
+round 2 station 83 sends with prio 1 data from 3 to 1
+round 2 station 84 sends with prio 1 data from 3 to 1
+round 2 station 85 sends with prio 1 data from 3 to 1
+round 2 station 86 sends with prio 1 data from 3 to 1
+round 2 station 87 sends with prio 1 data from 3 to 1
+round 2 station 88 sends with prio 1 data from 3 to 1
+round 2 station 89 sends with prio 1 data from 3 to 1
+round 2 station 90 sends with prio 1 data from 3 to 1
+round 2 station 91 sends with prio 1 data from 3 to 1
+round 2 station 92 sends with prio 1 data from 3 to 1
+round 2 station 93 sends with prio 1 data from 3 to 1
+round 2 station 94 sends with prio 1 data from 3 to 1
+round 2 station 95 sends with prio 1 data from 3 to 1
+round 2 station 96 sends with prio 1 data from 3 to 1
+round 2 station 97 sends with prio 1 data from 3 to 1
+round 2 station 98 sends with prio 1 data from 3 to 1
+round 2 station 99 sends with prio 1 data from 3 to 1
+round 3 station 0 sends with prio 1 data from 3 to 1
+round 3 station 1 sends with prio 1 ack from 1 to 3
+round 3 station 2 sends with prio 1 ack from 1 to 3
+round 3 station 3 sends with prio 1 token
+round 3 station 4 sends with prio 1 token
+round 3 station 5 sends with prio 1 token
+round 3 station 6 sends with prio 1 token
+round 3 station 7 sends with prio 1 token
+round 3 station 8 sends with prio 1 token
+round 3 station 9 sends with prio 1 token
+round 3 station 10 sends with prio 1 token
+round 3 station 11 sends with prio 1 token
+round 3 station 12 sends with prio 1 token
+round 3 station 13 sends with prio 1 token
+round 3 station 14 sends with prio 1 token
+round 3 station 15 sends with prio 1 token
+round 3 station 16 sends with prio 1 token
+round 3 station 17 sends with prio 1 token
+round 3 station 18 sends with prio 1 token
+round 3 station 19 sends with prio 1 token
+round 3 station 20 sends with prio 1 token
+round 3 station 21 sends with prio 1 token
+round 3 station 22 sends with prio 1 token
+round 3 station 23 sends with prio 1 token
+round 3 station 24 sends with prio 1 token
+round 3 station 25 sends with prio 1 token
+round 3 station 26 sends with prio 1 token
+round 3 station 27 sends with prio 1 token
+round 3 station 28 sends with prio 1 token
+round 3 station 29 sends with prio 1 token
+round 3 station 30 sends with prio 1 token
+round 3 station 31 sends with prio 1 token
+round 3 station 32 sends with prio 1 token
+round 3 station 33 sends with prio 1 token
+round 3 station 34 sends with prio 1 token
+round 3 station 35 sends with prio 1 token
+round 3 station 36 sends with prio 1 token
+round 3 station 37 sends with prio 1 token
+round 3 station 38 sends with prio 1 token
+round 3 station 39 sends with prio 1 token
+round 3 station 40 sends with prio 1 token
+round 3 station 41 sends with prio 1 token
+round 3 station 42 sends with prio 1 token
+round 3 station 43 sends with prio 1 token
+round 3 station 44 sends with prio 1 token
+round 3 station 45 sends with prio 1 token
+round 3 station 46 sends with prio 1 token
+round 3 station 47 sends with prio 1 token
+round 3 station 48 sends with prio 1 token
+round 3 station 49 sends with prio 1 token
+round 3 station 50 sends with prio 1 token
+round 3 station 51 sends with prio 1 token
+round 3 station 52 sends with prio 1 token
+round 3 station 53 sends with prio 1 token
+round 3 station 54 sends with prio 1 token
+round 3 station 55 sends with prio 1 token
+round 3 station 56 sends with prio 1 token
+round 3 station 57 sends with prio 1 token
+round 3 station 58 sends with prio 1 token
+round 3 station 59 sends with prio 1 token
+round 3 station 60 sends with prio 1 token
+round 3 station 61 sends with prio 1 token
+round 3 station 62 sends with prio 1 token
+round 3 station 63 sends with prio 1 token
+round 3 station 64 sends with prio 1 token
+round 3 station 65 sends with prio 1 token
+round 3 station 66 sends with prio 1 token
+round 3 station 67 sends with prio 1 token
+round 3 station 68 sends with prio 1 token
+round 3 station 69 sends with prio 1 token
+round 3 station 70 sends with prio 1 token
+round 3 station 71 sends with prio 1 token
+round 3 station 72 sends with prio 1 token
+round 3 station 73 sends with prio 1 token
+round 3 station 74 sends with prio 1 token
+round 3 station 75 sends with prio 1 token
+round 3 station 76 sends with prio 1 token
+round 3 station 77 sends with prio 1 token
+round 3 station 78 sends with prio 1 token
+round 3 station 79 sends with prio 1 token
+round 3 station 80 sends with prio 1 token
+round 3 station 81 sends with prio 1 token
+round 3 station 82 sends with prio 1 token
+round 3 station 83 sends with prio 1 token
+round 3 station 84 sends with prio 1 token
+round 3 station 85 sends with prio 1 token
+round 3 station 86 sends with prio 1 token
+round 3 station 87 sends with prio 1 token
+round 3 station 88 sends with prio 1 token
+round 3 station 89 sends with prio 1 token
+round 3 station 90 sends with prio 1 token
+round 3 station 91 sends with prio 1 token
+round 3 station 92 sends with prio 1 token
+round 3 station 93 sends with prio 1 token
+round 3 station 94 sends with prio 1 token
+round 3 station 95 sends with prio 1 token
+round 3 station 96 sends with prio 1 token
+round 3 station 97 sends with prio 1 token
+round 3 station 98 sends with prio 1 token
+round 3 station 99 sends with prio 1 token
+round 4 station 0 sends with prio 1 token
+round 4 station 1 sends with prio 1 token
+round 4 station 2 sends with prio 0 data from 2 to 1
+round 4 station 3 sends with prio 0 data from 2 to 1
+round 4 station 4 sends with prio 0 data from 2 to 1
+round 4 station 5 sends with prio 0 data from 2 to 1
+round 4 station 6 sends with prio 0 data from 2 to 1
+round 4 station 7 sends with prio 0 data from 2 to 1
+round 4 station 8 sends with prio 0 data from 2 to 1
+round 4 station 9 sends with prio 0 data from 2 to 1
+round 4 station 10 sends with prio 0 data from 2 to 1
+round 4 station 11 sends with prio 0 data from 2 to 1
+round 4 station 12 sends with prio 0 data from 2 to 1
+round 4 station 13 sends with prio 0 data from 2 to 1
+round 4 station 14 sends with prio 0 data from 2 to 1
+round 4 station 15 sends with prio 0 data from 2 to 1
+round 4 station 16 sends with prio 0 data from 2 to 1
+round 4 station 17 sends with prio 0 data from 2 to 1
+round 4 station 18 sends with prio 0 data from 2 to 1
+round 4 station 19 sends with prio 0 data from 2 to 1
+round 4 station 20 sends with prio 0 data from 2 to 1
+round 4 station 21 sends with prio 0 data from 2 to 1
+round 4 station 22 sends with prio 0 data from 2 to 1
+round 4 station 23 sends with prio 0 data from 2 to 1
+round 4 station 24 sends with prio 0 data from 2 to 1
+round 4 station 25 sends with prio 0 data from 2 to 1
+round 4 station 26 sends with prio 0 data from 2 to 1
+round 4 station 27 sends with prio 0 data from 2 to 1
+round 4 station 28 sends with prio 0 data from 2 to 1
+round 4 station 29 sends with prio 0 data from 2 to 1
+round 4 station 30 sends with prio 0 data from 2 to 1
+round 4 station 31 sends with prio 0 data from 2 to 1
+round 4 station 32 sends with prio 0 data from 2 to 1
+round 4 station 33 sends with prio 0 data from 2 to 1
+round 4 station 34 sends with prio 0 data from 2 to 1
+round 4 station 35 sends with prio 0 data from 2 to 1
+round 4 station 36 sends with prio 0 data from 2 to 1
+round 4 station 37 sends with prio 0 data from 2 to 1
+round 4 station 38 sends with prio 0 data from 2 to 1
+round 4 station 39 sends with prio 0 data from 2 to 1
+round 4 station 40 sends with prio 0 data from 2 to 1
+round 4 station 41 sends with prio 0 data from 2 to 1
+round 4 station 42 sends with prio 0 data from 2 to 1
+round 4 station 43 sends with prio 0 data from 2 to 1
+round 4 station 44 sends with prio 0 data from 2 to 1
+round 4 station 45 sends with prio 0 data from 2 to 1
+round 4 station 46 sends with prio 0 data from 2 to 1
+round 4 station 47 sends with prio 0 data from 2 to 1
+round 4 station 48 sends with prio 0 data from 2 to 1
+round 4 station 49 sends with prio 0 data from 2 to 1
+round 4 station 50 sends with prio 0 data from 2 to 1
+round 4 station 51 sends with prio 0 data from 2 to 1
+round 4 station 52 sends with prio 0 data from 2 to 1
+round 4 station 53 sends with prio 0 data from 2 to 1
+round 4 station 54 sends with prio 0 data from 2 to 1
+round 4 station 55 sends with prio 0 data from 2 to 1
+round 4 station 56 sends with prio 0 data from 2 to 1
+round 4 station 57 sends with prio 0 data from 2 to 1
+round 4 station 58 sends with prio 0 data from 2 to 1
+round 4 station 59 sends with prio 0 data from 2 to 1
+round 4 station 60 sends with prio 0 data from 2 to 1
+round 4 station 61 sends with prio 0 data from 2 to 1
+round 4 station 62 sends with prio 0 data from 2 to 1
+round 4 station 63 sends with prio 0 data from 2 to 1
+round 4 station 64 sends with prio 0 data from 2 to 1
+round 4 station 65 sends with prio 0 data from 2 to 1
+round 4 station 66 sends with prio 0 data from 2 to 1
+round 4 station 67 sends with prio 0 data from 2 to 1
+round 4 station 68 sends with prio 0 data from 2 to 1
+round 4 station 69 sends with prio 0 data from 2 to 1
+round 4 station 70 sends with prio 0 data from 2 to 1
+round 4 station 71 sends with prio 0 data from 2 to 1
+round 4 station 72 sends with prio 0 data from 2 to 1
+round 4 station 73 sends with prio 0 data from 2 to 1
+round 4 station 74 sends with prio 0 data from 2 to 1
+round 4 station 75 sends with prio 0 data from 2 to 1
+round 4 station 76 sends with prio 0 data from 2 to 1
+round 4 station 77 sends with prio 0 data from 2 to 1
+round 4 station 78 sends with prio 0 data from 2 to 1
+round 4 station 79 sends with prio 0 data from 2 to 1
+round 4 station 80 sends with prio 0 data from 2 to 1
+round 4 station 81 sends with prio 0 data from 2 to 1
+round 4 station 82 sends with prio 0 data from 2 to 1
+round 4 station 83 sends with prio 0 data from 2 to 1
+round 4 station 84 sends with prio 0 data from 2 to 1
+round 4 station 85 sends with prio 0 data from 2 to 1
+round 4 station 86 sends with prio 0 data from 2 to 1
+round 4 station 87 sends with prio 0 data from 2 to 1
+round 4 station 88 sends with prio 0 data from 2 to 1
+round 4 station 89 sends with prio 0 data from 2 to 1
+round 4 station 90 sends with prio 0 data from 2 to 1
+round 4 station 91 sends with prio 0 data from 2 to 1
+round 4 station 92 sends with prio 0 data from 2 to 1
+round 4 station 93 sends with prio 0 data from 2 to 1
+round 4 station 94 sends with prio 0 data from 2 to 1
+round 4 station 95 sends with prio 0 data from 2 to 1
+round 4 station 96 sends with prio 0 data from 2 to 1
+round 4 station 97 sends with prio 0 data from 2 to 1
+round 4 station 98 sends with prio 0 data from 2 to 1
+round 4 station 99 sends with prio 0 data from 2 to 1
+round 5 station 0 sends with prio 0 data from 2 to 1
+round 5 station 1 sends with prio 0 ack from 1 to 2
+round 5 station 2 sends with prio 0 token
+round 5 station 3 sends with prio 0 token
+round 5 station 4 sends with prio 0 token
+round 5 station 5 sends with prio 0 token
+round 5 station 6 sends with prio 0 token
+round 5 station 7 sends with prio 0 token
+round 5 station 8 sends with prio 0 token
+round 5 station 9 sends with prio 0 token
+round 5 station 10 sends with prio 0 token
+round 5 station 11 sends with prio 0 token
+round 5 station 12 sends with prio 0 token
+round 5 station 13 sends with prio 0 token
+round 5 station 14 sends with prio 0 token
+round 5 station 15 sends with prio 0 token
+round 5 station 16 sends with prio 0 token
+round 5 station 17 sends with prio 0 token
+round 5 station 18 sends with prio 0 token
+round 5 station 19 sends with prio 0 token
+round 5 station 20 sends with prio 0 token
+round 5 station 21 sends with prio 0 token
+round 5 station 22 sends with prio 0 token
+round 5 station 23 sends with prio 0 token
+round 5 station 24 sends with prio 0 token
+round 5 station 25 sends with prio 0 token
+round 5 station 26 sends with prio 0 token
+round 5 station 27 sends with prio 0 token
+round 5 station 28 sends with prio 0 token
+round 5 station 29 sends with prio 0 token
+round 5 station 30 sends with prio 0 token
+round 5 station 31 sends with prio 0 token
+round 5 station 32 sends with prio 0 token
+round 5 station 33 sends with prio 0 token
+round 5 station 34 sends with prio 0 token
+round 5 station 35 sends with prio 0 token
+round 5 station 36 sends with prio 0 token
+round 5 station 37 sends with prio 0 token
+round 5 station 38 sends with prio 0 token
+round 5 station 39 sends with prio 0 token
+round 5 station 40 sends with prio 0 token
+round 5 station 41 sends with prio 0 token
+round 5 station 42 sends with prio 0 token
+round 5 station 43 sends with prio 0 token
+round 5 station 44 sends with prio 0 token
+round 5 station 45 sends with prio 0 token
+round 5 station 46 sends with prio 0 token
+round 5 station 47 sends with prio 0 token
+round 5 station 48 sends with prio 0 token
+round 5 station 49 sends with prio 0 token
+round 5 station 50 sends with prio 0 token
+round 5 station 51 sends with prio 0 token
+round 5 station 52 sends with prio 0 token
+round 5 station 53 sends with prio 0 token
+round 5 station 54 sends with prio 0 token
+round 5 station 55 sends with prio 0 token
+round 5 station 56 sends with prio 0 token
+round 5 station 57 sends with prio 0 token
+round 5 station 58 sends with prio 0 token
+round 5 station 59 sends with prio 0 token
+round 5 station 60 sends with prio 0 token
+round 5 station 61 sends with prio 0 token
+round 5 station 62 sends with prio 0 token
+round 5 station 63 sends with prio 0 token
+round 5 station 64 sends with prio 0 token
+round 5 station 65 sends with prio 0 token
+round 5 station 66 sends with prio 0 token
+round 5 station 67 sends with prio 0 token
+round 5 station 68 sends with prio 0 token
+round 5 station 69 sends with prio 0 token
+round 5 station 70 sends with prio 0 token
+round 5 station 71 sends with prio 0 token
+round 5 station 72 sends with prio 0 token
+round 5 station 73 sends with prio 0 token
+round 5 station 74 sends with prio 0 token
+round 5 station 75 sends with prio 0 token
+round 5 station 76 sends with prio 0 token
+round 5 station 77 sends with prio 0 token
+round 5 station 78 sends with prio 0 token
+round 5 station 79 sends with prio 0 token
+round 5 station 80 sends with prio 0 token
+round 5 station 81 sends with prio 0 token
+round 5 station 82 sends with prio 0 token
+round 5 station 83 sends with prio 0 token
+round 5 station 84 sends with prio 0 token
+round 5 station 85 sends with prio 0 token
+round 5 station 86 sends with prio 0 token
+round 5 station 87 sends with prio 0 token
+round 5 station 88 sends with prio 0 token
+round 5 station 89 sends with prio 0 token
+round 5 station 90 sends with prio 0 token
+round 5 station 91 sends with prio 0 token
+round 5 station 92 sends with prio 0 token
+round 5 station 93 sends with prio 0 token
+round 5 station 94 sends with prio 0 token
+round 5 station 95 sends with prio 0 token
+round 5 station 96 sends with prio 0 token
+round 5 station 97 sends with prio 0 token
+round 5 station 98 sends with prio 0 token
+round 5 station 99 sends with prio 0 token
+round 6 station 0 sends with prio 0 token
+round 6 station 1 sends with prio 0 token
+round 6 station 2 sends with prio 0 token
+round 6 station 3 sends with prio 0 token
+round 6 station 4 sends with prio 0 token
+round 6 station 5 sends with prio 0 token
+round 6 station 6 sends with prio 0 token
+round 6 station 7 sends with prio 0 token
+round 6 station 8 sends with prio 0 token
+round 6 station 9 sends with prio 0 token
+round 6 station 10 sends with prio 0 token
+round 6 station 11 sends with prio 0 token
+round 6 station 12 sends with prio 0 token
+round 6 station 13 sends with prio 0 token
+round 6 station 14 sends with prio 0 token
+round 6 station 15 sends with prio 0 token
+round 6 station 16 sends with prio 0 token
+round 6 station 17 sends with prio 0 token
+round 6 station 18 sends with prio 0 token
+round 6 station 19 sends with prio 0 token
+round 6 station 20 sends with prio 0 token
+round 6 station 21 sends with prio 0 token
+round 6 station 22 sends with prio 0 token
+round 6 station 23 sends with prio 0 token
+round 6 station 24 sends with prio 0 token
+round 6 station 25 sends with prio 0 token
+round 6 station 26 sends with prio 0 token
+round 6 station 27 sends with prio 0 token
+round 6 station 28 sends with prio 0 token
+round 6 station 29 sends with prio 0 token
+round 6 station 30 sends with prio 0 token
+round 6 station 31 sends with prio 0 token
+round 6 station 32 sends with prio 0 token
+round 6 station 33 sends with prio 0 token
+round 6 station 34 sends with prio 0 token
+round 6 station 35 sends with prio 0 token
+round 6 station 36 sends with prio 0 token
+round 6 station 37 sends with prio 0 token
+round 6 station 38 sends with prio 0 token
+round 6 station 39 sends with prio 0 token
+round 6 station 40 sends with prio 0 token
+round 6 station 41 sends with prio 0 token
+round 6 station 42 sends with prio 0 token
+round 6 station 43 sends with prio 0 token
+round 6 station 44 sends with prio 0 token
+round 6 station 45 sends with prio 0 token
+round 6 station 46 sends with prio 0 token
+round 6 station 47 sends with prio 0 token
+round 6 station 48 sends with prio 0 token
+round 6 station 49 sends with prio 0 token
+round 6 station 50 sends with prio 0 token
+round 6 station 51 sends with prio 0 token
+round 6 station 52 sends with prio 0 token
+round 6 station 53 sends with prio 0 token
+round 6 station 54 sends with prio 0 token
+round 6 station 55 sends with prio 0 token
+round 6 station 56 sends with prio 0 token
+round 6 station 57 sends with prio 0 token
+round 6 station 58 sends with prio 0 token
+round 6 station 59 sends with prio 0 token
+round 6 station 60 sends with prio 0 token
+round 6 station 61 sends with prio 0 token
+round 6 station 62 sends with prio 0 token
+round 6 station 63 sends with prio 0 token
+round 6 station 64 sends with prio 0 token
+round 6 station 65 sends with prio 0 token
+round 6 station 66 sends with prio 0 token
+round 6 station 67 sends with prio 0 token
+round 6 station 68 sends with prio 0 token
+round 6 station 69 sends with prio 0 token
+round 6 station 70 sends with prio 0 token
+round 6 station 71 sends with prio 0 token
+round 6 station 72 sends with prio 0 token
+round 6 station 73 sends with prio 0 token
+round 6 station 74 sends with prio 0 token
+round 6 station 75 sends with prio 0 token
+round 6 station 76 sends with prio 0 token
+round 6 station 77 sends with prio 0 token
+round 6 station 78 sends with prio 0 token
+round 6 station 79 sends with prio 0 token
+round 6 station 80 sends with prio 0 token
+round 6 station 81 sends with prio 0 token
+round 6 station 82 sends with prio 0 token
+round 6 station 83 sends with prio 0 token
+round 6 station 84 sends with prio 0 token
+round 6 station 85 sends with prio 0 token
+round 6 station 86 sends with prio 0 token
+round 6 station 87 sends with prio 0 token
+round 6 station 88 sends with prio 0 token
+round 6 station 89 sends with prio 0 token
+round 6 station 90 sends with prio 0 token
+round 6 station 91 sends with prio 0 token
+round 6 station 92 sends with prio 0 token
+round 6 station 93 sends with prio 0 token
+round 6 station 94 sends with prio 0 token
+round 6 station 95 sends with prio 0 token
+round 6 station 96 sends with prio 0 token
+round 6 station 97 sends with prio 0 token
+round 6 station 98 sends with prio 0 token
+round 6 station 99 sends with prio 0 token
+round 7 station 0 sends with prio 0 token
+round 7 station 1 sends with prio 0 token
+round 7 station 2 sends with prio 0 token
+round 7 station 3 sends with prio 0 token
+round 7 station 4 sends with prio 0 token
+round 7 station 5 sends with prio 0 token
+round 7 station 6 sends with prio 0 token
+round 7 station 7 sends with prio 0 token
+round 7 station 8 sends with prio 0 token
+round 7 station 9 sends with prio 0 token
+round 7 station 10 sends with prio 0 token
+round 7 station 11 sends with prio 0 token
+round 7 station 12 sends with prio 0 token
+round 7 station 13 sends with prio 0 token
+round 7 station 14 sends with prio 0 token
+round 7 station 15 sends with prio 0 token
+round 7 station 16 sends with prio 0 token
+round 7 station 17 sends with prio 0 token
+round 7 station 18 sends with prio 0 token
+round 7 station 19 sends with prio 0 token
+round 7 station 20 sends with prio 0 token
+round 7 station 21 sends with prio 0 token
+round 7 station 22 sends with prio 0 token
+round 7 station 23 sends with prio 0 token
+round 7 station 24 sends with prio 0 token
+round 7 station 25 sends with prio 0 token
+round 7 station 26 sends with prio 0 token
+round 7 station 27 sends with prio 0 token
+round 7 station 28 sends with prio 0 token
+round 7 station 29 sends with prio 0 token
+round 7 station 30 sends with prio 0 token
+round 7 station 31 sends with prio 0 token
+round 7 station 32 sends with prio 0 token
+round 7 station 33 sends with prio 0 token
+round 7 station 34 sends with prio 0 token
+round 7 station 35 sends with prio 0 token
+round 7 station 36 sends with prio 0 token
+round 7 station 37 sends with prio 0 token
+round 7 station 38 sends with prio 0 token
+round 7 station 39 sends with prio 0 token
+round 7 station 40 sends with prio 0 token
+round 7 station 41 sends with prio 0 token
+round 7 station 42 sends with prio 0 token
+round 7 station 43 sends with prio 0 token
+round 7 station 44 sends with prio 0 token
+round 7 station 45 sends with prio 0 token
+round 7 station 46 sends with prio 0 token
+round 7 station 47 sends with prio 0 token
+round 7 station 48 sends with prio 0 token
+round 7 station 49 sends with prio 0 token
+round 7 station 50 sends with prio 0 token
+round 7 station 51 sends with prio 0 token
+round 7 station 52 sends with prio 0 token
+round 7 station 53 sends with prio 0 token
+round 7 station 54 sends with prio 0 token
+round 7 station 55 sends with prio 0 token
+round 7 station 56 sends with prio 0 token
+round 7 station 57 sends with prio 0 token
+round 7 station 58 sends with prio 0 token
+round 7 station 59 sends with prio 0 token
+round 7 station 60 sends with prio 0 token
+round 7 station 61 sends with prio 0 token
+round 7 station 62 sends with prio 0 token
+round 7 station 63 sends with prio 0 token
+round 7 station 64 sends with prio 0 token
+round 7 station 65 sends with prio 0 token
+round 7 station 66 sends with prio 0 token
+round 7 station 67 sends with prio 0 token
+round 7 station 68 sends with prio 0 token
+round 7 station 69 sends with prio 0 token
+round 7 station 70 sends with prio 0 token
+round 7 station 71 sends with prio 0 token
+round 7 station 72 sends with prio 0 token
+round 7 station 73 sends with prio 0 token
+round 7 station 74 sends with prio 0 token
+round 7 station 75 sends with prio 0 token
+round 7 station 76 sends with prio 0 token
+round 7 station 77 sends with prio 0 token
+round 7 station 78 sends with prio 0 token
+round 7 station 79 sends with prio 0 token
+round 7 station 80 sends with prio 0 token
+round 7 station 81 sends with prio 0 token
+round 7 station 82 sends with prio 0 token
+round 7 station 83 sends with prio 0 token
+round 7 station 84 sends with prio 0 token
+round 7 station 85 sends with prio 0 token
+round 7 station 86 sends with prio 0 token
+round 7 station 87 sends with prio 0 token
+round 7 station 88 sends with prio 0 token
+round 7 station 89 sends with prio 0 token
+round 7 station 90 sends with prio 0 token
+round 7 station 91 sends with prio 0 token
+round 7 station 92 sends with prio 0 token
+round 7 station 93 sends with prio 0 token
+round 7 station 94 sends with prio 0 token
+round 7 station 95 sends with prio 0 token
+round 7 station 96 sends with prio 0 token
+round 7 station 97 sends with prio 0 token
+round 7 station 98 sends with prio 0 token
+round 7 station 99 sends with prio 0 token
+round 8 station 0 sends with prio 0 token
+round 8 station 1 sends with prio 0 token
+round 8 station 2 sends with prio 0 token
+round 8 station 3 sends with prio 0 token
+round 8 station 4 sends with prio 0 token
+round 8 station 5 sends with prio 0 token
+round 8 station 6 sends with prio 0 token
+round 8 station 7 sends with prio 0 token
+round 8 station 8 sends with prio 0 token
+round 8 station 9 sends with prio 0 token
+round 8 station 10 sends with prio 0 token
+round 8 station 11 sends with prio 0 token
+round 8 station 12 sends with prio 0 token
+round 8 station 13 sends with prio 0 token
+round 8 station 14 sends with prio 0 token
+round 8 station 15 sends with prio 0 token
+round 8 station 16 sends with prio 0 token
+round 8 station 17 sends with prio 0 token
+round 8 station 18 sends with prio 0 token
+round 8 station 19 sends with prio 0 token
+round 8 station 20 sends with prio 0 token
+round 8 station 21 sends with prio 0 token
+round 8 station 22 sends with prio 0 token
+round 8 station 23 sends with prio 0 token
+round 8 station 24 sends with prio 0 token
+round 8 station 25 sends with prio 0 token
+round 8 station 26 sends with prio 0 token
+round 8 station 27 sends with prio 0 token
+round 8 station 28 sends with prio 0 token
+round 8 station 29 sends with prio 0 token
+round 8 station 30 sends with prio 0 token
+round 8 station 31 sends with prio 0 token
+round 8 station 32 sends with prio 0 token
+round 8 station 33 sends with prio 0 token
+round 8 station 34 sends with prio 0 token
+round 8 station 35 sends with prio 0 token
+round 8 station 36 sends with prio 0 token
+round 8 station 37 sends with prio 0 token
+round 8 station 38 sends with prio 0 token
+round 8 station 39 sends with prio 0 token
+round 8 station 40 sends with prio 0 token
+round 8 station 41 sends with prio 0 token
+round 8 station 42 sends with prio 0 token
+round 8 station 43 sends with prio 0 token
+round 8 station 44 sends with prio 0 token
+round 8 station 45 sends with prio 0 token
+round 8 station 46 sends with prio 0 token
+round 8 station 47 sends with prio 0 token
+round 8 station 48 sends with prio 0 token
+round 8 station 49 sends with prio 0 token
+round 8 station 50 sends with prio 0 token
+round 8 station 51 sends with prio 0 token
+round 8 station 52 sends with prio 0 token
+round 8 station 53 sends with prio 0 token
+round 8 station 54 sends with prio 0 token
+round 8 station 55 sends with prio 0 token
+round 8 station 56 sends with prio 0 token
+round 8 station 57 sends with prio 0 token
+round 8 station 58 sends with prio 0 token
+round 8 station 59 sends with prio 0 token
+round 8 station 60 sends with prio 0 token
+round 8 station 61 sends with prio 0 token
+round 8 station 62 sends with prio 0 token
+round 8 station 63 sends with prio 0 token
+round 8 station 64 sends with prio 0 token
+round 8 station 65 sends with prio 0 token
+round 8 station 66 sends with prio 0 token
+round 8 station 67 sends with prio 0 token
+round 8 station 68 sends with prio 0 token
+round 8 station 69 sends with prio 0 token
+round 8 station 70 sends with prio 0 token
+round 8 station 71 sends with prio 0 token
+round 8 station 72 sends with prio 0 token
+round 8 station 73 sends with prio 0 token
+round 8 station 74 sends with prio 0 token
+round 8 station 75 sends with prio 0 token
+round 8 station 76 sends with prio 0 token
+round 8 station 77 sends with prio 0 token
+round 8 station 78 sends with prio 0 token
+round 8 station 79 sends with prio 0 token
+round 8 station 80 sends with prio 0 token
+round 8 station 81 sends with prio 0 token
+round 8 station 82 sends with prio 0 token
+round 8 station 83 sends with prio 0 token
+round 8 station 84 sends with prio 0 token
+round 8 station 85 sends with prio 0 token
+round 8 station 86 sends with prio 0 token
+round 8 station 87 sends with prio 0 token
+round 8 station 88 sends with prio 0 token
+round 8 station 89 sends with prio 0 token
+round 8 station 90 sends with prio 0 token
+round 8 station 91 sends with prio 0 token
+round 8 station 92 sends with prio 0 token
+round 8 station 93 sends with prio 0 token
+round 8 station 94 sends with prio 0 token
+round 8 station 95 sends with prio 0 token
+round 8 station 96 sends with prio 0 token
+round 8 station 97 sends with prio 0 token
+round 8 station 98 sends with prio 0 token
+round 8 station 99 sends with prio 0 token
+round 9 station 0 sends with prio 0 token
+round 9 station 1 sends with prio 0 token
+round 9 station 2 sends with prio 0 token
+round 9 station 3 sends with prio 0 token
+round 9 station 4 sends with prio 0 token
+round 9 station 5 sends with prio 0 token
+round 9 station 6 sends with prio 0 token
+round 9 station 7 sends with prio 0 token
+round 9 station 8 sends with prio 0 token
+round 9 station 9 sends with prio 0 token
+round 9 station 10 sends with prio 0 token
+round 9 station 11 sends with prio 0 token
+round 9 station 12 sends with prio 0 token
+round 9 station 13 sends with prio 0 token
+round 9 station 14 sends with prio 0 token
+round 9 station 15 sends with prio 0 token
+round 9 station 16 sends with prio 0 token
+round 9 station 17 sends with prio 0 token
+round 9 station 18 sends with prio 0 token
+round 9 station 19 sends with prio 0 token
+round 9 station 20 sends with prio 0 token
+round 9 station 21 sends with prio 0 token
+round 9 station 22 sends with prio 0 token
+round 9 station 23 sends with prio 0 token
+round 9 station 24 sends with prio 0 token
+round 9 station 25 sends with prio 0 token
+round 9 station 26 sends with prio 0 token
+round 9 station 27 sends with prio 0 token
+round 9 station 28 sends with prio 0 token
+round 9 station 29 sends with prio 0 token
+round 9 station 30 sends with prio 0 token
+round 9 station 31 sends with prio 0 token
+round 9 station 32 sends with prio 0 token
+round 9 station 33 sends with prio 0 token
+round 9 station 34 sends with prio 0 token
+round 9 station 35 sends with prio 0 token
+round 9 station 36 sends with prio 0 token
+round 9 station 37 sends with prio 0 token
+round 9 station 38 sends with prio 0 token
+round 9 station 39 sends with prio 0 token
+round 9 station 40 sends with prio 0 token
+round 9 station 41 sends with prio 0 token
+round 9 station 42 sends with prio 0 token
+round 9 station 43 sends with prio 0 token
+round 9 station 44 sends with prio 0 token
+round 9 station 45 sends with prio 0 token
+round 9 station 46 sends with prio 0 token
+round 9 station 47 sends with prio 0 token
+round 9 station 48 sends with prio 0 token
+round 9 station 49 sends with prio 0 token
+round 9 station 50 sends with prio 0 token
+round 9 station 51 sends with prio 0 token
+round 9 station 52 sends with prio 0 token
+round 9 station 53 sends with prio 0 token
+round 9 station 54 sends with prio 0 token
+round 9 station 55 sends with prio 0 token
+round 9 station 56 sends with prio 0 token
+round 9 station 57 sends with prio 0 token
+round 9 station 58 sends with prio 0 token
+round 9 station 59 sends with prio 0 token
+round 9 station 60 sends with prio 0 token
+round 9 station 61 sends with prio 0 token
+round 9 station 62 sends with prio 0 token
+round 9 station 63 sends with prio 0 token
+round 9 station 64 sends with prio 0 token
+round 9 station 65 sends with prio 0 token
+round 9 station 66 sends with prio 0 token
+round 9 station 67 sends with prio 0 token
+round 9 station 68 sends with prio 0 token
+round 9 station 69 sends with prio 0 token
+round 9 station 70 sends with prio 0 token
+round 9 station 71 sends with prio 0 token
+round 9 station 72 sends with prio 0 token
+round 9 station 73 sends with prio 0 token
+round 9 station 74 sends with prio 0 token
+round 9 station 75 sends with prio 0 token
+round 9 station 76 sends with prio 0 token
+round 9 station 77 sends with prio 0 token
+round 9 station 78 sends with prio 0 token
+round 9 station 79 sends with prio 0 token
+round 9 station 80 sends with prio 0 token
+round 9 station 81 sends with prio 0 token
+round 9 station 82 sends with prio 0 token
+round 9 station 83 sends with prio 0 token
+round 9 station 84 sends with prio 0 token
+round 9 station 85 sends with prio 0 token
+round 9 station 86 sends with prio 0 token
+round 9 station 87 sends with prio 0 token
+round 9 station 88 sends with prio 0 token
+round 9 station 89 sends with prio 0 token
+round 9 station 90 sends with prio 0 token
+round 9 station 91 sends with prio 0 token
+round 9 station 92 sends with prio 0 token
+round 9 station 93 sends with prio 0 token
+round 9 station 94 sends with prio 0 token
+round 9 station 95 sends with prio 0 token
+round 9 station 96 sends with prio 0 token
+round 9 station 97 sends with prio 0 token
+round 9 station 98 sends with prio 0 token
+round 9 station 99 sends with prio 0 token
+round 10 station 0 sends with prio 0 token
+round 10 station 1 sends with prio 0 token
+round 10 station 2 sends with prio 0 token
+round 10 station 3 sends with prio 0 token
+round 10 station 4 sends with prio 0 data from 4 to 2
+round 10 station 5 sends with prio 0 data from 4 to 2
+round 10 station 6 sends with prio 0 data from 4 to 2
+round 10 station 7 sends with prio 0 data from 4 to 2
+round 10 station 8 sends with prio 0 data from 4 to 2
+round 10 station 9 sends with prio 0 data from 4 to 2
+round 10 station 10 sends with prio 0 data from 4 to 2
+round 10 station 11 sends with prio 0 data from 4 to 2
+round 10 station 12 sends with prio 0 data from 4 to 2
+round 10 station 13 sends with prio 0 data from 4 to 2
+round 10 station 14 sends with prio 0 data from 4 to 2
+round 10 station 15 sends with prio 0 data from 4 to 2
+round 10 station 16 sends with prio 0 data from 4 to 2
+round 10 station 17 sends with prio 0 data from 4 to 2
+round 10 station 18 sends with prio 0 data from 4 to 2
+round 10 station 19 sends with prio 0 data from 4 to 2
+round 10 station 20 sends with prio 0 data from 4 to 2
+round 10 station 21 sends with prio 0 data from 4 to 2
+round 10 station 22 sends with prio 0 data from 4 to 2
+round 10 station 23 sends with prio 0 data from 4 to 2
+round 10 station 24 sends with prio 0 data from 4 to 2
+round 10 station 25 sends with prio 0 data from 4 to 2
+round 10 station 26 sends with prio 0 data from 4 to 2
+round 10 station 27 sends with prio 0 data from 4 to 2
+round 10 station 28 sends with prio 0 data from 4 to 2
+round 10 station 29 sends with prio 0 data from 4 to 2
+round 10 station 30 sends with prio 0 data from 4 to 2
+round 10 station 31 sends with prio 0 data from 4 to 2
+round 10 station 32 sends with prio 0 data from 4 to 2
+round 10 station 33 sends with prio 0 data from 4 to 2
+round 10 station 34 sends with prio 0 data from 4 to 2
+round 10 station 35 sends with prio 0 data from 4 to 2
+round 10 station 36 sends with prio 0 data from 4 to 2
+round 10 station 37 sends with prio 0 data from 4 to 2
+round 10 station 38 sends with prio 0 data from 4 to 2
+round 10 station 39 sends with prio 0 data from 4 to 2
+round 10 station 40 sends with prio 0 data from 4 to 2
+round 10 station 41 sends with prio 0 data from 4 to 2
+round 10 station 42 sends with prio 0 data from 4 to 2
+round 10 station 43 sends with prio 0 data from 4 to 2
+round 10 station 44 sends with prio 0 data from 4 to 2
+round 10 station 45 sends with prio 0 data from 4 to 2
+round 10 station 46 sends with prio 0 data from 4 to 2
+round 10 station 47 sends with prio 0 data from 4 to 2
+round 10 station 48 sends with prio 0 data from 4 to 2
+round 10 station 49 sends with prio 0 data from 4 to 2
+round 10 station 50 sends with prio 0 data from 4 to 2
+round 10 station 51 sends with prio 0 data from 4 to 2
+round 10 station 52 sends with prio 0 data from 4 to 2
+round 10 station 53 sends with prio 0 data from 4 to 2
+round 10 station 54 sends with prio 0 data from 4 to 2
+round 10 station 55 sends with prio 0 data from 4 to 2
+round 10 station 56 sends with prio 0 data from 4 to 2
+round 10 station 57 sends with prio 0 data from 4 to 2
+round 10 station 58 sends with prio 0 data from 4 to 2
+round 10 station 59 sends with prio 0 data from 4 to 2
+round 10 station 60 sends with prio 0 data from 4 to 2
+round 10 station 61 sends with prio 0 data from 4 to 2
+round 10 station 62 sends with prio 0 data from 4 to 2
+round 10 station 63 sends with prio 0 data from 4 to 2
+round 10 station 64 sends with prio 0 data from 4 to 2
+round 10 station 65 sends with prio 0 data from 4 to 2
+round 10 station 66 sends with prio 0 data from 4 to 2
+round 10 station 67 sends with prio 0 data from 4 to 2
+round 10 station 68 sends with prio 0 data from 4 to 2
+round 10 station 69 sends with prio 0 data from 4 to 2
+round 10 station 70 sends with prio 0 data from 4 to 2
+round 10 station 71 sends with prio 0 data from 4 to 2
+round 10 station 72 sends with prio 0 data from 4 to 2
+round 10 station 73 sends with prio 0 data from 4 to 2
+round 10 station 74 sends with prio 0 data from 4 to 2
+round 10 station 75 sends with prio 0 data from 4 to 2
+round 10 station 76 sends with prio 0 data from 4 to 2
+round 10 station 77 sends with prio 0 data from 4 to 2
+round 10 station 78 sends with prio 0 data from 4 to 2
+round 10 station 79 sends with prio 0 data from 4 to 2
+round 10 station 80 sends with prio 0 data from 4 to 2
+round 10 station 81 sends with prio 0 data from 4 to 2
+round 10 station 82 sends with prio 0 data from 4 to 2
+round 10 station 83 sends with prio 0 data from 4 to 2
+round 10 station 84 sends with prio 0 data from 4 to 2
+round 10 station 85 sends with prio 0 data from 4 to 2
+round 10 station 86 sends with prio 0 data from 4 to 2
+round 10 station 87 sends with prio 0 data from 4 to 2
+round 10 station 88 sends with prio 0 data from 4 to 2
+round 10 station 89 sends with prio 0 data from 4 to 2
+round 10 station 90 sends with prio 0 data from 4 to 2
+round 10 station 91 sends with prio 0 data from 4 to 2
+round 10 station 92 sends with prio 0 data from 4 to 2
+round 10 station 93 sends with prio 0 data from 4 to 2
+round 10 station 94 sends with prio 0 data from 4 to 2
+round 10 station 95 sends with prio 0 data from 4 to 2
+round 10 station 96 sends with prio 0 data from 4 to 2
+round 10 station 97 sends with prio 0 data from 4 to 2
+round 10 station 98 sends with prio 0 data from 4 to 2
+round 10 station 99 sends with prio 0 data from 4 to 2
+round 11 station 0 sends with prio 0 data from 4 to 2
+round 11 station 1 sends with prio 0 data from 4 to 2
+round 11 station 2 sends with prio 0 ack from 2 to 4
+round 11 station 3 sends with prio 0 ack from 2 to 4
+round 11 station 4 sends with prio 0 token
+round 11 station 5 sends with prio 0 token
+round 11 station 6 sends with prio 0 token
+round 11 station 7 sends with prio 0 token
+round 11 station 8 sends with prio 0 token
+round 11 station 9 sends with prio 0 token
+round 11 station 10 sends with prio 0 token
+round 11 station 11 sends with prio 0 token
+round 11 station 12 sends with prio 0 token
+round 11 station 13 sends with prio 0 token
+round 11 station 14 sends with prio 0 token
+round 11 station 15 sends with prio 0 token
+round 11 station 16 sends with prio 0 token
+round 11 station 17 sends with prio 0 token
+round 11 station 18 sends with prio 0 token
+round 11 station 19 sends with prio 0 token
+round 11 station 20 sends with prio 0 token
+round 11 station 21 sends with prio 0 token
+round 11 station 22 sends with prio 0 token
+round 11 station 23 sends with prio 0 token
+round 11 station 24 sends with prio 0 token
+round 11 station 25 sends with prio 0 token
+round 11 station 26 sends with prio 0 token
+round 11 station 27 sends with prio 0 token
+round 11 station 28 sends with prio 0 token
+round 11 station 29 sends with prio 0 token
+round 11 station 30 sends with prio 0 token
+round 11 station 31 sends with prio 0 token
+round 11 station 32 sends with prio 0 token
+round 11 station 33 sends with prio 0 token
+round 11 station 34 sends with prio 0 token
+round 11 station 35 sends with prio 0 token
+round 11 station 36 sends with prio 0 token
+round 11 station 37 sends with prio 0 token
+round 11 station 38 sends with prio 0 token
+round 11 station 39 sends with prio 0 token
+round 11 station 40 sends with prio 0 token
+round 11 station 41 sends with prio 0 token
+round 11 station 42 sends with prio 0 token
+round 11 station 43 sends with prio 0 token
+round 11 station 44 sends with prio 0 token
+round 11 station 45 sends with prio 0 token
+round 11 station 46 sends with prio 0 token
+round 11 station 47 sends with prio 0 token
+round 11 station 48 sends with prio 0 token
+round 11 station 49 sends with prio 0 token
+round 11 station 50 sends with prio 0 token
+round 11 station 51 sends with prio 0 token
+round 11 station 52 sends with prio 0 token
+round 11 station 53 sends with prio 0 token
+round 11 station 54 sends with prio 0 token
+round 11 station 55 sends with prio 0 token
+round 11 station 56 sends with prio 0 token
+round 11 station 57 sends with prio 0 token
+round 11 station 58 sends with prio 0 token
+round 11 station 59 sends with prio 0 token
+round 11 station 60 sends with prio 0 token
+round 11 station 61 sends with prio 0 token
+round 11 station 62 sends with prio 0 token
+round 11 station 63 sends with prio 0 token
+round 11 station 64 sends with prio 0 token
+round 11 station 65 sends with prio 0 token
+round 11 station 66 sends with prio 0 token
+round 11 station 67 sends with prio 0 token
+round 11 station 68 sends with prio 0 token
+round 11 station 69 sends with prio 0 token
+round 11 station 70 sends with prio 0 token
+round 11 station 71 sends with prio 0 token
+round 11 station 72 sends with prio 0 token
+round 11 station 73 sends with prio 0 token
+round 11 station 74 sends with prio 0 token
+round 11 station 75 sends with prio 0 token
+round 11 station 76 sends with prio 0 token
+round 11 station 77 sends with prio 0 token
+round 11 station 78 sends with prio 0 token
+round 11 station 79 sends with prio 0 token
+round 11 station 80 sends with prio 0 token
+round 11 station 81 sends with prio 0 token
+round 11 station 82 sends with prio 0 token
+round 11 station 83 sends with prio 0 token
+round 11 station 84 sends with prio 0 token
+round 11 station 85 sends with prio 0 token
+round 11 station 86 sends with prio 0 token
+round 11 station 87 sends with prio 0 token
+round 11 station 88 sends with prio 0 token
+round 11 station 89 sends with prio 0 token
+round 11 station 90 sends with prio 0 token
+round 11 station 91 sends with prio 0 token
+round 11 station 92 sends with prio 0 token
+round 11 station 93 sends with prio 0 token
+round 11 station 94 sends with prio 0 token
+round 11 station 95 sends with prio 0 token
+round 11 station 96 sends with prio 0 token
+round 11 station 97 sends with prio 0 token
+round 11 station 98 sends with prio 0 token
+round 11 station 99 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "test with 101 stations"
+]2;echo "test with 101 stations"]1;echotest with 101 stations
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../tests[1m/[0m[0m      tokenring[1m [0m[0m 101 tests/test-with-s priority[1m [0m[0m 
+]2;./tokenring 101 tests/test-with-priority]1;./tokenringUsage: ./tokenring <stations (1-100)> [input-file]
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho  e  eecho "stdin should act as afil    file if no file is specified"
+]2;echo "stdin should act as file if no file is specified"]1;echostdin should act as file if no file is specified
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kccat tests[1m/[0m[0m/test-with-priority[1m [0m[0m| ./tokenring 5 tests[1m/[0m[0m/test-with-priority[1m [0m[K[K
+]2;cat tests/test-with-priority | ./tokenring 5 tests/test-with-priority]1;catround 0 station 0 sends with prio 0 token
+round 0 station 1 sends with prio 0 token
+round 0 station 2 sends with prio 0 token
+round 0 station 3 sends with prio 0 token
+round 0 station 4 sends with prio 0 token
+round 1 station 0 sends with prio 0 token
+round 1 station 1 sends with prio 0 data from 1 to 3
+round 1 station 2 sends with prio 1 data from 1 to 3
+round 1 station 3 sends with prio 4 ack from 3 to 1
+round 1 station 4 sends with prio 4 ack from 3 to 1
+round 2 station 0 sends with prio 4 ack from 3 to 1
+round 2 station 1 sends with prio 4 token
+round 2 station 2 sends with prio 4 token
+round 2 station 3 sends with prio 1 data from 3 to 1
+round 2 station 4 sends with prio 1 data from 3 to 1
+round 3 station 0 sends with prio 1 data from 3 to 1
+round 3 station 1 sends with prio 1 ack from 1 to 3
+round 3 station 2 sends with prio 1 ack from 1 to 3
+round 3 station 3 sends with prio 1 token
+round 3 station 4 sends with prio 1 token
+round 4 station 0 sends with prio 1 token
+round 4 station 1 sends with prio 1 token
+round 4 station 2 sends with prio 0 data from 2 to 1
+round 4 station 3 sends with prio 0 data from 2 to 1
+round 4 station 4 sends with prio 0 data from 2 to 1
+round 5 station 0 sends with prio 0 data from 2 to 1
+round 5 station 1 sends with prio 0 ack from 1 to 2
+round 5 station 2 sends with prio 0 token
+round 5 station 3 sends with prio 0 token
+round 5 station 4 sends with prio 0 token
+round 6 station 0 sends with prio 0 token
+round 6 station 1 sends with prio 0 token
+round 6 station 2 sends with prio 0 token
+round 6 station 3 sends with prio 0 token
+round 6 station 4 sends with prio 0 token
+round 7 station 0 sends with prio 0 token
+round 7 station 1 sends with prio 0 token
+round 7 station 2 sends with prio 0 token
+round 7 station 3 sends with prio 0 token
+round 7 station 4 sends with prio 0 token
+round 8 station 0 sends with prio 0 token
+round 8 station 1 sends with prio 0 token
+round 8 station 2 sends with prio 0 token
+round 8 station 3 sends with prio 0 token
+round 8 station 4 sends with prio 0 token
+round 9 station 0 sends with prio 0 token
+round 9 station 1 sends with prio 0 token
+round 9 station 2 sends with prio 0 token
+round 9 station 3 sends with prio 0 token
+round 9 station 4 sends with prio 0 token
+round 10 station 0 sends with prio 0 token
+round 10 station 1 sends with prio 0 token
+round 10 station 2 sends with prio 0 token
+round 10 station 3 sends with prio 0 token
+round 10 station 4 sends with prio 0 data from 4 to 2
+round 11 station 0 sends with prio 0 data from 4 to 2
+round 11 station 1 sends with prio 0 data from 4 to 2
+round 11 station 2 sends with prio 0 ack from 2 to 4
+round 11 station 3 sends with prio 0 ack from 2 to 4
+round 11 station 4 sends with prio 0 token
+[1m[7m%[27m[1m[0m                                                                                         ]2;chris@chris-ubuntu: ~/projects/cs343/a2]1;..ects/cs343/a2[0m[27m[24m[J[01;31m➜ [01;32m [36ma2 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K
+
+Script done on Wed 03 Oct 2012 07:29:13 PM EDT
