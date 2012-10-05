@@ -2,10 +2,19 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <vector>
 
 using namespace std;
 #include <cstdlib>
+
+bool convert(unsigned int &val, char *buffer ) {    // convert C string to integer
+    std::stringstream ss( buffer );         // connect stream and buffer
+    ss >> dec >> val;                       // convert integer from buffer
+    return ! ss.fail() &&                   // conversion successful ?
+                                            // characters after conversion all blank ?
+            string( buffer ).find_first_not_of( " ", ss.tellg() ) == string::npos;
+} // convert
 
 int Station::numPendingRequests = 0;
 
@@ -131,8 +140,8 @@ void uMain::main() {
     } // if
 
     // check for valid number of stations
-    unsigned int numStations = atoi(argv[1]);
-    if (numStations <= 0 || numStations > 100) {
+    unsigned int numStations;
+    if (!convert(numStations, argv[1]) || numStations <= 0 || numStations > 100) {
         usage(argv);
     } // if
 

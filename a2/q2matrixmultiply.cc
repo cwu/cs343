@@ -3,9 +3,18 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <sstream>
 
 using namespace std;
 #include <cstdlib>
+
+bool convert(int &val, char *buffer ) {    // convert C string to integer
+    std::stringstream ss( buffer );         // connect stream and buffer
+    ss >> dec >> val;                       // convert integer from buffer
+    return ! ss.fail() &&                   // conversion successful ?
+                                            // characters after conversion all blank ?
+            string( buffer ).find_first_not_of( " ", ss.tellg() ) == string::npos;
+} // convert
 
 /**
  * This class acts as a task to multiply a row of a matrix.
@@ -41,7 +50,7 @@ _Task RowMultiplier {
  * argv - the arguments fed into the program
  */
 void usage(char **argv) {
-    cerr << "Usage: " << argv[0] << " xrows xcols-yrows ycols "
+    cerr << "Usage: " << argv[0] << " xrows (> 0) xcols-yrows (> 0) ycols (> 0)"
          << " [ X-matrix-file Y-matrix-file ]" << endl;
     exit(EXIT_FAILURE);
 }
@@ -185,14 +194,14 @@ void uMain::main() {
     }
 
     // read in the matrix sizes
-    int xrows = atoi(argv[1]);
-    int xcols = atoi(argv[2]);
-    int yrows = xcols;
-    int ycols = atoi(argv[3]);
-
-    if (xrows <= 0 || xcols <= 0 || ycols <= 0) {
+    int xrows;
+    int xcols;
+    int ycols;
+    if (!convert(xrows, argv[1]) || !convert(xcols, argv[2]) || !convert(ycols, argv[3]) ||
+        xrows <= 0 || xcols <= 0 || ycols <= 0) {
         usage(argv);
     }
+    int yrows = xcols;
 
     int **X;
     int **Y;
