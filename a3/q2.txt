@@ -1,0 +1,21 @@
+class Table {
+  public:
+    Table( unsigned int noOfPhil, Printer &prt );
+    void pickup( unsigned int id );
+    void putdown( unsigned int id );
+}; // Table
+
+_Task Philosopher {
+  public:
+    enum States { Thinking = 'T', Hungry = 'H', Eating ='E', Waiting = 'W', Finished = 'F' };
+    Philosopher( unsigned int id, unsigned int noodles, Table &table, Printer &prt );
+}; // Philosopher
+
+# a monitor is like a class with a single built-in lock:
+# all public members are mutually exclusive
+_Monitor Printer {
+  public:
+    Printer( unsigned int NoOfPhil );
+    void print( unsigned int id, Philosopher::States state );
+    void print( unsigned int id, Philosopher::States state, unsigned int bite, unsigned int noodles );
+}; // Printer
