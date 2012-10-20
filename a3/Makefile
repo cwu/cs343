@@ -5,7 +5,7 @@ CXX = u++										# compiler
 CXXFLAGS = -g -Wall -Wno-unused-label -MMD ${OPT} -D"${KIND}"
 MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
 
-OBJECTS1 = # list of object files for question 1 prefixed with "q1"
+OBJECTS1 = q1main.o
 EXEC1 = boundedBuffer
 
 OBJECTS2 = # list of object files for question 2 prefixed with "q2"
@@ -13,7 +13,7 @@ EXEC2 = phil
 
 OBJECTS = ${OBJECTS1} ${OBJECTS2}				# all object files
 DEPENDS = ${OBJECTS:.o=.d}						# substitute ".o" with ".d"
-EXECS = ${EXEC1} ${EXEC2}						# all executables
+EXECS = ${EXEC1} # ${EXEC2}						# all executables
 
 .PHONY : all clean
 
