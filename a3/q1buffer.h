@@ -7,34 +7,68 @@
 
 using namespace std;
 
-#ifdef BUSY
 template<typename T> class BoundedBuffer {
   private:
-    const unsigned int size;
-    list<T> buffer;
+    const unsigned int maxSize;
+    T *buffer;
+    unsigned int head;
+    unsigned int size;
     uOwnerLock lock;
     uCondLock fullCond;
     uCondLock emptyCond;
 
+#ifdef NOBUSY
+    uCondLock bargingCond;
+    bool stopBarging;
+#endif
+
     bool isFull();
     bool isEmpty();
+    void push(T elem);
+    T pop();
   public:
-    BoundedBuffer( const unsigned int size = 10 );
+    BoundedBuffer( const unsigned int maxSize = 10 );
+    ~BoundedBuffer();
     void insert( T elem );
     T remove();
 };
 
 template<typename T>
-BoundedBuffer<T>::BoundedBuffer( const unsigned int size) : size(size) {}
+BoundedBuffer<T>::~BoundedBuffer() {
+    delete [] buffer;
+}
 
 template<typename T>
 bool BoundedBuffer<T>::isFull() {
-    return buffer.size() == size;
+    return size == maxSize;
 }
 
 template<typename T>
 bool BoundedBuffer<T>::isEmpty() {
-    return buffer.size() == 0;
+    return size == 0;
+}
+
+template<typename T>
+void BoundedBuffer<T>::push(T elem) {
+    assert(!isFull());
+    buffer[(head + size) % maxSize] = elem;
+    size++;
+}
+
+template<typename T>
+T BoundedBuffer<T>::pop() {
+    assert(!isEmpty());
+    T temp = buffer[head];
+    head = (head + 1) % maxSize;
+    size--;
+    return temp;
+}
+
+#ifdef BUSY
+
+template<typename T>
+BoundedBuffer<T>::BoundedBuffer( const unsigned int maxSize)
+    : maxSize(maxSize), buffer(new T[maxSize]), head(0), size(0)  {
 }
 
 template<typename T>
@@ -44,8 +78,8 @@ void BoundedBuffer<T>::insert(T elem) {
         fullCond.wait(lock);
     }
 
-    assert(!isFull());
-    buffer.push_back(elem);
+    push(elem);
+
     emptyCond.signal();
     lock.release();
 }
@@ -57,9 +91,8 @@ T BoundedBuffer<T>::remove() {
         emptyCond.wait(lock);
     }
 
-    assert(!isEmpty());
-    T temp = buffer.front();
-    buffer.pop_front();
+    T temp = pop();
+
     fullCond.signal();
     lock.release();
     return temp;
@@ -68,75 +101,37 @@ T BoundedBuffer<T>::remove() {
 #endif // BUSY
 
 #ifdef NOBUSY
-template<typename T> class BoundedBuffer {
-  private:
-    const unsigned int size;
-    list<T> buffer;
-    uOwnerLock lock;
-    uCondLock fullCond;
-    uCondLock emptyCond;
-    uCondLock bargingCond;
-    bool signalFlag;
-
-    bool isFull();
-    bool isEmpty();
-  public:
-    BoundedBuffer( const unsigned int size = 10 );
-    void insert( T elem );
-    T remove();
-};
 
 template<typename T>
 BoundedBuffer<T>::BoundedBuffer( const unsigned int size)
-    : size(size), signalFlag(false) {
-}
-
-template<typename T>
-bool BoundedBuffer<T>::isFull() {
-    return buffer.size() == size;
-}
-
-template<typename T>
-bool BoundedBuffer<T>::isEmpty() {
-    return buffer.size() == 0;
+    : maxSize(size), buffer(new T[maxSize]), head(0), size(0),
+      stopBarging(false)  {
 }
 
 template<typename T>
 void BoundedBuffer<T>::insert(T elem) {
     lock.acquire();
 
-    static int signalEmpty = 0;
-
-    // check if we are barging
-    if (signalFlag) {
-        cout << "  > barging into insert : " << buffer.size() << " [" << lock.owner() << "] " << endl;
+    if (stopBarging) {
         bargingCond.wait(lock);
+        if (bargingCond.empty()) {
+            stopBarging = false;
+        }
     }
 
     if (isFull()) {
         if (!bargingCond.empty()) {
-            cout << " - signal barging (insert wait) : " << buffer.size() << " [" << lock.owner() << "] " << endl;
             bargingCond.signal();
         }
-        cout << " > sleep on full : " << buffer.size() << " [" << lock.owner() << "] " << endl;
         fullCond.wait(lock);
-        cout << " < wake from full : " << buffer.size() << " [" << lock.owner() << "] " << endl;
     }
 
-    assert(!isFull());
-    buffer.push_back(elem);
-    cout << "insert : " << buffer.size() << " [" << lock.owner() << "] " << endl;
+    push(elem);
 
-    signalFlag = !emptyCond.empty();
+    stopBarging = !emptyCond.empty() || !bargingCond.empty();
     if (!emptyCond.empty()) {
-        assert(!isEmpty());
-        cout << " - signal not empty : " << buffer.size() << " [" << lock.owner() << "] " << endl;
-        signalFlag = true;
-        signalEmpty++;
-        cout << "   - signal empty : " << signalEmpty << " times." << endl;
         emptyCond.signal();
     } else if (!bargingCond.empty()) {
-        cout << " - signal barging (insert) : " << buffer.size() << " [" << lock.owner() << "] " << endl;
         bargingCond.signal();
     }
 
@@ -147,39 +142,27 @@ template<typename T>
 T BoundedBuffer<T>::remove() {
     lock.acquire();
 
-    static int waitEmpty = 0;
-
-    if (signalFlag) {
-        cout << "  > barging into remove : " << buffer.size() << " [" << lock.owner() << "] " << endl;
+    if (stopBarging) {
         bargingCond.wait(lock);
+        if (bargingCond.empty()) {
+            stopBarging = false;
+        }
     }
 
     if (isEmpty()) {
         if (!bargingCond.empty()) {
-            cout << " - signal barging (remove wait) : " << buffer.size() << " [" << lock.owner() << "] " << endl;
             bargingCond.signal();
         }
-        cout << " > sleep on empty : " << buffer.size() << " [" << lock.owner() << "] " << endl;
-        waitEmpty++;
-        cout << "   - wait empty : " << waitEmpty << " times." << endl;
         emptyCond.wait(lock);
-        cout << " < wake from empty : " << buffer.size() << " [" << lock.owner() << "] " << endl;
     }
-    cout << "remove : " << buffer.size() << " [" << lock.owner() << "] " << endl;
 
-    assert(!isEmpty());
-    T temp = buffer.front();
-    buffer.pop_front();
+    T temp = pop();
 
-    signalFlag = !fullCond.empty();
+    stopBarging = !fullCond.empty() || !bargingCond.empty();
     if (!fullCond.empty()) {
-        cout << " - signal not full : " << buffer.size() << " [" << lock.owner() << "] " << endl;
         fullCond.signal();
     } else if (!bargingCond.empty()) {
-        cout << " - signal barging (remove) : " << buffer.size() << " [" << lock.owner() << "] " << endl;
         bargingCond.signal();
-    } else {
-        cout << "nothing on the queue : " << fullCond.empty() << " " << bargingCond.empty() << " " << signalFlag << endl;
     }
 
     lock.release();
