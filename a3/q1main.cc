@@ -31,14 +31,8 @@ bool convert(int &val, char *buffer ) {    // convert C string to integer
  * argv - the program argument values
  */
 static void usage(char **argv) {
-    cerr << "usage: " << argv[0]
-         << " [ Cons [ Prods [ Produce [ Buffer Size [ Delays ]]]]]" << endl
-         << " defaults:" << endl
-         << "   Cons - " << DEFAULT_CONS << endl
-         << "   Prods - " << DEFAULT_PRODS << endl
-         << "   Produce - " << DEFAULT_PRODUCE << endl
-         << "   Buffer Size - " << DEFAULT_BUFFER_SIZE << endl
-         << "   Delays - Prods + Cons" << endl;
+    cerr << "Usage: " << argv[0] << " [ Cons (> 0) [ Prods (> 0) [ Produce (> 0) "
+         << "[ BufferSize (> 0) [ Delay (> 0) ] ] ] ] ]" << endl;
     exit(EXIT_FAILURE);
 }
 
@@ -112,6 +106,10 @@ void uMain::main() {
     if (argc >= 6 && (!convert(delays, argv[5]) || delays <= 0)) {
         usage(argv);
     }
+
+#ifdef __U_MULTI__
+    uProcessor p[3] __attribute__((unused));
+#endif // __U_MULTI__
 
     // Setup the tasks
     BoundedBuffer<int> buffer(bufferSize);
