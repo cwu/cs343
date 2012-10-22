@@ -5,15 +5,15 @@ CXX = u++										# compiler
 CXXFLAGS = -g -Wall -Wno-unused-label -MMD ${OPT} -D"${KIND}"
 MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
 
-OBJECTS1 = q1main.o
+OBJECTS1 = q1main.o q1random.o q1producer.o q1consumer.o
 EXEC1 = boundedBuffer
 
-OBJECTS2 = # list of object files for question 2 prefixed with "q2"
+OBJECTS2 = q2main.o q2philosopher.o q2table.o q2printer.o q2random.o
 EXEC2 = phil
 
 OBJECTS = ${OBJECTS1} ${OBJECTS2}				# all object files
 DEPENDS = ${OBJECTS:.o=.d}						# substitute ".o" with ".d"
-EXECS = ${EXEC1} # ${EXEC2}						# all executables
+EXECS = ${EXEC1} ${EXEC2}						# all executables
 
 .PHONY : all clean
 

@@ -5,7 +5,8 @@
 #include <sstream>
 
 #include "q1buffer.h"
-#include "MPRNG.h"
+#include "q1producer.h"
+#include "q1consumer.h"
 
 using namespace std;
 #include <cstdlib>
@@ -14,8 +15,6 @@ const int DEFAULT_CONS = 5;
 const int DEFAULT_PRODS = 3;
 const int DEFAULT_PRODUCE = 10;
 const int DEFAULT_BUFFER_SIZE = 10;
-
-static MPRNG randomGen;
 
 bool convert(int &val, char *buffer ) {    // convert C string to integer
     std::stringstream ss( buffer );         // connect stream and buffer
@@ -36,45 +35,6 @@ static void usage(char **argv) {
     exit(EXIT_FAILURE);
 }
 
-_Task Producer {
-    BoundedBuffer<int> &buffer;
-    const int Produce;
-    const int Delay;
-
-    void main() {
-        for (int produce = 1; produce <= Produce; produce++) {
-            yield(randomGen(Delay));
-            buffer.insert(produce);
-        }
-    }
-  public:
-    Producer( BoundedBuffer<int> &buffer, const int Produce, const int Delay )
-        : buffer(buffer), Produce(Produce), Delay(Delay) {}
-};
-
-_Task Consumer {
-    BoundedBuffer<int> &buffer;
-    const int Delay;
-    const int Sentinel;
-    int &sum;
-
-    void main() {
-        yield(randomGen(Delay));
-        int value = buffer.remove();
-        while (value != Sentinel) {
-            // accumulate sum only after we know it is not the Sentinel value
-            sum += value;
-
-            // get a new value
-            yield(randomGen(Delay));
-            value = buffer.remove();
-        }
-    }
-  public:
-    Consumer( BoundedBuffer<int> &buffer, const int Delay, const int Sentinel,
-              int &sum )
-        : buffer(buffer), Delay(Delay), Sentinel(Sentinel), sum(sum) {}
-};
 
 void uMain::main() {
     if (argc > 6) {

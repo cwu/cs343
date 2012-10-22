@@ -1,0 +1,55 @@
+i)
+No Busy -O0
+./boundedBuffer 50 55 10000 30 10  2.88s user 0.01s system 99% cpu 2.895 total
+
+No Busy -O2
+./boundedBuffer 50 55 10000 30 10  2.70s user 0.00s system 99% cpu 2.703 total
+
+Busy -O0
+./boundedBuffer 50 55 10000 30 10  2.16s user 0.00s system 99% cpu 2.162 total
+
+
+Busy -O2
+./boundedBuffer 50 55 10000 30 10  2.04s user 0.01s system 99% cpu 2.058 total
+
+ii)
+These timings show that busy waiting is more effecient than no busy waiting,
+in both the optimised and non-optimised cases.
+
+In all cases most all of the time is spent in user.
+
+The optimized times are slightly faster than the non-optimized time:
+ * 104ms faster for Busy
+ * 192ms faster for No Busy
+
+In both the unoptimized and optimized cases the busy wait version is about 30%
+faster.
+
+iii)
+The reason the busy wait is faster is because it avoid another level of
+condition variable waiting by allowing barging. This extra condition variable
+introduces overhead as tasks have to wait on a queue. These extra waits add up
+as to end up producing a significant performance decrease. There is also extra
+overhead for timeslicing/scheduling as well as the context switching between
+tasks. Also for each wait/signal there is a reacquire of a mutex which incurs
+more overhead.
+
+iv)
+No Busy -O0 4 cores
+./boundedBuffer 50 55 10000 30 10  78.22s user 0.12s system 400% cpu 19.573 total
+
+Busy -O0 4 cores
+./boundedBuffer 50 55 10000 30 10  74.32s user 0.11s system 400% cpu 18.600 total
+
+v)
+The multi core executions took much longer.
+
+The no busy wait took 7.2 times longer while the busy wait took 8.6 times longer.
+
+However the busy wait was still faster than the no busy wait but not by as high
+of a margin.
+
+Most all of the time was still spent in user time, and the 4 processors were
+utilized as seen by the 400% cpu.
+
+vi)

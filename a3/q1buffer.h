@@ -22,14 +22,52 @@ template<typename T> class BoundedBuffer {
     bool stopBarging;
 #endif
 
+    /**
+     * Check if the buffer is full.
+     *
+     * return true if it is full, false otherwise.
+     */
     bool isFull();
+
+    /**
+     * Check if the buffer is empty.
+     *
+     * return true if it is empty, false otherwise.
+     */
     bool isEmpty();
+
+    /**
+     * Push a new element onto the end of the buffer
+     *
+     * elem - the new element
+     */
     void push(T elem);
+
+    /**
+     * Pop a new element from the front of the buffer
+     *
+     * returns the popped element.
+     */
     T pop();
   public:
+    /**
+     * Construct a new buffer with a size of maxSize
+     */
     BoundedBuffer( const unsigned int maxSize = 10 );
     ~BoundedBuffer();
+
+    /**
+     * Inserts a new element into the buffer.
+     *
+     * elem - the element to insert.
+     */
     void insert( T elem );
+
+    /**
+     * Removes the front element of the buffer an returns it.
+     *
+     * returns the removed element.
+     */
     T remove();
 };
 
@@ -114,24 +152,29 @@ void BoundedBuffer<T>::insert(T elem) {
 
     if (stopBarging) {
         bargingCond.wait(lock);
+
+        // reset the flag if we have no more barging
         if (bargingCond.empty()) {
             stopBarging = false;
         }
     }
 
+    // If nessesary, wait until the buffer is not full
     if (isFull()) {
-        if (!bargingCond.empty()) {
-            bargingCond.signal();
-        }
+        bargingCond.signal();
         fullCond.wait(lock);
     }
 
     push(elem);
 
+    // set a signal flag to prevent barging as long as we have tasks waiting
+    // on the condition variables
     stopBarging = !emptyCond.empty() || !bargingCond.empty();
     if (!emptyCond.empty()) {
         emptyCond.signal();
     } else if (!bargingCond.empty()) {
+        // if the empty condition variable is empty then start signalling
+        // the barging queue
         bargingCond.signal();
     }
 
@@ -144,24 +187,29 @@ T BoundedBuffer<T>::remove() {
 
     if (stopBarging) {
         bargingCond.wait(lock);
+
+        // reset the flag if we have no more barging
         if (bargingCond.empty()) {
             stopBarging = false;
         }
     }
 
+    // If nessesary, wait until the buffer is not empty
     if (isEmpty()) {
-        if (!bargingCond.empty()) {
-            bargingCond.signal();
-        }
+        bargingCond.signal();
         emptyCond.wait(lock);
     }
 
     T temp = pop();
 
+    // set a signal flag to prevent barging as long as we have tasks waiting
+    // on the condition variables
     stopBarging = !fullCond.empty() || !bargingCond.empty();
     if (!fullCond.empty()) {
         fullCond.signal();
     } else if (!bargingCond.empty()) {
+        // if the full condition variable is empty then start signalling
+        // the barging queue
         bargingCond.signal();
     }
 
