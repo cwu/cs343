@@ -1,35 +1,37 @@
 Script started on Mon 22 Oct 2012 06:41:40 PM EDT
-ech[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "Test base case         bad inputs for    for parameters             ."
-]2;echo "Test bad inputs."]1;echoTest bad inputs.
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "too many arguments"
-]2;echo "too many arguments"]1;echotoo many arguments
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../phil 1 1 1 1 1
-]2;./phil 1 1 1 1 1]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 1 1 1 1 1[16Decho "too many arguments"                  bad number of philosophers"
-]2;echo "bad number of philosophers"]1;echobad number of philosophers
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kecho "bad number of philosophers"[33D./phil 1 1 1 1 1                 [17D     0
-]2;./phil 0]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 0 -1
-]2;./phil -1]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil -1  a
-]2;./phil a]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "bad number of noodles"
-]2;echo "bad number of noodles"]1;echobad number of noodles
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kecho "bad number of noodles"[28D./phil a                    [20D-10  2 0
-]2;./phil 2 0]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 2 0 a
-]2;./phil 2 a]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 2 a
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "bad seed"
-]2;echo "bad seed"]1;echobad seed
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kecho "bad seed"[15D./phil 2 a     0 2 0
-]2;./phil 2 2 0]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 2 2 0 ab
-]2;./phil 2 2 ab]1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "Base case of 2 philosophers. this  [K[K[A[60C     The p [Krrogram should not     be able to handle an  the case                               r [K[A[60C[K[1B[K[A[60C is  [Keespse  ecially tests the pickup() meth            table.pickup     utdown() method where it checks i [Kff hte left        the left (left(id)) is waiting (and right(right(id))) which  [Kwwould wind up being itself" ."
-]2;echo ]1;echoBase case of 2 philosophers. This especially tests the table.putdown() method where it checks if the left(left(id)) is waiting (and right(right(id))) which would wind up being itself.
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../phil[1m [0m[0m 2
-]2;./phil 2]1;./philPhil0  Phil1 
+ech%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "Test bad inputs."
+2;echo "Test bad inputs."1;echoTest bad inputs.
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "too many arguments"
+2;echo "too many arguments"1;echotoo many arguments
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 1 1 1 1 1
+2;./phil 1 1 1 1 11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 1 1 1 1 1echo "bad number of philosophers"
+2;echo "bad number of philosophers"1;echobad number of philosophers
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "bad number of philosophers"./phil 1 1 1 1 1        0
+2;./phil 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil -1
+2;./phil -11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 1
+2;./phil -11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil a
+2;./phil a1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "bad number of noodles"
+2;echo "bad number of noodles"1;echobad number of noodles
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "bad number of noodles"./phil a                   2 0
+2;./phil 2 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 2 a
+2;./phil 2 a1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 2 a
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "bad seed"
+2;echo "bad seed"1;echobad seed
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "bad seed"./phil 2 2 0
+2;./phil 2 2 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 2 2 ab
+2;./phil 2 2 ab1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "Base case of 2 philosophers. th The p rroris  eespecially tests the table.putdown() method where it checks i ff the left(left(id)) is waiting (and right(right(id))) which  wwould wind up being itself."
+2;echo 1;echoBase case of 2 philosophers. This especially tests the table.putdown() method where it checks if the left(left(id)) is waiting (and right(right(id))) which would wind up being itself.
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 2
+2;./phil 21;./philPhil0  Phil1 
 ****** ******
 H      H     
 E4,26  E5,25 
@@ -69,9 +71,9 @@ F      ...
 ...    F     
 ***********************
 Philosophers Terminated
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K""E"  eecho "e cec  heck 3 philosophers also works. a [K  base w case where there is an odd amount of philosophers "  inste [Kaada [K[A[60C[K[1B[K[A[60C    to ma [Kkke sure it doesnt just work on even amount"
-]2;echo ]1;echocheck 3 philosophers also works. a base case where there is an odd amount of philosophers to make sure it doesnt just work on even amount
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kecho "check 3 philosophers also works. a base case where there is an odd amount of philosophers to make sure it doesnt just work on even amount"[K[A[A[22D./phil 2[K[1B[K[1B[K[A[A[29C 3[1B]2;./phil 3]1;./philPhil0  Phil1  Phil2 
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "check 3 philosophers also works. a   base case where there is an odd amount of philosophers inste aadto ma kke sure it doesnt just work on even amount"
+2;echo 1;echocheck 3 philosophers also works. a base case where there is an odd amount of philosophers to make sure it doesnt just work on even amount
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "check 3 philosophers also works. a base case where there is an odd amount of philosophers to make sure it doesnt just work on even amount"./phil 232;./phil 31;./philPhil0  Phil1  Phil2 
 ****** ****** ******
 H      H      H     
 E1,29               
@@ -129,9 +131,9 @@ F      ...    ...
 ...    ...    F     
 ***********************
 Philosophers Terminated
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Keecho "Test with a ran      h th the demo sample"  as a reg [Kuular test case"
-]2;echo "Test with the demo sample as a regular test case"]1;echoTest with the demo sample as a regular test case
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[Kecho "Test with the demo sample as a regular test case"[K[A[6C./phil 3[K[1B[K[A[29C 5 20 56083[1B]2;./phil 5 20 56083]1;./philPhil0  Phil1  Phil2  Phil3  Phil4 
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "Test with the demo sample as a reg uular test case"
+2;echo "Test with the demo sample as a regular test case"1;echoTest with the demo sample as a regular test case
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "Test with the demo sample as a regular test case"./phil 35 20 560832;./phil 5 20 560831;./philPhil0  Phil1  Phil2  Phil3  Phil4 
 ****** ****** ****** ****** ******
 H                                 
 E1,19  H                          
@@ -187,10 +189,10 @@ F      ...    ...    ...    ...
 ...    F      ...    ...    ...   
 ***********************
 Philosophers Terminated
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K./phil 5 20 56083            .  " eecho "Test a high amount of philosophers [K  and noodles in order to probai bailistically verify it is corr [Keect. If there is no invalid assertions then the a ass   assertions va [Kllidify the solution is correct"
-]2;echo ]1;echoTest a high amount of philosophers and noodles in order to probabailistically verify it is correct. If there is no invalid assertions then the assertions validify the solution is correct
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K../phil[1m [0m[0m 99 1 100
-]2;./phil 99 100]1;./philPhil0  Phil1  Phil2  Phil3  Phil4  Phil5  Phil6  Phil7  Phil8  Phil9  Phil10 Phil11 Phil12 Phil13 Phil14 Phil15 Phil16 Phil17 Phil18 Phil19 Phil20 Phil21 Phil22 Phil23 Phil24 Phil25 Phil26 Phil27 Phil28 Phil29 Phil30 Phil31 Phil32 Phil33 Phil34 Phil35 Phil36 Phil37 Phil38 Phil39 Phil40 Phil41 Phil42 Phil43 Phil44 Phil45 Phil46 Phil47 Phil48 Phil49 Phil50 Phil51 Phil52 Phil53 Phil54 Phil55 Phil56 Phil57 Phil58 Phil59 Phil60 Phil61 Phil62 Phil63 Phil64 Phil65 Phil66 Phil67 Phil68 Phil69 Phil70 Phil71 Phil72 Phil73 Phil74 Phil75 Phil76 Phil77 Phil78 Phil79 Phil80 Phil81 Phil82 Phil83 Phil84 Phil85 Phil86 Phil87 Phil88 Phil89 Phil90 Phil91 Phil92 Phil93 Phil94 Phil95 Phil96 Phil97 Phil98
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ echo "Test a high amount of philosophers   and noodles in order to probabailistically verify it is corr eect. If there is no invalid assertions then the assertions va llidify the solution is correct"
+2;echo 1;echoTest a high amount of philosophers and noodles in order to probabailistically verify it is correct. If there is no invalid assertions then the assertions validify the solution is correct
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ ./phil 99 100
+2;./phil 99 1001;./philPhil0  Phil1  Phil2  Phil3  Phil4  Phil5  Phil6  Phil7  Phil8  Phil9  Phil10 Phil11 Phil12 Phil13 Phil14 Phil15 Phil16 Phil17 Phil18 Phil19 Phil20 Phil21 Phil22 Phil23 Phil24 Phil25 Phil26 Phil27 Phil28 Phil29 Phil30 Phil31 Phil32 Phil33 Phil34 Phil35 Phil36 Phil37 Phil38 Phil39 Phil40 Phil41 Phil42 Phil43 Phil44 Phil45 Phil46 Phil47 Phil48 Phil49 Phil50 Phil51 Phil52 Phil53 Phil54 Phil55 Phil56 Phil57 Phil58 Phil59 Phil60 Phil61 Phil62 Phil63 Phil64 Phil65 Phil66 Phil67 Phil68 Phil69 Phil70 Phil71 Phil72 Phil73 Phil74 Phil75 Phil76 Phil77 Phil78 Phil79 Phil80 Phil81 Phil82 Phil83 Phil84 Phil85 Phil86 Phil87 Phil88 Phil89 Phil90 Phil91 Phil92 Phil93 Phil94 Phil95 Phil96 Phil97 Phil98
 ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ****** ******
 H      H      H                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
               E3,97  H      H      H      H      H      H      H                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
@@ -502,6 +504,6 @@ F      ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...
 ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    F      ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...    ...   
 ***********************
 Philosophers Terminated
-[1m[7m%[27m[1m[0m                                                             ]2;chris@chris-ubuntu: ~/projects/cs343/a3]1;..ects/cs343/a3[0m[27m[24m[J[01;31m➜ [01;32m [36ma3 [01;34mgit:([31mmaster[34m) [33m✗[00m[00m[01;34m [00m[K
+%                                                             2;chris@chris-ubuntu: ~/projects/cs343/a31;..ects/cs343/a3➜  a3 git:(master) ✗ 
 
 Script done on Mon 22 Oct 2012 06:48:36 PM EDT
