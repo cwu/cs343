@@ -53,3 +53,16 @@ Most all of the time was still spent in user time, and the 4 processors were
 utilized as seen by the 400% cpu.
 
 vi)
+
+A reason for slowdown is the larger contention for the buffer with more cores.
+As the number of kernel threads was expanded to 4, there are 4 threads running
+in parallel vs the old 1. This means that 3 more threads are contending with
+the other threads for the owner lock on the buffer. Since there was only one
+buffer this scaled the number of tasks trying to access the owner lock and since
+acquiring,  and failing to acquire the lock is relatvily expensive compared to
+the task's execution, this increased the running time by a large magnitude.
+
+The busy waiting also approached closer to the no busy waiting time. This could be
+because there was alot more busy waiting since there were multiple threads running
+at the same time. This would induce a much higher chance for barging and looping on
+waiting on the condition variable for busy waiting.
