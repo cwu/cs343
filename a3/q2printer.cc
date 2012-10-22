@@ -19,7 +19,7 @@ Printer::Printer(unsigned int numPhil)
 
     cout << "******";
     for (unsigned int id = 1; id < numPhil; id++) {
-        cout << " ******";
+        cout << "\t******";
     }
     cout << endl;
 }
@@ -76,12 +76,12 @@ void Printer::flush() {
 }
 
 void Printer::flushColumn(const string &col, unsigned int id) {
-    cout << setw(COLUMN_WIDTH) << left << col;
+    cout << col;
 
     // output a space if not last, else a newline
     if (id == numPhil - 1) {
         cout << endl;
     } else {
-        cout << " ";
+        cout << "\t";
     }
 }
