@@ -1,4 +1,4 @@
-#include "q2northpole.h"
+#include "q2santa.h"
 #include "MPRNG.h"
 
 static const int SANTA_START_YIELD = 10;

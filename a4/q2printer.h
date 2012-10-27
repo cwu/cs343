@@ -16,6 +16,18 @@ _Monitor Printer {                  // choose monitor or cormonitor
     Printer( const unsigned int MAX_NUM_ELVES );
     void print( unsigned int id, States state );
     void print( unsigned int id, States state, unsigned int numBlocked );
+  private:
+    unsigned int numElves;
+    unsigned int numIds;
+    struct PrintState {
+        bool hasData;
+        States state;
+        unsigned int numBlocked;
+    };
+    PrintState *printStates;
+
+    void printFinished(unsigned int finishedId);
+    void flushStates();
 };
 
 #endif // Q2PRINTER_H

@@ -1,4 +1,4 @@
-#include "q2northpole.h"
+#include "q2elf.h"
 #include "MPRNG.h"
 
 static const int ELF_START_YIELD = 10;

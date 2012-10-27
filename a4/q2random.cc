@@ -1,3 +1,3 @@
-#include "q2random.cc"
+#include "MPRNG.h"
 
 MPRNG randomGen;

@@ -1,4 +1,4 @@
-#include "q2northpole.h"
+#include "q2reindeer.h"
 #include "MPRNG.h"
 
 static const int REINDEER_START_YIELD = 10;

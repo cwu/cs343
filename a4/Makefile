@@ -7,7 +7,7 @@ MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
 OBJECTS1 = q1station.o
 EXEC1 = #tokenring								# 1st executable name
 
-OBJECTS2 = q2main.o q2santa.o q2elf.o q2reindeer.o q2workshop.o q2printer.o
+OBJECTS2 = q2main.o q2santa.o q2elf.o q2reindeer.o q2workshop.o q2printer.o q2random.o
 EXEC2 = northpole								# 2nd executable name
 
 OBJECTS = ${OBJECTS1} ${OBJECTS2}				# all object files
