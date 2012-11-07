@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <sstream>
-#include "q2northpole.h"
 #include "q2printer.h"
 #include "q2workshop.h"
 #include "q2santa.h"
@@ -62,12 +61,19 @@ void uMain::main() {
     Workshop workshop(printer, E, N, D);
     Santa *santa = new Santa(workshop, printer);
     Elf *elves[E];
+    Reindeer *reindeers[Reindeer::MAX_NUM_REINDEER];
     for (int elf = 0; elf < E; elf++) {
         elves[elf] = new Elf(elf + 1, workshop, printer, C);
     }
-
-    Reindeer *reindeers[Reindeer::MAX_NUM_REINDEER];
-    for (int reindeer = 0; reindeer < E; reindeer++) {
+    for (int reindeer = 0; reindeer < Reindeer::MAX_NUM_REINDEER; reindeer++) {
         reindeers[reindeer] = new Reindeer(reindeer + 1 + E, workshop, printer, D);
+    }
+
+    delete santa;
+    for (int elf = 0; elf < E; elf++) {
+        delete elves[elf];
+    }
+    for (int reindeer = 0; reindeer < Reindeer::MAX_NUM_REINDEER; reindeer++) {
+        delete reindeers[reindeer];
     }
 }

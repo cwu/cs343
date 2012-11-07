@@ -28,10 +28,12 @@ void Santa::main() {
         if (status == Workshop::Done) {
             break;
         } else if (status == Workshop::Consulting) {
+            printer.print(SANTA_ID, Printer::Consulting);
             yield(randomGen(SANTA_CONSULT_YIELD));
             workshop.doneConsulting(SANTA_ID);
             printer.print(SANTA_ID, Printer::DoneConsulting);
         } else if (status == Workshop::Delivery) {
+            printer.print(SANTA_ID, Printer::DeliveringToys);
             yield(randomGen(SANTA_DELIVERY_YIELD));
             workshop.doneDelivering(SANTA_ID);
             printer.print(SANTA_ID, Printer::DoneDelivering);

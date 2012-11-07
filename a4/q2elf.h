@@ -12,6 +12,9 @@ _Task Elf {
     Printer &printer;
     unsigned int numConsultations;
 
+    /**
+     * Executes the elf task.
+     */
     void main();
   public:
     enum { CONSULTING_GROUP_SIZE = 3 };           // number of elves for a consultation with Santa

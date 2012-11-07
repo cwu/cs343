@@ -6,7 +6,7 @@ static const int REINDEER_YIELD = 3;
 static const int REINDEER_VACATIONING_YIELD = 5;
 static const int REINDEER_DELIVERING_YIELD = 5;
 
-Reindeer::Reindeer( unsigned int id, Workshop &wrk, Printer &prt,
+Reindeer::Reindeer( unsigned int id, Workshop &workshop, Printer &printer,
                     unsigned int numDeliveries )
                     : id(id), workshop(workshop), printer(printer),
                       numDeliveries(numDeliveries) {

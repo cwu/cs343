@@ -13,6 +13,9 @@ _Task Reindeer {
     Printer &printer;
     unsigned int numDeliveries;
 
+    /**
+     * Executes the reindeer task.
+     */
     void main();
   public:
     enum { MAX_NUM_REINDEER = 5 };                // number of reindeer in system for delivering toys

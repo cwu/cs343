@@ -14,6 +14,8 @@ _Monitor Printer {                  // choose monitor or cormonitor
           ConsultingFailed = 'X',                 // elf
     };
     Printer( const unsigned int MAX_NUM_ELVES );
+    ~Printer();
+
     void print( unsigned int id, States state );
     void print( unsigned int id, States state, unsigned int numBlocked );
   private:
@@ -26,7 +28,16 @@ _Monitor Printer {                  // choose monitor or cormonitor
     };
     PrintState *printStates;
 
+    /**
+     * Print the finished state for a particular id.
+     *
+     * finishedId - the id of the finished role
+     */
     void printFinished(unsigned int finishedId);
+
+    /**
+     * Flushes the states by printing to stdout
+     */
     void flushStates();
 };
 

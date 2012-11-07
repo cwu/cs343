@@ -11,6 +11,9 @@ _Task Santa {
     Workshop &workshop;
     Printer &printer;
 
+    /**
+     * Executes the santa task.
+     */
     void main();
   public:
     Santa( Workshop &wrk, Printer &prt );
