@@ -1,0 +1,30 @@
+a) record the timings
+
+Class Unoptimized     - 0.11s user 0.00s system 94% cpu 0.116 total
+Coroutine Unoptimized - 0.74s user 0.00s system 99% cpu 0.743 total
+Task Unoptimized      - 2.37s user 0.02s system 99% cpu 2.395 total
+Class Optimized       - 0.03s user 0.00s system 76% cpu 0.039 total
+Coroutine Optimized   - 0.40s user 0.00s system 97% cpu 0.411 total
+Task Optimized        - 2.33s user 0.00s system 99% cpu 2.339 total
+
+b)
+
+The results show that:
+* the coroutine is 6.7 times slower than just the class.
+* the task is 21.5 times slower than just the class.
+
+The reason the coroutine is slower than calling hte routine is because it needs
+to context switch to a new stack. This incurs an overhead for switching stack pointers
+as well as storing and restoring registers.
+
+Meanwhile the task is much slower than the routine call since in addition to the
+context switching it yields to the scheduler which has to schedule the next thread
+as well as context switch to it.
+
+The optimized versions cause the routine call to become much faster (timings are inaccurate at this range). however the coroutine became 1.84 times faster, meanwhile
+the task did not get very much faster.
+
+This shows that the coroutine context switch can be optimized a great deal.
+
+However the task context switching cannot, probably due to the complexity of the
+scheduling as well as the context switching which the compiler cannot optimise.
