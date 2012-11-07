@@ -50,7 +50,7 @@ void uMain::main() {
     int C = DEFAULT_C;
     int D = DEFAULT_D;
     if ((argc >= 2 && (!convert(N, argv[1]) || N <= 0)) ||
-        (argc >= 3 && (!convert(E, argv[2]) || N <= 0)) ||
+        (argc >= 3 && (!convert(E, argv[2]) || E <= 0)) ||
         (argc >= 4 && (!convert(seed, argv[3]) || seed <= 0)) ||
         (argc >= 5 && (!convert(C, argv[4]) || C < 0)) ||
         (argc >= 6 && (!convert(D, argv[5]) || D < 0))) {

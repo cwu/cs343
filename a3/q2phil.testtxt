@@ -1,477 +1,285 @@
-Script started on Mon 22 Oct 2012 07:35:43 PM EDT
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid number of arugments"
-2;echo "check invalid number of arugments"1;echocheck invalid number of arugments
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 1 1 1 1
-2;./phil 1 1 1 11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid number of philosophers"
-2;echo "check invalid number of philosophers"1;echocheck invalid number of philosophers
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid number of philosophersarugments"abbcfd" | ./grammar               fc
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 0
-2;./phil 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+Script started on Mon 22 Oct 2012 07:46:42 PM EDT
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _rm typescecho "check a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"
+bck-i-search: ec_echeechobase case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"          2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                number of noodles"philosophers"arugments"abbcfd" | ./grammar               fcfoo              "abbfcd" | ./grammarcfcheck invalid number of arugments"philosophers"arugments"abbcfd" | ./grammar               check invalid number of arugments"2;echo "check invalid number of arugments"1;echocheck invalid number of arugments
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _vim foo q2phil.testtxt._./phil 10 1 1 1 12;./phil 1 1 1 11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 1 1 1 1echo "check invalid number of arugments"script                            rm typescript
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _echo "check invalid number of arugments"e_ecec_echeechoa highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"          2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                number of noodles"philosophers"arugments"abbcfd" | ./grammar               check invalid number of arugments"philosophers"2;echo "check invalid number of philosophers"1;echocheck invalid number of philosophers
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-searc./phil 12;./phil 1 1 1 11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 1
 2;./phil 11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil -1
-2;./phil -11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 0
+2;./phil 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil a
 2;./phil a1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid number of noodles"
-2;echo "check invalid number of noodles"1;echocheck invalid number of noodles
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _echo "check invalid number of philosophers"e_ecec_echeechoarugments"   a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                number of noodles"2;echo "check invalid number of noodles"1;echocheck invalid number of noodles
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 0
 2;./phil 2 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 -1
 2;./phil 2 -11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ A
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 a
 2;./phil 2 a1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid seed"
-2;echo "check invalid seed"1;echocheck invalid seed
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check invalid seed"./phil 2 a              2 0
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _echo "check invalid number of noodles"e_ecec_echeechophilosophers"arugments"a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                     2;echo "check invalid seed"1;echocheck invalid seed
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 2 0
 2;./phil 2 2 01;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 2 -1
 2;./phil 2 2 -11;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 2 a
 2;./phil 2 2 a1;./philUsage: ./phil [ philosophers (> 1) [ noodles (> 0) [ Seed (> 0) ] ] ]
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"
-2;echo 1;echocheck base case of 2. this tests the putdown logic when left(left(id)) refers to itself
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"./phil 2 2 a                                                                              
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2 2 0echo "check invalid seed"./phil 2 a              0echo "check invalid number of noodles"./phil a                              
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _./phil 2 2 a/_./failing bck-i-search: ./e_c_h_o_            bck-i-search: _echo "check invalid seed"e_ecec_echeechonumber of noodles"philosophers"arugments"a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"2ts tests the putdown logic when left(left(id)) fers to itself"2;echo 1;echocheck base case of 2. this tests the putdown logic when left(left(id)) refers to itself
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2
 2;./phil 21;./philPhil0	Phil1
 ******	******
 H	H
-E1,29	E3,27
-T	T
-	H
-H	E5,22
-E2,27	T
-	H
-	E4,18
+E2,28	
+T	E3,27
+H	T
+E2,26	
+T	H
+	E4,23
+	T
+H	H
+E1,25	E2,21
 T	T
 H	
-E4,23	
+E3,22	
 T	H
-	E1,17
+	E4,17
 H	T
-E1,22	
+E2,20	
 T	H
-H	E1,16
-E2,20	T
-T	H
-	E4,12
+	E5,12
 H	T
-E5,15	
+E2,18	H
+T	E5,7
+H	T
+E2,16	
+T	H
+	E5,2
+H	T
+E5,11	
+T	H
+H	E1,1
+E4,7	T
+T	H
+	E1,0
+...	F
+H	
+E5,2	
 T	
 H	
-E4,11	
-T	H
-H	E2,10
-E2,9	T
-T	H
-	E3,7
-H	T
-E4,5	H
-T	E2,5
-H	T
-E5,0	H
-	E5,0
-...	F
-	
+E2,0	
 F	...
 ***********************
 Philosophers Terminated
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2echo "check base case of 3. this tests the putdown logic when left(left(id)) refers to itself"                                             )             itself" itself" which tests an odd number of philosophers to ensure it still works on " n"oon-even cases
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 2echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"./phil 2 2 a                                                                                 -1
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"e_ecec_echeechoinvalid seed"                                                                 number of noodles"philosophers"arugments"a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"
 2;echo 1;echocheck base case of 3. which tests an odd number of philosophers to ensure it still works on non-even cases
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check base case of 3. which tests an odd number of philosophers to ensure it still works on non-even cases"./phil 232;./phil 31;./philPhil0	Phil1	Phil2
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 3
+2;./phil 31;./philPhil0	Phil1	Phil2
 ******	******	******
 H		
-E2,28	H	H
-		E3,27
-		T
-		H
-T	E4,26	E5,22
-	T	T
-		H
-		E5,17
-		T
-H		H
-	H	E1,16
-E5,23	E3,23	T
-	T	
+E4,26		
+T	H	H
+H	E4,26	E4,26
+E5,21		T
+T	T	H
+H		E2,24
+E5,16		
 T	H	
+	E3,23	T
+	T	
+	H	
 	E4,19	
 	T	H
-H		E1,15
-	H	T
-E5,18	E4,15	
-T		
-H		
-E2,16	T	
-T		
-H	H	
-E2,14	E3,12	
-T	T	H
-		E5,10
-	H	T
-H	E4,8	H
-	T	E3,7
-E4,10	H	
-T	E5,3	T
-	T	H
-	H	E2,5
-H	E2,1	T
-E4,6	T	
-T	H	H
-	E1,0	
-...	F	...
-		E2,3
-H		T
-E2,4		
+H	H	E4,20
+E2,14		T
+T	E4,15	
+H	T	
+E4,10		
 T		H
-		E3,0
-...	...	F
+		E2,18
+		T
+	H	H
+	E4,11	
+H	T	
+E3,7		E4,14
+T		T
 H		
-E3,1		
-T		
-H		
-E1,0		
+E1,6		H
+T		E5,9
+H		T
+E5,1		
+T	H	
+	E3,8	
+H	T	
+E1,0		H
+		E5,4
 F	...	...
+	H	T
+	E3,5	
+	T	H
+		E4,0
+...	...	F
+	H	
+	E5,0	
+...	F	...
 ***********************
 Philosophers Terminated
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 3echo "check base caa highly concurrent case, which would probabilistically trigger the asserts in the tabl ee if there was an error"
-2;echo 1;echocheck a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error
-2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ echo "check a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an./phil 399 1002;./phil 99 1001;./philPhil0	Phil1	Phil2	Phil3	Phil4	Phil5	Phil6	Phil7	Phil8	Phil9	Phil10	Phil11	Phil12	Phil13	Phil14	Phil15	Phil16	Phil17	Phil18	Phil19	Phil20	Phil21	Phil22	Phil23	Phil24	Phil25	Phil26	Phil27	Phil28	Phil29	Phil30	Phil31	Phil32	Phil33	Phil34	Phil35	Phil36	Phil37	Phil38	Phil39	Phil40	Phil41	Phil42	Phil43	Phil44	Phil45	Phil46	Phil47	Phil48	Phil49	Phil50	Phil51	Phil52	Phil53	Phil54	Phil55	Phil56	Phil57	Phil58	Phil59	Phil60	Phil61	Phil62	Phil63	Phil64	Phil65	Phil66	Phil67	Phil68	Phil69	Phil70	Phil71	Phil72	Phil73	Phil74	Phil75	Phil76	Phil77	Phil78	Phil79	Phil80	Phil81	Phil82	Phil83	Phil84	Phil85	Phil86	Phil87	Phil88	Phil89	Phil90	Phil91	Phil92	Phil93	Phil94	Phil95	Phil96	Phil97	Phil98
-******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******	******
-H	H	H	H	H	H																																																																																													
-					E2,98																																																																																													
-					T	H	H	H	H	H	H	H	H																																																																																					
-													E2,98	H	H	H	H	H	H	H																																																																														
-																				E4,96	H	H	H	H	H	H	H	H																																																																						
-																												E5,95	H	H	H	H	H	H	H																																																															
-																																			E3,97	H	H																																																													
-																																					E4,96	H																																																												
-																																						E4,96	H	H	H	H	H	H	H	H	H																																																			
-																																															E4,96	H	H																																																	
-																																																	E3,97	H																																																
-																																																		E4,96	H	H	H																																													
-																																																					E1,99																																													
-																																																					T	H	H																																											
-																																																							E5,95																																											
-																																																							T	H	H	H	H	H																																						
-																																																												E2,98	H	H																																				
-																																																														E2,98	H																																			
-																																																															E1,99	H	H	H	H	H																														
-																																																																				E5,95	H	H	H	H	H	H	H	H	H																					
-																																																																													E4,96																					
-																																																																													T	H																				
-																																																																														E4,96																				
-																																																																														T	H	H	H	H																
-																																																																																		E4,96																
-																																																																																		T	H	H	H	H	H	H	H	H	H	H	H					
-																																																																																													E5,95	H				
-																																																																																														E4,96	H	H	H	
-			E4,96	E5,95				E1,99	E3,97				T							T	E3,97																	T			E1,99																																																								E1,99	H
-																																									T					E3,97				T		E5,95							E2,98		E2,98								E4,96	E2,98																												
-																																																																						T						E2,98																						
-																																																																												T										E1,99						E3,97				E4,96		
-		E2,98	T			E3,97				E2,98				E2,98				E1,99			T					E3,97	E2,98																																																																					T		
-																											T		E3,97		E5,95		E3,97		T	E1,99	T		E5,95			E5,95	E4,96			T						T				E2,98		E4,96																																								
-																																																										T	T		T			E4,96			E4,96	T					E4,96														E2,98			E1,99								
-E3,97	E1,99	T		T		T	E4,96	T	T	T	E1,99	E3,97		T	E2,98	E3,97	E2,98	T	E3,97			E4,96	E1,99	E1,99	E2,98	T	H	T	T	E4,96	T	E3,97	T	E4,96		T		H	T	E5,95	H	T	T	E4,96	E4,96		T	E2,98	T		E2,98			E1,99		T	E4,96			T		T	T	T	E3,97	E4,96	T		T		E5,95	E4,96	T	E5,95	E5,95	H		H	E1,99	E4,96	E1,99		E4,96	E1,99	E4,96	T	T	E4,96	E5,95	T	E1,99	T	T	T	E3,97		T	E3,97
-T	T	H	H	H	H	H	T	H	H	H	T	T	H	H	T	T	T	H	T	H	H	T	T	T	T	H	E2,96	H	H	T		T	H	T	H		H	E3,93	H	T	E4,95		H	T	T	H	H	T	H	H	T	H	H	T	H		T	H	H	H	H	H	H	H	T	T	H	H	H	H	T	T		T	T	E2,96	H	E4,92	T	T	T	H	T	T	T	H	H	T	T	H	T	H	H	H	T	H	H	T
-H	H	E1,97	E2,94	E4,91	E4,94	E5,92	H	E1,98	E4,93	E2,96	H	H	E4,94	E4,94	H	H	H	E5,94	H	E4,92	E3,94	H	H	H	H	E5,92	T	E3,92	E1,96	H	H	H	E4,93	H	E3,94	H	E4,92	T	E3,92	H	T	H	E5,91	H	H	E5,92	E3,93	H	E2,95	E1,95	H	E4,91	E1,98	H	E5,90	H	H	E3,93	E3,95	E2,96	E2,96	E5,93	E5,94	E4,92	H	H	E4,92	E5,90	E3,93	E4,94	H	H	H	H	H		E3,93	T	H	H	H	E1,95	H	H	H	E2,97	E5,93	H	H	E1,98	H	E1,96	E2,93	E5,91	H	E4,92	E1,98	H
-E3,94	E4,95	T	T	T	T	T	E1,95	T	T	T	E3,96	E5,92	T	T	E4,94	E2,95	E4,94	T	E4,93	T	T	E3,93	E1,98	E5,94	E5,93	T	H	T	T	E4,92	E2,93	E5,92	T	E5,91	T	E5,94	T	H	T	E3,92		E5,90	T	E5,91	E3,93	T	T	E4,94	T	T	E3,95	T	T	E3,96	T	E5,93	E3,93	T	T	T	T	T	T	T	E2,95	E1,95	T	T	T	T	E5,90	E1,95	E5,91	E3,92	E4,91	T	T		E2,97	E4,92	E4,95	T	E5,91	E5,94	E2,94	T	T	E5,91	E1,94	T	E5,94	T	T	T	E4,93	T	T	E4,93
-T	T	H	H	H	H		T		H	H	T	T	H		T	T	T	H	T	H	H	T	T	T	T	H	E3,93	H	H	T	T	T		T	H	T	H	E1,92	H	T	H	T	H	T	T	H	H	T	H	H	T	H	H	T	H	T	T	H	H	H	H		H		T	T	H	H		H	T	T	T	T	T	H	H	H	T	T	T	H	T	T	T		H	T	T	H	T		H	H	T	H	H	T
-H	H	E3,94	E4,90	E2,89	E4,90	H	H	H	E4,89	E3,93	H	H	E1,93	H	H	H	H	E3,91		E3,89	E2,92			H	H	E3,89	T	E1,91	E4,92	H	H	H	H	H	E2,92	H	E3,89	T	E5,87	H	E2,93	H	E5,86	H	H	E1,91	E1,92	H	E5,90	E4,91	H	E5,86	E3,95	H	E4,86	H	H	E4,89	E1,94	E1,95	E3,93	H	E1,93	H	H	H	E3,89	E1,89	H	E2,92	H	H	H	H	H	E1,95	E1,92	E3,89	H		H	E3,92	H	H	H	H	E2,91	H	H	E1,97	H	H	E2,91	E4,87	H	E5,87	E1,97	
-E5,89	E5,90	T	T	T	T	E2,90	E3,92	E2,96	T	T	E3,93	E1,91	T	E2,92	E1,93	E5,90	E3,91	T	H	T	T	H	H	E5,89	E4,89	T	H	T	T	E5,87	E4,89	E4,88	E4,89	E4,87	T	E3,91	T		T	E1,91	T	E5,85	T	E1,90	E2,91	T	T	E1,93	T	T	E3,92	T	T	E5,91	T	E3,90	E4,89	T	T	T	T	E4,89	T	E4,88	E1,94	E5,90	T	T	E3,90	T	E4,86	E1,94	E1,90	E4,88	E1,90	T	T	T	E4,93	H	E2,93	T	E4,87	E4,90	E5,89	E3,94	T	E1,90	E5,89	T	E2,92	E5,91	T	T	E4,89	T	T	H
-T	T	H	H		H	T	T	T	H	H	T	T	H	T	T	T	T	H	E3,90	H	H	E4,89	E5,93	T	T		E3,90	H	H	T	T	T	T	T	H	T	H	H		T	H	T		T	T	H	H	T	H	H	T	H	H	T	H	T	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	H	H	H	T	E4,88	T	H	T	T	T	T	H	T	T	H	T	T	H	H	T	H	H	E4,89
-H	H	E1,93	E1,89	H	E5,85	H	H	H	E5,84	E4,89	H	H	E4,89	H	H	H	H	E5,86	T	E4,85	E1,91	T	T	H		H	T	E4,87	E2,90	H	H	H	H	H	E2,90	H	E2,87	E3,89	H	H	E4,89	H	H	H	H	E2,89	E2,90	H	E1,89	E5,86	H	E1,85	E5,90	H	E5,81	H	H	E4,85	E2,92	E3,92	E1,92	H	E3,90	H	H	H	E5,84	E4,85	H	E1,91	H	H	H	H	H	E2,93	E5,87	E4,85	H	T	H	E4,88	H	H	H	H	E3,88			E3,94		H	E2,89	E1,86	H	E2,85	E5,92	T
-E4,85	E3,87	T	T	E5,84	T	E4,86	E5,87	E4,92	T	T	E2,91	E3,88	T	E5,87	E3,90	E3,87	E5,86	T	H	T	T	H	H	E2,87	H	E4,85	H	T	T	E5,82	E5,84	E4,84	E5,84	E5,82	T	E5,86	T	T	E2,85	E2,89	T	E2,83	E1,85	E3,87	E5,86	T	T		T	T	E4,88	T	T	E1,90	T	E4,86	E5,84	T	T	T	T	E1,88	T	E2,86	E5,89	E2,88	T	T	E5,85	T	E4,82	E5,89	E5,85	E3,85	E5,85	T	T	T	E2,91	H	E4,89	T	E2,85	E2,88	E2,87	E3,91	T	H	H	T	H	E2,89	T	T	E5,84	T		H
-T	T	H	H	T	H	T	T	T	H	H		T	H	T		T	T	H	E5,85	H	H	E5,84	E5,88	T	E5,84	T		H	H	T	T	T	T	T	H	T	H	H	T	T	H	T	T	T	T	H	H	E1,92	H	H	T	H	H	T	H	T	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	H	H	H	T	E3,85	T	H	T	T	T	T	H	E1,89	E2,87	H	E3,89	T		H	T	H	T	E5,84
-H	H	E3,90	E5,84	H	E5,80	H	H	H	E4,80	E2,87	T	H	E1,88	H	T	H		E5,81	T	E2,83	E5,86	T	T	H	T	H	E3,87	E4,83	E4,86	H	H	H	H	H	E5,85	H	E5,82	E3,86	H		E2,87	H	H	H	H	E5,84	E5,85	T	E2,87	E1,85	H	E2,83	E4,86	H	E1,80	H	H	E3,82	E2,90	E1,91	E1,91	H	E4,86	H	H	H	E3,81	E5,80	H	E5,86	H	H	H	H	H	E2,91	E4,83	E4,81	H	T	H	E5,83	H	H		H	E1,87	T	T	E2,92	T	H	H	E1,85	H	E1,84	H	T
-E2,83	E1,86	T	T	E4,80	T	E3,83	E1,86	E2,90	T	T	H	E4,84	T	E4,83	H	E5,82	H	T	H	T	T	H	H	E1,86	H	E3,82	T	T	T	E3,79	E2,82	E3,81	E3,81	E1,81	T	E3,83	T	T	E4,81	H	T	E5,78	E4,81	E2,85	E2,84	T	T	H	T	T	E3,85	T	T	E5,85	T	E1,85	E2,82	T	T	T	T	E5,83	T	E3,83	E1,88	E3,85	T	T	E4,81	T	E2,80	E4,85	E3,82	E3,82	E5,80	T	T	T	E2,89	H	E2,87	T	E2,83	E4,84	H	E3,88	T	H	H	T	H	E4,85	E2,87	T	E4,80	T	E1,91	H
-T	T		H	T	H	T	T	T	H	H	E3,88	T	H	T	E2,88	T	E1,85		E5,80	H	H	E1,83	E5,83	T	E4,80	T	H	H		T	T	T	T	T	H	T	H	H	T	E2,87	H	T	T	T	T	H	H	E5,87	H	H	T	H	H	T	H	T	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	H	H	H	T	E3,82	T	H	T		E5,82	T		E1,88	E1,86	H	E5,84	T	T	H	T	H	T	E1,83
-H	H	H	E1,83	H	E4,76	H	H	H	E2,78	E2,85	T	H	E5,83	H	T	H	T	H	T	E5,78	E2,84	T	T	H	T	H	E2,85	E4,79	H	H	H	H	H	H	E3,82	H	E5,77	E5,81	H	T	E1,86	H	H	H	H	E1,83	E5,80	T	E2,85	E5,80	H	E5,78	E2,84	H	E4,76	H	H	E4,78	E1,89	E1,90	E4,87	H	E1,85	H	H	H	E2,79	E4,76	H	E2,84	H	H	H	H	H	E2,89	E1,82	E3,78	H	T	H	E4,79	H	T	T	H	H	T	T	E4,88	T	H	H	E5,80	H	E4,80	H	T
-E5,78	E1,85	E1,89	T	E5,75	T	E3,80	E3,83	E3,87	T	T	H	E5,79	T	E2,81	H	E2,80	H	E2,79	H	T	T	H	H	E1,85	H	E4,78	T	T	E1,85	E5,74	E1,81	E3,78	E5,76	E4,77	T	E4,79	T	T	E5,76	H	T	E3,75	E4,77	E1,84	E2,82	T	T	H		T	E4,81	T	T	E4,81	T	E5,80	E2,80	T	T	T	T	E2,81	T	E3,80	E5,83	E4,81	T	T	E3,78	T	E5,75	E3,82	E5,77	E2,80	E1,79	T	T	T	E3,86	H		T	E3,80	H	H	E2,86	E4,83	H	H	T	H	E2,83	E2,85	T	E2,78	T	E3,88	H
-T	T	T	H	T	H	T	T	T	H	H	E5,83	T	H	T	E3,85	T	E4,81	T	E2,78	H	H	E2,81	E3,80	T	E4,76	T	H	H	T	T	T		T	T	H	T	H	H	T	E4,83	H	T	T	T	T	H	H	E2,85	T		T	H	H	T		T	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	H	H	H	T	E1,81	E5,82	H	T	E5,79	E2,80	T	T	E1,87	E1,85	H	E5,79	T	T	H	T	H	T	E3,80
-H	H	H	E2,81	H	E5,71	H	H	H	E1,77	E2,83	T	H	E4,79	H	T	H	T	H	T	E2,76	E4,80	T	T	H	T	H	E1,84	E2,77	H	H	H	T	H	H	E2,80	H	E3,74	E3,78	H	T	E4,82	H	H	H	H	E5,78	E1,79	T	H	H	H	E4,74	E4,80	H	H	H	H	E5,73	E1,88	E3,87	E1,86	H	E2,83	H	H	H	E2,77	E5,71	H	E5,79	H	H	H	H		E3,86	E3,79	E1,77	H	T	T	E5,74	H	T	T	H	H	T	T	E2,86	T	H	H	E3,77	H	E3,77	H	T
-E3,75	E3,82	E4,85	T	E1,74	T	E5,75	E3,80	E1,86	T	T	H	E3,76	T	E2,79	H	E5,75	H	E5,74	H	T	T	H	H	E3,82	H	E3,75	T	T	E4,81	E2,72	E1,80	H	E5,71	E2,75	T	E2,77	T	T	E3,73	H	T	E1,74	E4,73	E1,83	E3,79	T	T	H	E4,81	E2,78	E3,78	T	T	E2,79	E5,71	E5,75	E4,76	T	T	T	T	E1,80	T	E2,78	E1,82	E2,79	T	T	E3,75	T	E3,72	E1,81	E3,74	E5,75	H	T	T	T	E5,81	H	H	T		H	H	E3,83	E3,80	H	H	T	H	E3,80	E1,84	T	E2,76	T	E3,85	H
-T	T	T	H	T	H	T	T	T	H	H	E4,79	T	H	T	E1,84	T	E2,79	T	E4,74	H	H	E4,77	E1,79	T	E4,72	T	H	H	T	T	T	E1,77	T	T	H	T	H	H	T	E2,81	H	T	T	T	T	H		E1,84	T	T	T	H	H	T	T	T	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	E2,77	H	H	H	T	E1,80	E4,78	H	E2,78	E1,78	E3,77	T	T	E2,85	E5,80	H	E5,74	T	T	H	T	H	T	E2,78
-H	H	H	E4,77	H	E4,67	H	H	H	E2,75	E1,82	T	H	E4,75	H	T	H	T	H	T	E1,75	E2,78	T	T	H	T	H	E3,81	E3,74	H		H	T	H	H	E4,76	H	E3,71	E2,76	H	T	E1,81	H	H		H	E2,76	H	T	H	H		E4,70	E5,75		H	H	H	E2,71	E5,83	E4,83	E3,83	H	E4,79	H	H	H	E3,74	E1,70	H	E2,77	H	H	H		T	E1,85	E5,74	E5,72	H	T	T	E2,72	T	T	T	H	H	T	T	E5,81	T	H	H	E2,75	H	E3,74	H	T
-E2,73	E3,79	E4,81	T	E2,72	T	E3,72	E5,75	E5,81	T	T	H	E2,74	T	E1,78	H	E3,72	H	E1,73	H	T	T	H	H	E4,78	H	E1,74	T	T	E2,79	H	E5,75	H	E2,69	E1,74	T	E5,72	T	T	E5,68	H	T	E4,70	E5,68	H	E2,77	T	E3,76	H	E1,80	E3,75	H	T	T	H	E1,70	E2,73	E3,73	T	T	T	T	E2,78	T	E3,75	E4,78	E4,75	T	T	E4,71	T	E4,68	E2,79	E5,69	H	H	T	T	T	E1,80	H	H	T	H	H	H	E2,81	E5,75	H	H	T	H	E2,78	E3,81	T	E2,74	T	E4,81	H
-T	T	T	H	T	H	T	T	T	H	H	E5,74	T		T	E2,82	T	E4,75	T	E5,69	H	H	E3,74	E3,76	T	E4,68	T	H		T	E1,71	T	E2,75	T	T	H	T	H	H	T	E4,77	H	T	T	E2,81	T	H	T	E3,81	T	T	E4,74	H	H	E5,74	T	T	T	H	H		H	T	H	T	T	T		H	T	H	T	T	T	E1,74	E3,74	H	H	H	T	E3,77	E3,75	H	E4,74	E1,77	E2,75	T	T	E4,81	E4,76	H	E1,73	T	T	H	T	H	T	E5,73
-H	H	H	E3,74	H	E1,66	H	H		E4,71	E3,79	T	H	H	H	T	H	T	H	T	E1,74	E2,76	T	T		T	H	E2,79	H	H	T	H	T	H	H	E5,71	H	E1,70	E3,73	H	T	E3,78	H	H	T		E2,74	H	T	H	H	T	E1,69	E1,74	T	H	H		E2,69	E1,82	H	E1,82	H	E4,75	H			H	E1,69	H	E1,76	H	H	H	T	T	E1,84	E2,72	E1,71	H	T	T	E3,69	T	T	T	H	H	T	T		T	H	H	E4,71	H	E3,71	H	T
-E2,71	E5,74	E5,76	T	E2,70	T	E4,68	E4,71	H	T	T	H	E2,72	E1,74	E4,74	H	E1,71	H	E4,69	H	T	T	H	H	H	H	E4,70	T	E2,72	E4,75	H	E1,74	H	E3,66	E1,73	T	E5,67	T	T	E4,64	H	T	E1,69	E2,66	H	H	T	E1,75	H	E1,79	E5,70	H	T	T	H	E5,65	E2,71	H	T	T	E1,82	T	E4,74	T	E2,73	H	H	E5,69	T	E2,69	T	E3,65	E4,75	E5,64	H	H	T	T	T	E2,78	H	H	T	H	H	H	E5,76	E2,73	H	H	E5,76	H	E2,76	E4,77	T	E3,71	T	E3,78	H
-T	T	T	H	T	H	T	T	E4,77	H	H	E5,69	T	T	T	E1,81	T	E3,72	T	E4,65	H	H	E2,72	E4,72	E3,75	E4,64	T	H	T	T	E5,66	T	E2,73	T	T		T	H	H	T	E3,74	H	T	T	E3,78	E3,74	H	T	E2,79	T	T	E5,69	H	H	E5,69	T	T	E3,70	H	H	T	H	T	H	T	E1,77	E3,72	T	H	T	H	T	T	T	E2,72	E3,71	H	H	H	T	E1,76	E4,71	H	E2,72	E5,72	E5,70	T	T	E4,77	E5,71	T	E5,68	T	T	H	T	H	T	E5,68
-H	H	H	E2,72	H	E1,65	H		T	E3,68	E3,76	T	H	H	H	T		T	H	T	E3,71	E5,71	T	T	T	T	H	E5,74	H	H	T	H	T	H		H	H	E2,68	E3,70	H	T	E3,75	H	H	T	T	E3,71	H	T	H	H	T	E4,65	E5,69	T	H	H	T	E4,65	E5,77	H	E3,79	H	E3,72	H	T	T	H		H	E4,72	H		H	T	T	E1,83	E4,68	E1,70		T	T	E3,66	T	T	T	H	H	T	T	H	T	H	H	E5,66	H	E1,70	H	T
-E3,68	E5,69	E2,74	T	E1,69	T	E3,65	H	H	T	T	H	E2,70	E1,73	E1,73	H	H	H	E5,64	H	T	T	H	H	H	H	E1,69	T	E4,68	E1,74	H	E2,72	H	E3,63	H	E2,69	E3,64	T	T	E2,62	H	T	E1,68	E4,62	H	H	T	E1,74	H	E1,78	E4,66	H	T	T	H	E1,64	E3,68	H	T	T	E2,80	T	E3,71		E2,71	H	H	E4,65	E1,68	E4,65	T	E4,61	H	E1,63	H	H	T	T	T	H	H	H		H	H	H	E3,73	E1,72	H	H	E4,72	H	E1,75	E1,76	T	E1,70	T	E1,77	H
-T	T	T	H	T	H	T	E2,69	E5,72	H		E2,67	T	T	T	E3,78	E5,66	E4,68	T	E5,60	H	H	E2,70	E2,70	E1,74	E5,59	T	H	T	T	E1,65	T	E5,68	T	E1,72	T	T	H	H	T	E1,73	H	T	T	E3,75	E5,69	H	T	E3,76	T	T	E2,67	H		E5,64	T	T	E1,69	H	H	T	H	T	T	T	E5,72	E4,68	T	T	T		T	E1,74	T	E2,70	E5,66	H	H	H	E1,77	E5,71	E5,66	T	E1,71	E3,69	E2,68	T	T	E3,74	E1,70	T	E3,65	T	T	H	T	H	T	E2,66
-	H	H	E5,67	H	E4,61	H	T	T	E5,63	H	T		H	H	T	T	T	H	T	E1,70	E1,70	T	T	T	T	H	E1,73	H	H	T	H	T		T	H	H	E3,65	E5,65	H	T	E4,71	H	H	T	T	E3,68	H	T	H	H	T		H	T	H	H	T	E3,62	E2,75	H	E3,76		H	H	T	T	H	H	H	H	H	T		T	T	E5,78	E2,66	E4,66	T	T	T	H	T	T	T	H	H	T	T	H	T	H	H	E5,61	H	E1,69	H	T
-H	E5,64	E3,71	T	E1,68	T	E1,64	H	H	T	E3,73	H	H	E5,68	E3,70	H	H	H	E1,63	H	T	T	H	H	H	H	E2,67	T	E2,66	E2,72	H	E4,68	H	H	H	E3,66	E2,62	T	T	E4,58	H	T	E3,65	E1,61	H	H	T	E2,72	H	E2,76	E3,63	H	E4,61	E3,66	H	E4,60	E2,66	H	T	T	E2,78	T	H	E2,70	E2,69	H	H	E1,64	E2,66	E2,63	E2,70		H	H	H	H	T	T	T	H	H	H	E2,64	H	H	H	E3,70	E3,69	H	H	E2,70	H	E2,73	E5,71	T	E1,69	T	E5,72	H
-E5,63		T	H	T	H	T	E5,64	E2,70	H	T	E3,64	E3,67	T	T	E5,73	E1,65	E5,63	T	E4,56	H	H	E4,66	E3,67	E4,70	E1,58	T	H	T	T	E2,63	T	E2,66	E5,58	E2,70	T	T	H	H	T	E5,68	H	T	T	E2,73	E1,68		T	E5,71	T	T	E3,64	T	T	E1,63	T	T	E3,66	H		T	H	E4,67	T	T	E3,69	E4,64	T	T	T	T	E3,58	E4,70	E3,60	E4,66	E5,61	H		H	E2,75	E4,67	E1,65	T	E2,69	E5,64	E2,66	T	T	E1,73	E1,69	T	E5,60	T	T	H	T	H	T	E1,65
-T	T	H	E4,63	H	E5,56	H	T	T	E4,59	H	T	T	H	H	T	T	T	H	T	E3,67	E3,67	T	T	T	T	H	E1,72	H	H	T	H	T	T	T	H	H	E4,61	E3,62		T	E2,69	H	H	T	T	H	H	T	H	H	T	H	H	T	H	H	T	E1,61	H	H	E5,71	T	H		T	T	H	H	H	H	T	T	T	T	T	E3,75	H	E4,62	T	T	T	H	T	T	T	H	H	T	T	H	T		H	E3,58	H	E2,67	H	T
-H	H	E3,68	T	E3,65	T	E3,61	H	H	T	E5,68	H	H	E1,67	E4,66	H	H	H	E5,58		T	T	H	H	H	H	E1,66	T	E4,62	E2,70	H	E1,67	H	H	H	E2,64	E1,61	T	T	H	H	T	E1,64	E3,58	H	H	E3,65	E1,71	H	E5,71	E1,62	H	E1,60	E1,65	H	E5,55	E5,61	H	T	E3,72	E1,77	T	H	E3,67	H	H	H	E5,59	E4,62	E1,62	E5,65	H	H	H	H	H	T	E2,64	T	H	H	H	E5,59	H	H	H	E5,65	E3,66	H	H	E5,65	H	H	E3,68	T	E5,64	T	E4,68	
-E4,59	E2,62	T		T	H	T	E1,63	E3,67	H	T	E2,62	E3,64	T	T	E4,69	E4,61	E4,59	T	H	H	H	E5,61	E1,66	E5,65	E5,53	T	H	T	T	E3,60	T	E3,63	E1,57	E1,69	T	T	H	H	E3,55	E4,64	H	T	T	E2,71	E5,63	T	T	E1,70	T	T	E2,62	T	T	E2,61	T	T	E2,64		T	T	H	E1,66	T	E1,68	E2,67	E4,60	T	T	T	T	E3,55	E1,69	E5,55	E1,65	E3,58	H	T	H	E1,74	E1,66	E4,61	T	E5,64	E4,60	E4,62	T	T	E1,72	E5,64	T	E1,59	E2,71	T	H	T		T	H
-T	T	H	H	H	E5,51		T	T	E4,55	H	T	T	H	H	T	T	T	H	E1,55	E3,64	E4,63	T	T	T	T	H	E1,71	H	H	T		T	T	T	H	H	E2,59	E5,57	T	T	E1,68	H		T	T	H	H	T	H	H	T	H	H	T	H	H	T	H	H	H	E1,70	T	H	T	T	T	H	H	H	H	T	T	T	T	T	E5,70	H	E2,60	T	T	T	H	T	T	T	H	H	T	T	H	T	T	H	E3,55	H	H		E4,61
-H	H	E1,67	E3,60	E1,64	T	H	H	H	T	E3,65	H	H	E3,64	E5,61	H	H	H	E3,55	T	T	T	H		H	H	E3,63	T	E4,58	E1,69	H	H	H	H	H	E2,62		T	T	H	H	T	E5,59	H	H	H	E3,62	E5,66	H	E1,70	E4,58	H	E5,55	E3,62	H	E5,50	E3,58	H	E3,58	E3,69	E1,76	T	H	E1,66	H	H	H	E4,55	E1,61	E2,60	E3,62	H	H	H	H	H	T	E2,62	T	H	H	H	E4,55	H		H	E2,63	E1,65	H	H	E3,62	H	H	E2,66	T	E5,59	E1,66	H	T
-E5,54	E4,58	T	T	T	H	E5,56	E3,60	E5,62		T	E3,59	E4,60	T	T	E5,64	E2,59	E5,54	T	H	H		E5,56	H	E4,61	E5,48	T	H	T	T	E3,57	E3,64	E3,60	E3,54	E3,66	T	E1,60	H		E4,51	E4,60	H	T	E5,53	E4,67	E2,61	T	T	E3,67	T	T	E3,59	T	T	E1,60	T	T	E2,62	T	T	T	H	E2,64	T	E5,63	E3,64	E1,59	T	T	T	T	E2,53	E4,65	E5,50	E1,64	E3,55	H	T	H	E3,71	E3,63	E3,58	T	E3,61	H	E3,59	T	T	E4,68	E4,60	T	E3,56	E3,68	T	H	T	T	E5,63	H
-T	T	H	H	H	E3,48	T	T	T	H	H	T	T	H		T	T	T	H	E2,53	E1,63	H	T	E2,64	T	T	H	E1,70	H	H	T	T	T	T	T	H	T	E2,57	H	T	T	E5,63		T	T	T	H	H	T	H	H	T	H	H	T	H	H	T	H	H	H	E3,67	T	H	T	T	T	H	H	H	H	T	T	T	T	T	E5,65	H	E5,55	T	T	T	H	T	E2,58	T		H	T	T	H	T	T	H		H	H	T	E4,57
-H	H	E2,65	E5,55	E1,63	T	H	H	H	E3,52	E2,63	H	H	E5,59	H	H	H		E4,51	T	T	E3,60	H	T	H	H	E5,58	T	E3,55	E3,66	H	H	H	H	H	E2,60	H		E2,55	H	H	T	H	H	H	H	E2,60	E5,61	H	E1,69	E2,56	H	E2,53	E2,60	H	E3,47	E3,55	H	E3,55	E5,64	E3,73	T	H	E4,62	H	H	H	E3,52	E1,60	E2,58	E5,57	H	H	H	H	H	T	E1,61		H	H	H	E1,54	H	T	H	H	E3,62		H	E5,57	H	H	E2,64	E5,50	E1,58	E1,65	H	T
-E2,52	E5,53	T	T	T		E3,53	E5,55	E1,61	T	T	E4,55	E4,56	T	E1,60	E5,59	E1,58	H	T	H	H	T	E3,53	H	E2,59	E3,45	T	H	T	T	E4,53	E1,63	E3,57	E1,53	E5,61	T	E4,56	T	T	E3,48	E1,59	H	E1,58	E3,50	E5,62	E2,59	T	T	E1,66	T	T	E4,55	T	T	E2,58	T	T	E5,57	T	T	T		E1,63	T	E3,60	E2,62	E3,56	T	T		T	E1,52	E2,63	E3,47	E2,62	E4,51	H	T	T	E1,70	E3,60	E4,54	T	E3,58	H	E2,57	E2,61	T	H	E3,57	T	E2,54	E4,64	T	T	T	T	E4,59	H
-T	T		H	H	H	T	T	T	H	H	T	T	H	T	T	T	E4,50	H	E2,51	E5,58	H	T	E2,62	T	T	H	E3,67	H	H	T	T	T	T	T	H	T	H	H	T	T	E3,60	T	T	T	T	H	H	T	H	H	T	H	H	T	H	H	T	H	H	H	H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	E3,62	H	H	T	T	T	H	T	E2,56	T	T		E2,66	T	H	T	T	H	H	H	H	T	E2,55
-H	H	H	E3,52	E2,61	E2,46	H	H	H	E2,50	E2,61	H	H	E3,56	H	H	H	T	E1,50	T	T	E4,56	H	T	H		E1,57	T	E2,53	E1,65	H	H		H	H	E1,59	H	E4,53	E5,50	H	H	T	H	H	H	H	E3,57	E5,56	H	E1,68	E4,52	H	E1,52	E4,56	H	E3,44	E3,52	H	E5,50	E4,60	E1,72	E2,65	H	E3,59	H	H	H	E5,47	E4,56	H	E5,52	H	H	H	H	H	T	E1,60	E3,52	H	H	H	E4,50	H	T	H	H	H	T	H	E5,52		H	E5,59	E4,46	E5,53	E3,62	H	T
-E1,51	E2,51	E1,64	T	T	T	E5,48	E5,50	E2,59	T	T	E1,54	E2,54	T	E4,56	E2,57	E5,53	H	T	H	H	T	E3,50	H	E2,57	H	T	H	T	T	E4,49	E1,62	H	E4,49	E4,57	T	E3,53	T	T	E3,45	E2,57	H	E5,53	E5,45	E5,57	E2,57	T	T	E5,61	T	T	E2,53	T	T	E1,57	T	T	E5,52	T	T	T	T	E4,59	T	E5,55	E1,61	E2,54	T	T	E5,53	T	E3,49	E5,58	E3,44	E5,57	E2,49	H	T	T	E2,68	E4,56	E4,50	T	E3,55	H	E2,55	E2,59	E5,57	H	E5,52	T	H	E3,61	T	T	T	T	E5,54	H
-T	T	T	H	H	H	T	T	T	H	H	T	T	H	T	T	T	E2,48	H	E1,50	E2,56	H	T	E5,57	T	E4,41	H	E1,66	H	H	T	T	E3,54	T	T	H	T	H	H	T	T	E1,59	T	T	T	T	H	H	T	H	H	T	H	H	T			T	H	H		H	T	H	T	T	T	H	H	T	H	T	T	T	T	T	E2,60	H	H	T	T	T	H	T	E4,52	T	T	T	E1,65	T	H	E1,53	T	H	H	H	H	T	E5,50
-H	H	H	E3,49	E5,56	E3,43	H	H	H	E5,45	E2,59	H	H	E4,52	H		H	T	E2,48	T	T	E3,53	H	T		T	E2,55	T	E4,49	E1,64	H	H	T	H	H	E1,58	H	E2,51	E3,47	H		T	H	H	H	H	E4,53	E3,53	H	E1,67	E1,51	H	E2,50	E3,53	H	H	H	H	E1,49	E3,57	H	E5,60	H	E5,54	H	H	H	E3,44	E2,54	H	E3,49	H	H	H		H	T	E1,59	E2,50	H	H	H	E2,48	H	T	H	H	H	T	H	E2,50	T	H	E2,57	E2,44	E2,51	E2,60	H	T
-E2,49	E2,49	E1,63	T	T	T	E2,46	E2,48	E1,58	T	T	E4,50	E3,51	T	E1,55	H	E1,52	H	T	H	H	T	E4,46	H	H	H			T	T	E2,47	E4,58	H	E2,47	E1,56	T	E2,51	T	T	E1,44	H	H	E4,49	E5,40	E2,55	E2,55	T	T	E5,56	T	T	E2,51	T	T	E2,55	E4,40	E2,50	E4,48	T	T	E1,71	T	E4,55	T	E4,51	E4,57	E2,52	T	T	E1,52	T	E4,45	E4,54	E5,39	H	E5,44		T	T	E1,67		E4,46	T	E3,52	H	E1,54	E5,54	E5,52	H	E4,48	T	H	E3,58	T	T	T	T	E4,50	H
-T	T	T	H	H	H	T	T	T	H	H	T	T	H	T	E3,54	T	E5,43	H	E1,49		H	T	E2,55	E5,52	E5,36	T	H	H	H	T	T	E2,52	T	T	H	T	H	H	T	E4,53	E2,57	T	T	T	T	H	H	T		H	T	H	H	T	T	T	T	H	H	T	H	T	H	T	T	T		H	T		T	T	T	E2,55	T	H	H	H	T	E5,51	T	H	T	E1,51	T	T	T	E3,62	T	H	E2,51	T		H		H	T	E1,49
-H	H	H	E3,46	E2,54	E4,39	H	H	H	E2,43	E1,58	H	H	E1,51	H	T	H	T	E4,44	T	E2,54	E3,50	H	T	T	T	H	E3,63	E4,45	E5,59	H	H	T	H	H	E4,54	H	E1,50	E1,46	H	T	T	H	H	H	H	E2,51	E1,52		H	E5,46		E5,45	E4,49	H	H	H	H	E2,47	E4,53	H	E4,56	H	E5,49	H	H	H	H	E1,53	H	H	H		H	T	H	E3,57	E3,56	E1,49	H	T	H	E5,43		T	H	H	H	T	H	E2,48	T	H	H	E5,39	H	E2,58	H	T
-E5,44	E1,48	E4,59	T	T	T	E5,41	E3,45	E5,53	T	T	E2,48	E1,50	T	E4,51	H	E4,48	H	T	H	T	T	E3,43	H	H	H	E1,54	T	T	T	E1,46	E2,56	H	E1,46	E4,52	T	E1,50	T	T	E3,41	H	H	E2,47	E1,39	E3,52	E3,52	T	T	H	E4,63	T	H	T	T	E5,50	E1,39	E1,49	E4,44	T	T	E3,68	T	E1,54	T	E2,49	E4,53	E5,47	E2,42	T	E4,48	E5,44	E2,43	H	E3,36	H	E1,43	T	T	T	E2,65	H	E2,44	T	H	H	E2,52	E3,51	E3,49	H	E2,46	T	H	E4,54	E2,55	T	E5,46	T	E3,47	H
-T	T	T	H	H	H	T	T	T	H	H		T	H	T	E2,52	T	E1,42	H	E1,48	H	H		E4,51	E3,49	E2,34	T	H		H	T	T	E4,48	T	T	H	T	H	H	T	E4,49	E2,55	T	T	T	T	H	H	E3,53	T	H	E1,50	H	H	T	T	T	T	H	H	T	H	T	H	T	T	T	T		T	T	T	E5,49	T	E4,51	T	H	H	H	T	E5,46			E3,49	E1,50	T	T	T	E4,58	T	H	E1,50	T	T	H	T	H	T	E2,47
-H	H	H	E3,43	E4,50	E2,37	H	H	H	E1,42	E1,57	T	H	E1,50	H	T	H	T	E4,40	T	E1,53	E2,48	T	T	T	T	H	E1,62	H	E1,58	H	H	T	H		E1,53	H	E5,45	E5,41	H	T	T	H	H	H	H	E2,49	E2,50	T	H	E1,45	T	E1,44	E3,46	H	H	H	H	E2,45	E2,51	H	E3,53		E1,48	H	H	H	H	H	H	H	H	T	H	T		E3,54	E5,51	E5,44	H	T	T	H	T	T	H	H	H	T	H	E3,45	T	H	H	E3,36	H	E5,53	H	T
-E3,41	E3,45	E1,58	T	T	T	E5,36	E2,43	E2,51	T	T	H	E2,48	T	E5,46	H	E3,45	H	T	H	T	T	H	H	H	H	E5,49	T	E2,43	T	E3,43	E5,51	H	E4,42	H	T	E3,47	T	T	E3,38	H	H	E4,43	E3,36	E1,51	E3,49	T	T	H	E5,58	T	H	T	T	E5,45	E1,38	E5,44	E1,43	T	T	E5,63	T	H	T	E5,44	E2,51	E5,42	E2,40	E4,49	E1,47	E3,41	E5,38	H	E2,34	H	H	T	T	T	E5,60	H	H	E4,39	H	H	E3,49	E1,50	E2,47	H	E1,45	T	H	E2,52	E1,54	T	E5,41	T	E2,45	H
-T	T	T	H		H	T	T	T	H	H	E5,43	T		T	E2,50	T	E1,41		E5,43	H	H	E1,42	E2,49	E5,44	E2,32	T	H	T	H	T	T	E5,43	T	E5,47	H	T	H	H	T	E5,44	E3,52	T	T	T	T	H	H	E5,48	T	H	E3,47	H	H	T	T	T	T	H	H	T	H	E3,51	H	T	T	T	T	T	T	T	T	E5,44	T	E5,46	E5,38	H	H	H	T	E4,42	E3,41	T	E1,48	E3,47	T	T	T	E1,57	T	H	E2,48	T	T	H	T	H	T	E1,46
-H	H	H	E1,42	H	E1,36	H	H	H	E2,40	E3,54	T	H	H	H	T	H	T	H	T	E2,51	E4,44	T	T	T	T	H	E1,61	H	E4,54		H	T	H	T	E1,52	H	E2,43	E3,38	H	T	T	H	H	H	H	E3,46	E3,47	T	H	E5,40	T	E4,40	E5,41	H	H	H	H	E3,42	E1,50	H	E5,48	T	E1,47	H	H	H	H	H	H	H	H	T	H	T	T	E3,51	E3,48	E5,39	H	T	T	H	T	T	H	H	H	T		E4,41	T		H	E1,35	H	E2,51	H	T
-E1,40	E5,40	E4,54	T	E3,47	T	E3,33	E1,42	E1,50	T	T	H	E4,44	E2,48	E4,42	H	E4,41	H	E3,37	H	T	T	H	H	H	H	E4,45	T	E5,38	T	H	E3,48	H	E2,40	H	T	E5,42	T	T	E4,34	H	H	E2,41	E3,33	E2,49	E2,47	T	T	H	E2,56	T	H	T	T	E4,41	E3,35	E2,42	E2,41	T	T	E2,61	T	H	T	E5,39	E2,49		E3,37	E4,45	E5,42	E2,39	E4,34	H	E2,32	H	H	T	T	T	E2,58	H	H	E1,38	H	H	E1,48	E4,46	E2,45	H	H	T	H	H	E1,53	T	E4,37	T	E3,42	H
-T	T	T	H	T	H	T	T	T	H	H	E5,38	T	T	T	E2,48	T	E5,36	T	E3,40	H	H	E5,37	E3,46	E1,43	E2,30	T	H	T	H	E4,39	T	E4,39	T	E3,44	H	T	H	H	T	E2,42	E3,49	T	T	T	T	H		E1,47	T		E1,46	H	H	T	T	T	T	H	H	T	H	E1,50		T	T	E4,38	T	T	T	T	T	E3,41	T	E4,42	E1,37	H	H	H	T	E5,37	E2,39	T	E1,47	E3,44	T	T	T	E5,52	E1,44	H	E1,47	E5,47	T	H	T	H	T	E1,45
-H		H	E5,37	H	E3,33	H	H	H	E1,39	E1,53	T	H	H	H	T	H	T	H	T	E4,47	E4,40	T	T	T	T	H	E3,58	H	E4,50	T	H	T	H	T	E1,51	H	E3,40	E2,36	H	T	T	H	H	H		E5,41	H	T	H	H	T	E5,35	E3,38	H	H	H	H	E5,37	E5,45	H	E2,46	T	H	H	H	T	H	H	H	H	H	T	H	T	T	E2,49	E3,45	E5,34	H	T	T	H	T	T		H	H	T	T	E3,38	T	T	H	E2,33	H	E1,50	H	T
-E1,39	H	E3,51	T	E2,45	T	E2,31	E4,38	E4,46	T	T	H	E4,40	E4,44	E1,41	H	E1,40	H	E1,36	H	T	T	H	H	H	H	E4,41	T	E3,35	T	H	E4,44	H	E2,38	H	T	E4,38	T	T	E5,29	H		E1,40	E1,32	E2,47	H	T	E4,43	H	E1,55	E3,37	H	T	T		E1,34	E2,40	E2,39	T	T	E5,56	T	H	E1,46	E4,35	E4,45	H	E5,32	E4,41	E4,38	E4,35	E3,31	H	E4,28	H	H	T	T	T	E2,56	H	H	E5,33	H	H	H	E3,43	E3,42	H	H	T	H	H	E4,49	T	E3,34	T	E3,39	
-T	E1,39	T	H	T	H	T	T	T	H	H	E3,35	T	T	T	E3,45	T	E5,31	T		H	H	E2,35	E2,44	E2,41	E3,27	T	H	T	H	E5,34	T	E5,34	T	E4,40	H	T	H	H	T	E4,38	H	T	T	T	E1,46	H	T	E2,45	T	T	E1,45	H	H	E4,37	T	T	T	H	H	T	H	E5,45	T	T	T	E4,34	T	T	T	T	T	E4,37	T	E2,40	E1,36	H	H	H	T	E4,33	E2,37	T	E2,45	E1,43	E4,44	T	T	E5,47	E5,39	H	E3,44	E1,46	T	H	T	H	T	H
-H	T	H	E3,34	H	E2,31	H	H		E5,34	E2,51	T		H	H	T		T	H	E4,36	E2,45	E5,35	T	T	T	T	H	E5,53	H	E1,49	T	H	T		T	E4,47	H	E1,39	E5,31	H	T	E4,45	H	H		T	E2,39	H	T	H	H	T	E2,33	E5,33	T	H	H		E1,36	E2,43	H	E3,43	T	H	H	H	T	H	H	H	H		T		T	T	E3,46	E1,44	E4,30	H	T	T	H	T	T	T	H	H	T	T	E5,33	T	T	H	E3,30	H	E5,45	H	E1,44
-E4,35	H	E2,49	T	E5,40	T	E1,30	E2,36	H	T	T	H	H	E4,40	E2,39	H	H	H	E4,32	T	T	T	H	H	H	H	E2,39	T	E1,34	T	H	E5,39	H	H	H	T	E2,36	T	T	E2,27	H	T	E4,36	E2,30	H	H	T	E1,42	H	E2,53	E4,33	H	T	T	H	E1,33	E4,36	H	T	T	E4,52	T	H	E4,42	E3,32	E4,41	H	E4,28	E5,36	E5,33	E1,34	H	H	H	H	H	T	T	T	E2,54	H	H	E3,30	H	H	H	E3,40	E3,39	H	H	T	H	H	E4,45	T	E2,32	T	E4,35	T
-T	E2,37	T	H	T	H	T	T	E5,41	H		E5,30	E2,38	T	T	E5,40	E5,35	E1,30	T	H	H	H	E4,31	E1,43	E3,38	E1,26	T	H	T	H	E1,33	T	E5,29	E3,35	E2,38			H	H	T	E5,33	H	T	T	E5,42	E1,45	H	T	E1,44	T	T	E3,42	H	H	E1,36	T	T	E1,38		H	T	H	E1,44	T	T	T	E1,33	T	T	T	T	E2,29	E3,34	E5,23	E4,36	E3,33	H	H	H	T	E3,30	E4,33	T	E4,41	E3,40	E1,43	T	T	E2,45	E5,34		E5,39	E1,45	T	H	T		T	H
-	T	H	E1,33	H	E2,29	H	H	T	E4,30	H	T	T	H	H	T	T	T	H	E4,32	E3,42	E1,34	T	T	T	T	H	E2,51	H	E4,45	T	H	T	T	T	H	T	E1,38	E5,26		T	E3,42	H	H	T	T	E3,36	H	T	H	H	T	E3,30	E1,32	T	H	H	T	H	E1,42	H	E3,40	T	H	H	H	T	H	H	H	H	T	T	T	T	T	E1,45	E2,42	E5,25	H	T	T	H	T	T	T		H	T	T	H	T	T	H	E1,29	H	H	H	E2,42
-H	H	E1,48	T	E2,38	T	E3,27	E5,31	H	T	E4,47	H	H	E2,38	E2,37	H	H	H	E3,29	T	T	T	H	H	H	H	E1,38	T	E4,30	T	H	E3,36	H	H	H	E4,43	H	T		H	H	T	E4,32	E2,28	H	H	T	E2,40	H	E5,48	E1,32	H	T	T	H	E3,30	E1,35	H	E2,34	T	E4,48	T	H	E5,37	E3,29	E5,36	H	E4,24	E1,35	E4,29	E5,29	H	H	H	H	H	T	T		E1,53	H	H	E3,27	H	H	H	H	E5,34	H	H	E5,28	H	H	E4,41	T	E4,28	E1,44	E3,32	T
-E5,30	E5,32	T	H	T	H	T	T	E2,39	H	T	E2,28	E1,37	T	T	E5,35	E1,34	E5,25	T	H	H	H	E3,28	E3,40	E1,37	E3,23	T	H	T	H	E3,30	T	E1,28	E2,33	E3,35	T	E5,31	H	T	E1,26	E2,31	H	T	T	E4,38	E4,41	H	T	E1,43	T	T	E1,41		H	E1,35		T	E4,34	T	H	T	H	E5,39	T	T	T	E5,28	T	T	T	T	E1,28	E2,32	E4,19	E2,34	E5,28	H	H	T	T	E5,25	E4,29	T	E3,38		E1,42	E4,36	T	E1,44	E1,33	T	E1,38	E4,41	T	H	T	T	T	H
-T	T	H	E3,30	H	E1,28	H		T	E1,29	H	T	T	H		T	T	T	H	E1,31	E5,37	E4,30	T	T	T	T	H	E4,47	H	E5,40	T	H	T	T	T	H	T	E2,36	H	T	T	E1,41	H	H	T	T		H	T	H	H	T	H	E3,29	T	T	H	T	H	E2,40	H	E1,39	T	H	H		T	H	H	H	H	T	T	T	T	T	E3,42	E3,39	H		T	T	H	T	E3,37	T	T	H	T	T	H	T	T	H	E4,25	H	H	H	E1,41
-H	H	E1,47	T	E3,35	T	E4,23	H	H	T	E4,43	H	H	E4,34	H	H	H		E4,25	T	T	T	H		H	H	E3,35	T	E1,29	T	H	E4,32	H	H	H	E1,42	H	T	E4,22	H	H	T	E5,27	E5,23	H	H	E1,35	E2,38	H	E1,47	E5,27	H	E5,25	T	H	H	E4,31	H	E4,30	T	E2,46	T	H	E1,36	E2,27	H	H	E3,21	E5,30	E4,25	E5,24	H	H	H	H	H	T	T	E3,22	H	H	H	E3,24	H	T	H	H	E5,29	H	H	E1,27	H	H	E4,37	T	E5,23	E4,40	E1,31	T
-E4,26	E4,28	T	H	T	H	T	E4,27	E2,37	H	T	E4,24	E3,34	T	E1,36	E1,34	E1,33	H	T	H	H	H	E5,23	H	E4,33	E4,19	T	H	T		E5,25	T	E3,25	E1,32	E4,31	T	E1,30	H	T	E1,25	E5,26	H	T	T	E2,36	E4,37	T	T	E4,39	T	T	E5,36	T	H	E4,31	E1,29	T	E3,31	T	H	T	H	E4,35	T	T	E2,34	E2,26	T	T	T	T	E3,25	E2,30	E5,14	E3,31	E1,27	H	H	T	E3,50	E2,23	E4,25	T	E1,37	H	E1,41	E3,33	T	E3,41	E4,29	T	E2,36	E3,38	T	H	T	T	T	H
-T	T	H	E3,27	H	E2,26		T	T	E1,28	H	T	T	H	T	T	T	E2,23	H	E4,27	E5,32	E3,27	T	E2,38	T	T	H	E5,42	H	H	T	H	T	T	T	H	T	E3,33	H	T	T	E2,39	H	H	T	T	H	H	T	H	H	T	H	E3,26	T	T	H	T	H	E3,37	H	E3,36	T	H	H	T	T	H	H	H	H	T	T	T	T	T	E2,40	E1,38	H	T	T	T	H	T	E3,34	T	T	H	T	T	H	T	T	H	E4,21	H	H	H	E4,37
-H	H		T	E2,33	T	H	H	H	T	E5,38	H	H	E4,30	H	H	H	T	E4,21	T	T	T	H	T		H	E2,33	T	E1,28	E2,38	H	E1,31	H	H	H	E4,38	H	T	E2,20	H	H	T	E3,24	E3,20	H	H	E5,30	E5,33	H	E1,46	E2,25	H	E2,23	T	H	H	E5,26	H	E3,27	T	E2,44	T	H	E3,33	E4,23	H	H	E3,18	E4,26	E3,22	E2,22	H	H	H	H	H	T	T	E3,19	H	H	H	E2,22	H	T	H	H	E3,26	H	H	E1,26	H	H	E3,34	T	E5,18	E3,37	E4,27	T
-E2,24	E3,25	E3,44	H	T	H	E1,22	E2,25	E2,35	H	T	E3,21	E2,32	T	E3,33	E1,33	E5,28	H	T	H	H	H	E3,20	H	H	E3,16	T	H	T	T	E4,21	T	E4,21	E1,31	E2,29	T	E2,28	H	T	E3,22	E3,23	H	T	T	E3,33	E5,32	T	T	E5,34	T	T	E4,32	T		E5,26	E5,24	T	E1,30	T	H	T		E3,32	T	T	E2,32	E3,23	T	T	T	T	E1,24	E5,25	E1,13	E4,27	E1,26	H	H	T	E3,47	E1,22	E3,22	T	E1,36	H	E3,38	E1,32	T	E4,37	E5,24	T	E1,35	E1,37	T	H	T	T	T	H
-T	T	T	E4,23	H	E1,25	T	T	T	E1,27	H	T	T	H	T	T	T	E2,21	H	E4,23	E2,30	E2,25	T	E2,36	E1,32	T	H	E5,37	H	H	T	H	T	T	T	H	T	E5,28	H	T	T	E4,35	H	H	T	T	H	H	T	H	H	T	H	H	T	T	H	T	H		H	H	T	H	H	T	T	H	H	H	H	T	T	T	T	T	E1,39	E1,37	H	T	T	T		T	E1,33	T	T	H	T	T	H	T	T		E3,18	H	H	H	E4,33
-H	H	H	T	E2,31	T	H	H	H	T	E4,34	H	H	E5,25	H	H	H	T	E1,20	T		T	H	T	T	H	E2,31	T	E3,25	E2,36	H	E3,28	H	H	H	E1,37	H	T	E4,16	H	H	T	E1,23	E3,17	H	H	E5,25	E5,28	H	E3,43	E1,24	H	E3,20	E3,23	H	H	E3,23	H	E4,23	E1,36	E4,40	E1,35	H	E4,29	E3,20	H	H	E3,15	E2,24	E4,18	E3,19	H	H	H	H	H	T	T	E1,18	H	H	H	H		T	H	H	E1,25	H	H	E1,25		H	H	T	E2,16	E4,33	E2,25	T
-E1,23	E1,24	E2,42		T	H	E3,19	E5,20	E3,32	H	T	E3,18	E2,30	T	E5,28	E5,28	E3,25	H	T	H	T	H	E5,15	H	H	E4,12	T	H	T	T	E3,18	T	E1,20	E4,27	E5,24	T	E2,26	H	T	E1,21	E5,18	H	T	T	E2,31	E4,28	T	T	E2,32	T	T	E2,30	T	T	E3,23	E5,19	T	E5,25	T	T	T	T	E2,30	T	T	E3,29	E5,18	T	T	T	T	E1,23	E2,23	E2,11	E2,25	E4,22			T	E4,43	E4,18	E4,18	E5,17	H	H	E5,33	E4,28	T	E3,34	E4,20	T	H	E4,33	E4,30	H	T	T	T	H
-T	T	T	H	H	E1,24	T	T	T	E3,24	H	T	T	H	T	T	T	E3,18	H	E5,18	H	E3,22	T	E2,34	E2,30	T	H	E3,34	H	H	T	H	T	T	T	H	T	E5,23	H	T	T	E2,33	H	H	T	T	H	H	T		H	T	H	H	T	T	H	T	H	H	H	H	T	H	H	T	T	H	H	H	H	T	T	T	T	T	H	H	H	T	T	T	T	E4,32	E2,31	T	T	H	T	T	H	E3,32	T	T		H	H		E5,28
-H	H	H	E3,20	E3,28	T	H	H	H	T	E2,32		H	E4,21	H		H	T	E2,18	T	E2,28	T	H	T	T	H	E3,28	T	E3,22	E1,35	H	E5,23	H	H	H	E5,32	H	T	E3,13	H	H	T	E5,18	E4,13	H	H	E4,21	E2,26	H	H	E5,19	H	E1,19	E5,18	H	H	E1,22	H	E2,21	E5,31	E1,39	E1,34	H	E1,28	E4,16	H	H	E3,12	E1,23	E4,14	E3,16	H	H	H	H	H	E3,36	E3,34	E2,16	H	H	H	H	T	T	H	H	E5,20	H	H	E2,23	T	H	H	E4,14	E4,12	E5,28	H	T
-E5,18	E3,21	E5,37	T	T	H	E2,17	E4,16	E1,31		T	H	E1,29	T	E2,26	H	E3,22	H	T	H	T		E5,10	H	H	E2,10	T	H	T	T	E2,16	T	E1,19	E5,22	E3,21	T	E2,24	H	T	E4,17	E4,14	H	T	T	E1,30	E4,24	T	T	E2,30	E1,42	T	E2,28	T	T	E3,20	E5,14	T	E4,21	T	T	T	T	E4,26	T	T	E5,24	E4,14	T	T	T	T	E5,18	E5,18	E3,8	E3,22	E2,20	T	T	T	E1,42	E4,14	E2,16	E5,12	H	H	E1,32	E3,25	T	E4,30	E2,18	T	H	E1,32	E3,27	T	T	T	E5,20	H
-T	T	T	H	H	E5,19	T	T	T	H	H	E3,15	T	H	T	E1,27	T	E3,15	H	E3,15	H	H	T	E3,31	E4,26	T	H	E2,32	H	H	T		T	T	T	H	T	E2,21	H	T	T	E2,31			T	T	H	H	T	T	H	T	H	H	T	T	H	T	H	H	H	H	T	H	H	T	T		H	H	H	T	T	T	T	T	H	H	H	T	T	T	T	E3,29	E5,26	T	T	H	T	T	H	E4,28	T	T	H		H	T	E2,26
-H	H	H	E2,18	E4,24	T	H	H	H	E1,23	E1,31	T	H	E5,16	H	T	H	T	E1,17	T	E4,24	E5,17	H	T	T	H	E5,23	T	E2,20	E5,30	H	H	H	H	H	E1,31	H	T	E2,11	H	H	T	H	H	H	H	E4,17	E1,25		H	E2,17	H	E3,16	E4,14	H	H	E4,18	H	E3,18	E4,27	E4,35	E1,33	H	E2,26	E1,15	H		H	E3,20	E1,13	E4,12	H		H	H	H	E5,31	E5,29	E5,11	H			H	T	T	H	H	E5,15	H	H	E1,22	T	H	H	E3,11	H	E4,24	H	T
-E3,15	E5,16	E1,36	T	T		E5,12	E2,14	E3,28	T	T	H	E5,24	T	E4,22	H	E1,21	H	T	H	T	T	E2,8	H	H	E5,5	T		T	T	E4,12	E1,22	E4,15	E1,21		T	E4,20		T	E5,12	E1,13	H	E2,16	E3,10	E2,28	E1,23	T	T	H	E3,39	T	E1,27	T	T	E4,16	E2,12	T	E1,20	T	T	T	T	E1,25	T	T	E1,23	H	E3,9	T	T	T	E5,13	H	E2,6	E3,19	E4,16	T	T	T	E4,38	H	H	E5,7	H	H	E3,29	E2,23	T	E4,26	E1,17	T	H	E3,29	E2,25	T	E3,9	T	E5,15	H
-T	T	T	H	H	H	T	T	T	H	H	E2,13	T	H	T	E5,22	T	E5,10	H	E2,13	H	H	T	E5,26	E3,23	T		H	H	H	T	T	T	T	E2,19	H	T	H	H	T	T	E3,28	T	T	T	T	H	H	E4,26	T	H	T	H	H	T	T		T	H	H	H	H	T	H	H	T	E3,11	T	H	H	H	T	E5,13	T	T	T	H	H	H	T	E5,9	E2,14	T	E3,26	E1,25	T	T	H	T	T	H	E3,25	T	T	H	T	H	T	E1,25
-H	H	H	E4,14	E3,21	E2,17	H	H	H	E5,18	E5,26	T	H	E3,13	H	T		T	E4,13	T	E1,23	E2,15	H	T	T		H	E5,27	E3,17	E5,25	H	H		H	T	E1,30	H	E4,17	E5,6	H	H	T	H	H	H	H	E1,16	E1,24	T	H	E1,16	H	E3,13	E5,9		H	H	H	E5,13	E4,23	E5,30	E3,30	H	E4,22	E1,14	H	T	H	E5,15	E4,9	E5,7	H	T	H	H	H	E2,29	E4,25	E5,6	H	T	T	H	T	T	H		E5,10		H	E1,21	T	H	H	E2,9	H	E1,23	H	T
-E3,12	E4,12	E4,32	T	T	T	E4,8	E5,9	E1,27	T	T	H	E3,21	T	E1,21	H	H	H	T	H	T	T	E1,7	H	H	H	E2,21	T	T	T	E2,10	E4,18	H	E3,18	H	T	E1,19	T	T	E3,9	E2,11	H	E3,13	E1,9	E4,24	E3,20	T	T	H	E5,34	T	E1,26	T	T	H	E1,11	E5,13	E2,18	T	T	T	T	E3,22	T	T	E1,22	H	E4,5	T	T	T	E5,8	H	E3,3	E1,18	E5,11	T	T	T	E4,34	H	H	E1,6	H	H	E3,26	H	T	H	E2,15	T	H	E4,25	E5,20	T	E1,8	T	E1,14	H
-T	T	T	H		H	T	T	T	H	H	E3,10	T	H	T	E1,21	E4,17	E3,7	H	E1,12	H	H	T	E2,24	E2,21	E3,2	T	H	H	H	T	T	E2,13	T	E4,15	H	T	H	H	T	T	E1,27	T	T	T	T	H	H	E5,21	T	H	T	H	H	E4,12	T	T	T	H	H	H	H	T	H	H	T	E5,6	T			H	T	E1,12	T	T	T	H	H	H	T	E3,6	E4,10	T	E4,22	E1,24	T	E2,21	H	E1,25	T	H	E3,22	T	T	H	T	H	T	E5,20
-H	H	H	E2,12	H	E3,14	H	H	H	E1,17	E2,24	T	H	E1,12	H	T	T	T	E4,9	T	E4,19	E4,11		T	T	T	H	E4,23	E1,16	E5,20		H	T	H	T	E3,27	H	E4,13	E4,2	H	H	T	H	H	H		E2,14	E2,22	T	H	E3,13		E5,8	E1,8	T	H	H	H	E5,8	E3,20	E3,27	E1,29	H	E5,17	E1,13	H	T	H	H	H	E2,5	H	T	H	H	H	E4,25	E3,22	E4,2	H	T	T	H	T	T	H	T	E3,7	T	H	E3,18	T	H	H	E1,8	H	E1,22	H	T
-E2,10	E4,8	E3,29	T	E2,19	T	E5,3	E1,8	E5,22	T	T	H	E3,18	T	E3,18	H	H	H	T	H	T	T	H	H	H	H	E1,20	T	T	T	H	E5,13	H	E5,13	H	T	E4,15	T	T	E5,4	E2,9		E3,10	E1,8	E5,19	H	T	T	H	E1,33	T	H	T	T	H	E2,9	E5,8	E5,13	T	T	T	T	E3,19	T	T	E5,17	H	E1,4	E1,14	E2,7	T	E5,3	H	E3,0	E1,17	E1,10	T	T	T	E4,30	H	H	E2,4	H	H	E1,25	H	T	H		T	H	E3,22	E1,19	T	E1,7	T	E5,9	H
-		T	H	T	H	T	T		H		E1,9			T	E3,18	E5,12	E5,2			H	H	E1,6			E2,0	T	H			E1,9	T	E4,9		E3,12			H		T		H	T	T		E5,15			E3,18	T		E4,22		H	E2,10		T										E5,1	T	T	T			E1,11				H	H		T	E4,2	E1,9	T	E1,21			E4,17		E3,22	E1,14	H	E1,21	T	T	H	T		T	E1,19
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-T	T							T		H		T	H					H	E4,8			T	E2,22	E1,20					H	T			T		H	T		H		T	E2,25			T		H				H		H			T		T	H	H	H	H	T	H	H	T				H	H	T			T	T			H						E5,19	T	T			T							H		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-H	H	H	E1,11	H	E1,13	H	H	H	E3,14	E5,19	T	H	E5,7	H	T	T	T	E4,5	T	E2,17	E4,7	H	T	T		H	E2,21	H	E4,16		H	T	H	T	E5,22	H	E5,8	E1,1	H	H	T	H	H	H	T	E2,12	H	T	H	E1,12	T	E2,6	E3,5	T	H	H	H	E5,3	E1,19	E5,22	E5,24	H	E3,14	E1,12	H	T	H	H	E1,6	E1,4	H	T		H	H	E2,23	E3,19	E2,0	H	T	T	H	T	T	H	H	H	T	H	E3,15	T	H	H	E2,6	H	E4,18	H	T
-		E3,26	T	E4,15	T	E3,0	E5,3		T		H				H	H	H			T	T					E5,15	T	E4,12		H	E3,10	H		H			T		E1,3			E2,8	E4,4		H		E5,17	H	E2,31		H		T	H		E5,3										H	E4,0	E4,10				H				T	T			H	H	E2,2	H				E2,5	H		T	H			T	E1,6		E1,8	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-E3,7	E2,6			T	H			E1,21	H	T	E1,8	E5,13	T	E4,14	E4,14	E3,9		T	H			E1,5	H	H		T	H	T	T	E4,5	T	E1,8	E2,11	E4,8	T	E2,13	H	T		E1,8	H	T	T	E5,14	E5,10	T	T	E4,14	T	T	E1,21	T		E3,7	E4,5	T	E4,9	T	T	T	T	E2,17	T	T	E1,16	E1,0		T	T	T	E3,0	E2,9		E2,15	E1,9	H			E2,28			T		H	E1,24	E1,16	T	E5,17	E5,9		E2,19	E1,21	E5,14			T		H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-							T													H																																																																						H					T			
-...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-T		T	H							H							E2,0				H																		T														H																								H			E2,0	E5,4		E2,19									T	T	H			T	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-	T			H				T				T	H	T				H	E3,5			T	E1,21	E4,16		H		H	H	T		T	T		H	T		H		T	E5,20			T	T	H	H			H		H			T		T	H	H	H	H	T	H	H	T					H				T	T				T					E4,15	T	T	H	T	T		T					H		E3,16
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-					E1,12				E4,10		T				T	T				E4,13							E5,16				H			T			E5,3					H	H					T	H		T			T		H												H	H			T				E1,22						H								E2,13								
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-H	H	H	E2,9	E3,12	T		H	H	T	E2,17		H	E3,4	H		H		E1,4	T	T	E1,6	H	T	T		E1,14	T	E2,10	E1,15	H	E2,8	H	H	H	E3,19	H	T	E1,0	H	H	T	E5,3	E1,3	H	H	E5,7	E4,13	H	E4,27	E1,11	H	E5,1	E2,3	H	H	E3,0	H	E3,0	E2,17	E3,19	E5,19	H	E3,11	E4,8	H			E1,9	E2,4	E2,2				H	H	T	E2,17		H		T	E2,0	T	T	H	H	E5,0	H	H	T	H	H	H	E5,1	H	E2,16	H	T
-E1,6		E1,25	T				E3,0			T	H				H				H		T															E2,11			E3,0							T				T			T		E4,1				T				T	T								H			E3,6		T		E4,24		H		H									E2,19	E2,12	T	E3,3		E1,7	H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-	E3,3			T				E1,20				E1,12	T	E1,13				T					H	H					T				E2,9		T					E4,4	H			E1,13			T					T					E5,4			T	T	E5,12			E4,12					T				E2,13										H	E3,21											T		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...
-									H													E4,1				T	H	T		E4,1	T	E1,7		E4,4											E3,7						E1,20																	T	T																	E4,12		E2,15	E1,8		E3,16							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																E5,4																					H											E2,12																												H																						
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-					H						E1,7																															T	T						T					E3,4																																				H								
-...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T	H												E2,12					H																																	H																			E4,5							T		E3,1		E5,14									T		H	T		T	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-T	T		E1,8	H	E4,8			T	E3,7	H	T	T	H	T	T	T		H	E1,4	E5,8	H	T	E4,17	E2,14		H	E1,15	H	H	T	H	T	T	T	H	T	E2,1			T	E4,16	H	H	T	T	H	H	T	H	H	T	H		T	T		T		H	H	H	T	H	H	T			H	H	H		T		T	T	E5,17	H				T		T	E1,14	T	T		T	T	E1,12	T		T	E1,0	H	H	H	E3,13
-H	H	H		E2,10	T			H	T	E3,14	H	H	E3,1	H				E1,3	T		E4,2	H	T	T		E4,10	T	E1,9	E1,14	H	E3,5	H	H	H	E2,17	H	T			H	T	E3,0		H	H	E3,4	E2,11	H		E2,9	H	E1,0	E3,0		H		H		E3,14	E4,15	E5,14	H	E3,8	E5,3	H			E3,6	E1,3	E2,0				H	H	T	E2,15		H					T	H	H		H	H	T	H	H	H		E2,1	E5,11		T
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...
-			T													H				T																													E2,25																							H																									E3,4	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-E5,1		E2,23						E3,17		T		E1,11		E4,9	H			T	H		T			H					T				E5,4		T	E4,7				E2,2	H		E2,1			T				T				H	E1,0				T		T	E5,7	T	T	E5,7										E5,1		T		E1,23		H		H		E1,20							E5,14	E3,9			T		H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-	E3,0												T										H																								T										E4,0			T																																						
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-				T					H		E4,3											E1,0				T	H	T		E1,0	T	E3,4		E3,1										E5,8	E5,2						E5,15																	T	T					E1,12		H								H		E4,8		E3,12	E4,4	H	E1,15							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T	H		H					H					E4,8	E1,3				H																T	H						T					E1,11	T	H				E4,0					H													E3,2			T				T				E1,13									T			T		T	E1,12
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-T								T				T		T				H	E2,2		H			E2,12					H				T		H					T	E3,13					H															H	T	H	H	T												H				E1,0				T								T			H		
-...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																							E4,13																						T		H													H														T										E1,13							T							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-									E2,5				H													H	E4,11	H						T										T																																												T	T									
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-			E4,4	H	E1,7						T					T															H	T					E1,0											T	H		T																	H	H			T				E1,16										T				E2,10								
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H								E1,13					T					E1,7																							H							E4,5									E2,12																								T												H		H	T
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-H				E5,5	T			H	T		H	H	E1,0	H		H		E3,0	T		E2,0		T	T		E5,5	T	E3,6	E1,13		E4,1		H	H	E4,13	H				H	T			H	H	E4,0	E4,7		E5,20											E4,11	E4,10	H	E4,4	E3,0	H			E3,3	E3,0					H	H	T	E5,10		H					T	H	H		H	H	T	H	H	H			E3,8		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		E2,21	T							T					H					T												H				E3,4							E1,0					H		T	H								T													H			E1,0																				E1,0		E3,1	H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																													T																																																																					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-E1,0								E5,12				E4,7							H																T						H																				T	E4,3			E1,6												T		E2,21				H									E5,9	E4,5			T		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																								H		T							E2,2							E2,0							T													T			T																						E1,19													
-...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-									H					E4,5									H					T			T													E5,3	E2,0																							T						E2,10										H				E5,7			E1,14							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T		T	H						E3,0					E1,2				H							H					E3,1		E1,0														E1,10	T		E4,11																					E2,0				H										E2,6			E3,1	H								E4,8
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...
-			H																																																																																															
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-															E2,6																																																																																		T	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-										H																										T														H									H		H																		T				E4,9									T				H		
-F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								T				T							E2,0					E3,9					H												E1,12																					T			T												H																T					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																	T														H																H																						T													
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-									E3,2					T									E1,12			H		H							H									T																H														T										E5,8				T			T							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H	E2,2	H	E4,3											T				E4,3							E1,10				H	T																T	H		T																	H								E4,12										T			T	E4,6								T
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								H		E4,9					T														E4,9												T									E4,1									E3,9		E1,9																		H				T									H				E4,4	H	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		E5,16	T	E5,0	T			E4,8	T	T		H		H		H				T			T	T		E4,1	T	E3,3			E1,0	H	H		E3,10	H					H			H			E5,2	H	E5,15	T	H								T	E5,6	T	H	E2,2		H			E2,1						H		T	E3,7		E5,16				H	T	H	H		H	H	T	H	E5,4	H			T	E1,0	H
-												E4,3		E3,2	H								H	H		T	H	T	T				E2,0		T	E1,3								E3,0			T													T		E3,0	T		E4,2									E5,5			T							H	E5,14			E2,5			E4,10		E4,1					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T			H				H							E2,0				H												E1,0																	T																			T																		E5,1			E1,0	H								
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...
-			H					T																					H							T					E4,8							E2,8			E3,8								H		H															H			T				E2,7									T				H		E5,3
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-												T			E2,4																																			H															T																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-										H				T												H																																																			H							E2,6									T					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																							E2,10	E4,5			E3,7	H																			H													H			H											T											T			T			T							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																			H																																																															
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-					E1,2				E2,0																																								H																			H																		T												
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...
-		H	E1,1					H		E4,5		H		H	T					E3,0			T	T		E1,0	T	E3,0	E5,4						E2,8	H					T						E2,0	T		E1,0	T								E3,6	E3,3	E4,5		E2,0		H									H		E1,11	E4,3		H				T	T	H					E2,4	H	H	H			E1,3		T
-...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-			T		T																																												E1,14		H																	E1,0																		H		H		T								
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		E1,15													H																																	H											T		T															T							H													T		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																													T																																																		E3,13																			H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								E2,6		T		E2,1																								E2,1																																									T															E1,3						
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																	E2,0																				E5,9						E4,6							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-														E2,0										H											T						H																			T														E4,1										H									E1,0					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																	T																																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T	H		H			T		H		T			E4,0								H				H		H							T												E2,6			E5,3								H		H															H			T				E5,2	E2,4	T	E1,0		E4,1		H	T	T				H		E2,1
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																									E1,7																																				H																					
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...
-																								E2,3																																																		T																								
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																								T										
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...
-			E1,0		E2,0																		E3,7				E3,4								H													T			T								E1,5	H																							T							E4,0						E1,2		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H						H		E5,0		H												T			T		E2,2						E1,7	H					T								H		H									E3,0	E5,0															E3,8	E3,0		H					T	H						H	H				T		T
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...
-																																																																										H																								
-...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		E5,10																					T																										E5,9										T																													H										
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																													T																																															T							H									E3,0						
-...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																									H																																						E4,9												E1,5							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								E2,4				E1,0												H											T	E1,0												H			E3,0																																	H	E2,7													H
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T																					H				H														E1,6								T																									E1,0									E2,0					E1,0								H		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...
-								T																E3,0					H																			E1,5											H																	H			T					E3,1	T						T							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		E1,0
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																			H																																																															
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H																					E1,6				E4,0																																																																					E2,0		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...
-																																									T								H																																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								H																					E2,0																														E5,0																	E5,3																						
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																T																																				T														
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F
-																							T												E1,6																																												H						H						H							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...
-		E4,6																																																																																																
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																	E1,8																																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-								E3,1																																																																				T																						
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T						T																											T						H							H	T																														E1,8					H	E5,2						E1,4							
-																							H																		E5,1							E4,1																												H			T					E1,0	T						T							
-																							E4,2												H						T							T																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H						H															T												E3,3														H																											E3,0			H						H						H							
-		E4,2																																															E5,3																														E2,6																			
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		T						E1,0															H												T						H							H	T																														T						E2,0						E3,1							
-																																			H						E1,0																																																									
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		H																					E2,0												E2,1													E1,0	H																														H												T							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																			T														E1,2																																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-		E2,0																																	H														T																														E4,2												H							
-																																																																															T																			
-...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																			E1,0														H																																																	
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																	E2,0																														H												E1,0							
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
-																																																																																																		
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...
-																																																																															E1,1																			
-																																																																															T																			
-																																																																															H																			
-																																																																															E1,0																			
-...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	F	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 3echo "check base case of 3. which tests an odd number of philosophers to ensure it still works on non-even cases"./phil 2echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"./phil 2 2 a                                                                                 aecho "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"./phil 2                                                                                      echo "check base case of 2. this tests the putdown logic when left(left(id)) refers to itself"./phil 2 2 a                                                                                  2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
+bck-i-search: _echo "check base case of 3. which tests an odd number of philosophers to ensure it still works on non-even cases"
+bck-i-searcecec_echeecho2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                number of noodles"philosophers"arugments"a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"invalid number of arugments"philosophers"noodles"seed"             base case of 2. this tests the putdown logic when left(left(id)) refers to itself"3wch tests an odd number of philosophers to ensu it still works on non-even cases"2ts tests the putdown logic when left(left(id)) fers to itself"invalid seed"                                                                number of noodles"philosophers"arugments"a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error"base case of 3. which tests an odd number of philosophers to ensurit still works on non-even cases"a highly concurrent case, which would probabilistically trigger thasserts in the table if there was an error"2;echo 1;echocheck a highly concurrent case, which would probabilistically trigger the asserts in the table if there was an error
+2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ ./phil 15
+2;./phil 151;./philPhil0	Phil1	Phil2	Phil3	Phil4	Phil5	Phil6	Phil7	Phil8	Phil9	Phil10	Phil11	Phil12	Phil13	Phil14
+******	******	******	******	******	******	******	******	******	******	******	******	******	******	******
+H	H	H	H	H	H	H	H	H	H					
+						E4,26			E5,25	H	H	H	H	H
+	E1,29				E2,28					E5,25	E4,26	E5,25		
+					T		E1,29							
+E4,26							T							E2,28
+T	T	E2,28	E5,25											
+			T	E3,27				E1,29	T		T	T	E4,26	
+H	H	T				T		T		T			T	T
+E3,23		H	H	T				H					H	
+T	E2,27	E1,27	E1,24					E3,26					E2,24	
+	T				H		H							
+			T				E5,24	T			H			
+H		T									E3,23		T	
+E1,22					E5,23		T				T	H		H
+T		H												
+		E1,26			T				H					
+									E4,21			E4,21		E5,23
+		T		H					T				H	T
+				E1,26	H									
+				T		H		H				T	E3,21	
+					E5,18	E3,23		E2,24		H			T	
+	H				T	T		T		E3,22		H		H
+H	E4,23				H	H		H						E5,18
+E4,18				H	E3,15									
+			H	E2,24	T						H	E5,16		
+			E3,21									T		
+			T	T		E4,19		E3,21		T	E5,18			
+T	T	H									T			T
+		E5,21			H									
+		T			E5,10	T	H	T						
+		H						H	H		H			
+									E1,20					
+		E2,19			T		E5,19		T					
+		T	H	H			T	E4,17			E5,13		H	
+H				E5,19									E4,17	
+E1,17														
+T		H									T			
+		E5,14									H		T	
+		T	E5,16			H		T						H
+			T											
+			H	T								H		
+			E4,12			E3,16					E4,9	E1,15		E5,13
+	H	H	T			T				H	T	T		T
+		E4,10												
+		T										H		
+H												E2,13		
+E4,13									H					
+									E1,19	E1,21				
+	E4,19		H						T	T		T		
+T	T		E3,9		H									
+					E4,6					H				
+	H		T		T		H			E4,17			H	
+							E4,15						E5,12	
+H	E5,14						T			T			T	
+										H	H			
+	T				H			H			E3,6			H
+								E1,16						
+E3,10		H		H			H	T		E1,16	T			E1,12
+								H						
+					E4,2	H		E1,15						
+				E4,15		E2,14				T				
+T		E1,9				T	E1,14					H		
+		T		T	T			T				E4,9		T
+		H					T		H		H			
+											E3,3			
+											T			
+		E5,4	H					H		H	H			H
+		T	E1,8	H		H			E5,14			T		
+						E3,11		E4,11	T	E4,12		H		
+						T		T			E3,0	E4,5		E1,11
+						H								
+						E1,10								
+...	...	...	...	...	...	...	...	...	...	...	F	...	...	...
+	H		T	E5,10			H	H		T		T	H	
+				T		T	E4,10		H					
+									E4,10					
+		H							T					T
+	E3,11	E4,0				H	T	E3,8					E3,9	
+	T					E4,6						H	T	
+...	...	F	...	...	...	...	...	...	...	...	...	...	...	...
+						T	H							
+H					H		E4,6	T				E2,3		H
+E3,7												T		E4,7
+T			H		E2,0	H	T							T
+			E5,3											
+...	...	...	...	...	F	...	...	...	...	...	...	...	...	...
+	H					E1,5	H	H	H					
+									E5,5	H				
+										E3,9				
+	E4,7					T				T				
+	T		T									H		
+				H				E5,3				E1,2		
+				E2,8			E2,4		T				H	
+				T										
+H				H		H	T	T				T	E3,6	H
+E1,6				E3,5		E4,1							T	E5,2
+				T		T	H	H						T
+								E2,1						
+								T						
+T				H		H	E4,0	H	H	H				
+			H							E1,8				
+			E2,1											
+H			T					E1,0						
+...	...	...	...	...	...	...	F	...	...	...	...	...	...	...
+				E3,2		E1,0								
+...	...	...	...	...	...	...	...	F	...	...	...	...	...	...
+E5,1	H			T					E2,3	T		H	H	
+T	E3,4		H						T					
+...	...	...	...	...	...	F	...	...	...	...	...	...	...	...
+H	T		E1,0									E1,1	E2,4	
+													T	
+...	...	...	F	...	...	...	...	...	...	...	...	...	...	...
+E1,0														
+F	...	...	...	...	...	...	...	...	...	...	...	...	...	...
+												T		H
+												H		E2,0
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F
+				H									H	
+										H		E1,0	E4,0	
+...	...	...	...	...	...	...	...	...	...	...	...	...	F	...
+				E1,1						E3,5				
+				T					H					
+									E3,0	T				
+...	...	...	...	...	...	...	...	...	...	...	...	F	...	...
+	H													
+	E4,0			H										
+...	...	...	...	...	...	...	...	...	F	...	...	...	...	...
+														
+...	F	...	...	...	...	...	...	...	...	...	...	...	...	...
+				E1,0										
+...	...	...	...	F	...	...	...	...	...	...	...	...	...	...
+										H				
+										E3,2				
+										T				
+										H				
+										E2,0				
+...	...	...	...	...	...	...	...	...	...	F	...	...	...	...
 ***********************
 Philosophers Terminated
 2;c27wu@linux032: ~/cs343/a31;~/cs343/a3%                                                                                                                   ☁  a3 [master] ⚡ 
 
-Script done on Mon 22 Oct 2012 07:41:34 PM EDT
+Script done on Mon 22 Oct 2012 07:49:20 PM EDT

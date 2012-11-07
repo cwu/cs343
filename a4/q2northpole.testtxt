@@ -1,0 +1,567 @@
+Script started on Wed 07 Nov 2012 12:02:19 AM EST
+c27wu@linux028:~/cs343/a4$ echo "test too many parameters"
+test too many parameters
+c27wu@linux028:~/cs343/a4$ ./northpole 1 2 3 4 5 6
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ echo "test illegal N"
+test illegal N
+c27wu@linux028:~/cs343/a4$ ./northpole a
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 0
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole -1
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ echo "test illegal E"
+test illegal E
+c27wu@linux028:~/cs343/a4$ ./northpole 2 a
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 0
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 -1
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ echo "test illegal seed"
+test illegal seed
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 a
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 0
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 -1
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ echo "test illegal C"
+test illegal C
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 2 a
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 2 -1
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ echo "test illegal D"
+test illegal D
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 2 2 a
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2 2 2 -1
+Usage: ./northpole [ N (> 0) [ E (> 0) [ seed (> 0) [ C (>= 0) [ D (>= 0) ] ] ] ] ]
+
+c27wu@linux028:~/cs343/a4$ echo "default case"
+default case
+c27wu@linux028:~/cs343/a4$ ./northpole 
+Sa	E1	E2	E3	R1	R2	R3	R4	R5	
+--	--	--	--	--	--	--	--	--	
+		S							
+		W					S		
+							V		
+							I		
+			S				B 1		
+			W						
+			H						
+			B 1					S	
+	S							V	
+	W	H							
+		B 2		S		S			
+						V			
+						I			
+						B 2		I	
+S								B 3	
+N									
+B	H								
+A	B 3			V					
+C	U								
+	C	U			S				
+		C	U	I					
+	B 1		C	B 4	V				
+B 2		c	B 3		I				
+			U 3						
+			c						
+U 2			W						
+c	U 1								
+	c	W	H						
+N	W	H	B 1		B 5				
+A		B 2							
+D					U				
+				U	D				
+	H			D				U	
+						U		D	
+						D	U		
+B 1	B 3				B 2		D		
+				d		B 4	B 3	B 5	
+				V				U 5	
+				I		U 4		d	
+						d	U 3	V	
+					U 2	V	d		
+					d				
+U 1					V		V		
+d									
+N				B 1				I	
+A									
+C	U					I			
+	C	U					I		
+		C	U		I				
+B 1			C		B 5	B 3	B 4	B 2	
+	c	B 3	B 2						
+		U 3							
+		c	U 2						
+U 1	W		c						
+c		W							
+		H							
+	H	B 1							
+N	B 2		W						
+A									
+D					U				
+					D		U		
+						U	D		
+			H			D		U	
+				U				D	
+B 1			B 3	D	B 4		B 3	B 2	
+				B 5		d			
+				U 5					
+				d	U 4	V			
+					d	I	U 3		
+				V	V		d		
+				I				U 2	
+U 1							V	d	
+d						B 1		V	
+N				B 2	I				
+A									
+C			U						
+	U		C				I		
+	C	U						I	
+B 1	B 3	C	B 2		B 3		B 4	B 5	
+	U 3	c							
+	c		U 2						
+U 1			c						
+c									
+...	...	F	...	...	...	...	...	...	
+N									
+...	F	...	...	...	...	...	...	...	
+									
+...	...	...	F	...	...	...	...	...	
+A									
+D								U	
+							U	D	
+					U		D		
+				U	D				
+				D		U			
+B 3				B 2	B 5	D	B 4	B 1	
+						d			
+...	...	...	...	...	...	F	...	...	
+					U 5				
+					d				
+...	...	...	...	...	F	...	...	...	
+							U 4		
+							d		
+...	...	...	...	...	...	...	F	...	
+U 3									
+d				U 2					
+				d					
+...	...	...	...	F	...	...	...	...	
+								U 1	
+								d	
+...	...	...	...	...	...	...	...	F	
+N									
+A									
+F	...	...	...	...	...	...	...	...	
+Workshop closed
+c27wu@linux028:~/cs343/a4$ echo "test elves cannot consult by specifying fewer than 3 elve s"
+test elves cannot consult by specifying fewer than 3 elves
+c27wu@linux028:~/cs343/a4$ ./northpole 2 2
+Sa	E1	E2	R1	R2	R3	R4	R5	
+--	--	--	--	--	--	--	--	
+		S						
+		W					S	
+							V	
+							I	
+			S				B 1	
+	S	H	V					
+		X						
+...	...	F	...	...	...	...	...	
+			I					
+			B 2			S		
+	W					V		
+	H							
+	X							
+...	F	...	...	...	...	...	...	
+S				S				
+				V		I		
+N						B 3		
+B				I	S			
+				B 4	V			
+					I			
+A					B 5			
+D					U			
+				U	D			
+				D		U		
+			U			D		
+			D				U	
+B 2			B 5	B 3	B 1	B 4	D	
+			U 5				d	
+			d			U 4		
+						d		
+				U 3		V	V	
+U 2				d				
+d			V	V	U 1	I		
+N					d	B 1		
+B							I	
+			I				B 2	
+			B 3	I	V			
+				B 4	I			
+A					B 5			
+D					U			
+				U	D			
+			U	D				
+			D				U	
+						U	D	
+B 3			B 5	B 1	B 2	D	B 4	
+			U 5			d		
+			d			V	U 4	
+U 3							d	
+d								
+N					U 2			
+			V	U 1	d	I	V	
+B			I	d		B 1		
+			B 2	V	V		I	
+				I			B 3	
+				B 4	I			
+A					B 5			
+D					U			
+				U	D			
+				D			U	
+			U				D	
+			D			U		
+B 4				B 3	B 1	D	B 2	
+			d			B 5		
+...	...	...	F	...	...	...	...	
+						U 5		
+						d		
+...	...	...	...	...	...	F	...	
+U 4								
+d				U 3				
+				d				
+...	...	...	...	F	...	...	...	
+							U 2	
+							d	
+...	...	...	...	...	...	...	F	
+N					U 1			
+					d			
+...	...	...	...	...	F	...	...	
+A								
+F	...	...	...	...	...	...	...	
+Workshop closed
+c27wu@linux028:~/cs343/a4$ echo "test bound has effect with a large number of consulting a nd delivering. specify a low bound (1) to increase the chance of the bound not taking effe ct if it's incorrectly implemented"
+test bound has effect with a large number of consulting and delivering. specify a low bound (1) to increase the chance of the bound not taking effect if it's incorrectly implemented
+c27wu@linux028:~/cs343/a4$ ./northpole 1 5 1009 8 8
+Sa	E1	E2	E3	E4	E5	R1	R2	R3	R4	R5	
+--	--	--	--	--	--	--	--	--	--	--	
+		S									
+		W					S				
+							V				
+							I				
+							B 1		S		
+			S						V		
+			W					S	I		
+	S	H							B 2		
+		B 1	H			S		V			
+S	W		B 2	S		V		I			
+	H							B 3		S	
+N	B 3			W						V	
+A											
+C					S						
+	U				W						
+	C		U			I				I	
+		U	C		H						
+B 3	B 2	C	B 1	H	B 1	B 4				B 5	
+U 3		c		B 2							
+c	U 2										
+N	c		U 1								
+A		W	c								
+D										U	
+	W					U				D	
+			W			D		U			
+	H	H						D	U		
+							U		D		
+B 2	B 3	B 4	H			B 3	D	B 4	B 5	B 1	
+			B 5				d		U 5		
+									d		
+								U 4	V		
+								d			
+						U 3	V	V			
+U 2						d					
+d							I	I		U 1	
+										d	
+										V	
+N						V	B 2	B 1	I	I	
+A						I				B 3	
+C	U 2										
+	C			U 2							
+				C	U 2						
+B 2	B 1			B 3	C	B 5			B 4		
+					c						
+				U 3	W						
+				c							
+U 2				W	H						
+c											
+N	U 1										
+A	c			H	B 3						
+D						U					
+	W					D					
+	H								U		
+									D	U	
+							U			D	
+							D	U			
+B 1	B 5			B 4		B 3	B 4	D	B 2	B 5	
+								d		U 5	
+							U 4			d	
+						U 3	d	V		V	
+						d					
+						V	V				
+							I		U 2		
+U 1						I			d		
+d							B 1				
+N						B 2		I	V	I	
+A											
+C					U 2						
+			U 2		C						
+		U 2	C								
+B 1		C						B 4	I	B 3	
+		B 2	B 3		c				B 5		
+			U 3		W						
+		U 2	c								
+		c									
+U 1		W									
+c		H									
+		B 3	W		H						
+N					B 4						
+A											
+D									U		
+			H					U	D		
+								D		U	
+						U				D	
+						D	U				
+B 3			B 5			B 4	D	B 5	B 2	B 1	
+							d	U 5			
+						U 4		d			
+U 3						d	V				
+d								V	U 2		
+						V		I	d	U 1	
+N								B 1	V	d	
+A											
+C		U 2					I				
+	U 2	C				I				V	
+	C			U 2							
+B 2		B 1		C		B 3	B 2		I	I	
+	B 3			c					B 5	B 4	
+	U 3										
+U 2	c										
+c		U 1									
+N	W	c		W							
+A											
+D	H	W		H					U		
+									D	U	
+						U				D	
+		H				D	U				
+							D	U			
+B 1	B 3	B 5		B 4		B 3		D	B 2		
+							d	B 4		B 5	
+										U 5	
+										d	
+							V	U 4		V	
+						U 3		d			
+						d			U 2		
+									d		
+								V	V		
+U 1							I	I			
+d								B 1			
+N						V	B 2		I	I	
+A											
+C	U 2										
+	C		U 2			I					
+			C		U 2						
+B 2	B 1		B 3		C	B 5			B 3	B 4	
+					c						
+			U 3		W						
+U 2			c								
+c	U 1		W								
+	c										
+	W				H						
+N					B 3						
+A											
+D	H		H			U					
+						D				U	
+									U	D	
+							U		D		
+							D	U			
+B 3	B 5		B 4			B 4	B 5	D	B 1	B 2	
+								d			
+							U 5	V			
+						U 4	d	I			
+U 3						d					
+d						V	V			U 2	
+N							I		U 1	d	
+A						I		B 1	d		
+C					U 2				V	V	
+		U 2			C						
+		C		U 2						I	
+B 1		B 2		C	B 3	B 3	B 2		I	B 4	
+				c	U 3				B 5		
+		U 2			c						
+U 1		c									
+c				W	W						
+				H							
+		W		B 3	H						
+N					B 4						
+A											
+D		H							U		
+									D	U	
+						U				D	
+						D	U				
+							D	U			
+B 2		B 5				B 3		D	B 1		
+							d	B 4		B 5	
+										U 5	
+								U 4		d	
+								d			
+								V			
+						U 3	V	I			
+U 2						d					
+d									U 1	V	
+						V		B 1	d		
+							I		V		
+N							B 2				
+A											
+C				U 2						I	
+	U 2			C							
+	C		U 2			I					
+B 2			C	B 1		B 4			I	B 3	
+	B 3		c						B 5		
+	U 3		W								
+	c										
+U 2	W										
+c				U 1							
+N				c							
+A											
+D									U		
+	H					U			D		
+			H	W		D				U	
+							U			D	
+							D	U			
+B 2	B 3		B 4	H		B 1		D	B 3		
+				B 5			B 5	B 4		d	
+							U 5			V	
+							d				
+							V				
+							I	U 4			
+								d			
+								V	U 3	I	
+									d		
+									V		
+U 2									I		
+d						U 1					
+						d					
+N						V	B 1	I	B 3	B 2	
+A											
+C	U 2					I					
+	C	U 2									
+		C			U 2						
+B 2	B 1				C	B 5		B 4			
+		c			B 3						
+					U 3						
+U 2					c						
+c		W			W						
+	U 1	H									
+N	c	B 3									
+A	W				H						
+D						U					
+						D		U			
+	H							D	U		
+									D	U	
+							U			D	
+B 1	B 5				B 4	B 2	D	B 4	B 3		
+							B 5			d	
+...	...	...	...	...	...	...	...	...	...	F	
+							U 5				
+							d				
+...	...	...	...	...	...	...	F	...	...	...	
+								U 4			
+								d			
+...	...	...	...	...	...	...	...	F	...	...	
+									U 3		
+									d		
+...	...	...	...	...	...	...	...	...	F	...	
+						U 2					
+						d					
+...	...	...	...	...	...	F	...	...	...	...	
+U 1											
+d											
+N											
+A											
+C		U 2									
+		C		U 2							
+			U 2	C							
+B 3		B 1	C	B 2							
+U 3			c								
+c			W	U 2							
+		U 1		c							
+N		c		W							
+B		W		H							
+A			H	B 3							
+C				U							
+	U			C							
+	C	H			U						
+B 2	B 3	B 2	B 1	B 1	C						
+					c						
+					W						
+	U 3				H						
+U 2	c										
+c	W			U 1							
+N	H			c	B 3						
+A	B 4										
+C				W	U 1						
+		U 1		H	C						
+		C	U 1								
+B 3		B 2	C	B 2	B 1						
+			c								
+U 3			W								
+c		U 2									
+N		c	H		U 1						
+B		W			c						
+A		H	B 3		W						
+C			U								
+			C	U							
+	U			C							
+B 1	C	B 1			H						
+	B 2		B 3	c							
+			U 3								
+			c								
+	U 2		W	W							
+U 1	c										
+c											
+N			H	H	B 2						
+...	F	...	...	...	...	...	...	...	...	...	
+B			B 3								
+A											
+C			U								
+			C		U						
+		U			C						
+B 1		C	B 2	B 1							
+		B 3			c						
+		U 3									
+		c	U 2								
+U 1			c								
+c											
+...	...	...	...	...	F	...	...	...	...	...	
+											
+...	...	F	...	...	...	...	...	...	...	...	
+				U							
+N				X							
+...	...	...	F	...	...	...	...	...	...	...	
+											
+...	...	...	...	F	...	...	...	...	...	...	
+A											
+F	...	...	...	...	...	...	...	...	...	...	
+Workshop closed
+c27wu@linux028:~/cs343/a4$ echo "as we can see the elves and reindeer alternate consulting  and delivering despite the reindeer had a higher priority"
+as we can see the elves and reindeer alternate consulting and delivering despite the reindeer had a higher priority
+c27wu@linux028:~/cs343/a4$ echo "test extremely large case. pipe to /dev/null since there  is not enough space but it should deadlock or assert should trigger in q2workspace.cc if t here are any concurrency errors"
+test extremely large case. pipe to /dev/null since there is not enough space but it should deadlock or assert should trigger in q2workspace.cc if there are any concurrency errors
+c27wu@linux028:~/cs343/a4$ ./northpole 10 100 100923 100 100 > /dev/null
+c27wu@linux028:~/cs343/a4$ ./northp5
+c27wu@linux028:~/cs343/a4$ exit
+
+Script done on Wed 07 Nov 2012 12:18:50 AM EST
