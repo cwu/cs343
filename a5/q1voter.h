@@ -10,6 +10,8 @@ _Task Voter {
     unsigned int id;
     TallyVotes &voteTallier;
     Printer &printer;
+
+    void main();
   public:
 	enum States {
         Start = 'S',
