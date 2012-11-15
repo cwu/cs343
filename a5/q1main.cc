@@ -5,14 +5,13 @@
 #include <iostream>
 #include <sstream>
 
-#include <cstdlib>
-
 #include "MPRNG.h"
 #include "q1printer.h"
 #include "q1tallyvotes.h"
 #include "q1voter.h"
 
 using namespace std;
+#include <cstdlib>
 
 MPRNG randomGen;
 
@@ -56,5 +55,5 @@ void uMain::main() {
         usage(argv);
     }
 
-    cout << "parsed";
+    Printer printer(V);
 }

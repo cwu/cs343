@@ -1,6 +1,8 @@
 #ifndef Q1VOTER_H
 #define Q1VOTER_H
 
+#include <uC++.h>
+
 #include "q1tallyvotes.h"
 
 class Printer;
