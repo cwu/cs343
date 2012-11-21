@@ -18,7 +18,11 @@ void Voter::main() {
 
     // randomly cast a ballot
     bool ballot = randomGen(1) == 1;
+    printer.print(id, Voter::Vote, ballot);
 
     // submit vote
-    voteTallier.vote(id, ballot);
+    bool outcome = voteTallier.vote(id, ballot);
+
+    // start the tour!
+    printer.print(id, Voter::Finished, outcome);
 }

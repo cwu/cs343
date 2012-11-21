@@ -7,7 +7,7 @@
 
 #include "MPRNG.h"
 #include "q1printer.h"
-#include "q1tallyvotes.h"
+#include "q1tallyVotes.h"
 #include "q1voter.h"
 
 using namespace std;
@@ -56,4 +56,13 @@ void uMain::main() {
     }
 
     Printer printer(V);
+    TallyVotes tallier(G, printer);
+    Voter *voters[V];
+    for (unsigned int voter = 0; voter < V; voter++) {
+        voters[voter] = new Voter(voter, tallier, printer);
+    }
+
+    for (unsigned int voter = 0; voter < V; voter++) {
+        delete voters[voter];
+    }
 }

@@ -3,6 +3,11 @@
 
 #include <uC++.h>
 
+#include <list>
+#include <utility>
+
+#include "AutomaticSignal.h"
+
 class Printer;
 
 #if defined( IMPLTYPE_LOCK )		// mutex/condition solution
@@ -13,22 +18,29 @@ class TallyVotes {
 #elif defined( IMPLTYPE_EXT )		// external scheduling monitor solution
 // includes for this kind of vote-tallier
 _Monitor TallyVotes {
-	// private declarations for this kind of vote-tallier
 
 #elif defined( IMPLTYPE_INT )		// internal scheduling monitor solution
 // includes for this kind of vote-tallier
 _Monitor TallyVotes {
-	// private declarations for this kind of vote-tallier
+    uCondition needVoters;
 
 #elif defined( IMPLTYPE_AUTO )		// automatic-signal monitor solution
 // includes for this kind of vote-tallier
 _Monitor TallyVotes {
-	// private declarations for this kind of vote-tallier
+    AUTOMATIC_SIGNAL;
+
+    int numWaiting;
 
 #elif defined( IMPLTYPE_TASK )		// internal/external scheduling task solution
 _Task TallyVotes {
-	// private declarations for this kind of vote-tallier
-
+    public:
+        virtual ~TallyVotes();
+    private:
+        void main();
+        uCondition needVoters;
+        uCondition serverNeedsWork;
+        bool done;
+        std::list<std::pair<int, bool> > workQueue;
 #else
 #error unsupported voter type
 #endif
@@ -36,6 +48,12 @@ _Task TallyVotes {
 	// common declarations
     unsigned int group;
     Printer &printer;
+
+    unsigned int votersForPictures;
+    unsigned int votersForStatues;
+    unsigned int numNeededVoters;
+    bool winner;
+
   public:
 	// common interface
 	TallyVotes( unsigned int group, Printer &printer );

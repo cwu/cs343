@@ -4,7 +4,7 @@ CXX = u++										# compiler
 CXXFLAGS = -g -Wall -Wno-unused-label -MMD -DIMPLTYPE_${TYPE}
 MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
 
-OBJECTS = q1tallyvotes${TYPE}.o	q1voter.o q1main.o q1printer.o
+OBJECTS = q1tallyVotes${TYPE}.o	q1voter.o q1main.o q1printer.o
 DEPENDS = ${OBJECTS:.o=.d}						# substitute ".o" with ".d"
 EXEC = vote
 
@@ -27,7 +27,7 @@ else											# implementation type has changed
 .PHONY : ${EXEC}
 ${EXEC} :
 	rm -f ImplType
-	touch q1tallyvotes.h
+	touch q1tallyVotes.h
 	${MAKE} ${EXEC} TYPE="${TYPE}"
 endif
 endif

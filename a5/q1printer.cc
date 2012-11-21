@@ -35,7 +35,7 @@ void Printer::print( unsigned int id, Voter::States state ) {
 void Printer::print( unsigned int id, Voter::States state, bool vote ) {
     if (state == Voter::Finished) {
         flushStates();
-        printFinished(state, vote);
+        printFinished(id, vote);
         return;
     }
 

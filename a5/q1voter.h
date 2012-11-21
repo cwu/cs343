@@ -3,7 +3,7 @@
 
 #include <uC++.h>
 
-#include "q1tallyvotes.h"
+#include "q1tallyVotes.h"
 
 class Printer;
 _Task Voter {
