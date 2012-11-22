@@ -5,6 +5,7 @@
 
 #define AUTOMATIC_SIGNAL \
     uCondition waitPred
+
 #define WAITUNTIL(pred, before, after) \
     if (!(pred)) { \
         before; \
@@ -14,6 +15,7 @@
         } \
         after; \
     }
+
 #define RETURN(expr...) \
     while (!waitPred.empty()) { waitPred.signal(); } \
     return (expr)

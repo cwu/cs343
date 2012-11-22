@@ -3,7 +3,7 @@
 
 #include <uC++.h>
 
-#include <list>
+#include <queue>
 #include <utility>
 
 #include "AutomaticSignal.h"
@@ -13,7 +13,10 @@ class Printer;
 #if defined( IMPLTYPE_LOCK )		// mutex/condition solution
 // includes for this kind of vote-tallier
 class TallyVotes {
- 	// private declarations for this kind of vote-tallier
+    uCondLock bargingLock;
+    uCondLock needVotersLock;
+    uOwnerLock mutex;
+    bool preventBarging;
 
 #elif defined( IMPLTYPE_EXT )		// external scheduling monitor solution
 // includes for this kind of vote-tallier
@@ -28,8 +31,7 @@ _Monitor TallyVotes {
 // includes for this kind of vote-tallier
 _Monitor TallyVotes {
     AUTOMATIC_SIGNAL;
-
-    int numWaiting;
+    bool signalDone;
 
 #elif defined( IMPLTYPE_TASK )		// internal/external scheduling task solution
 _Task TallyVotes {
@@ -40,7 +42,7 @@ _Task TallyVotes {
         uCondition needVoters;
         uCondition serverNeedsWork;
         bool done;
-        std::list<std::pair<int, bool> > workQueue;
+        std::queue<std::pair<int, bool> > workQueue;
 #else
 #error unsupported voter type
 #endif

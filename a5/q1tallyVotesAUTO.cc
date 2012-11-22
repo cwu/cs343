@@ -5,25 +5,46 @@
 
 #include <assert.h>
 
-#include <iostream>
 using namespace std;
 
 TallyVotes::TallyVotes( unsigned int group, Printer &printer )
-    : group(group), printer(printer), votersForPictures(0), votersForStatues(0), numWaiting(0) {
+    : group(group), printer(printer), votersForPictures(0), votersForStatues(0),
+      numNeededVoters(group) {
 }
 
 bool TallyVotes::vote( unsigned int id, bool ballot ) {
-    unsigned int *voteBucket = ballot ? &votersForPictures : &votersForStatues;
-    unsigned int nessesaryTotalVotes = (totalVotes() / group + 1) * group;
-    cout << nessesaryTotalVotes << endl;
-    *voteBucket++;
+    // keep track of number of needed voters
+    numNeededVoters--;
+
+    // keep track of the vote
+    if (ballot) {
+        votersForPictures++;
+    } else {
+        votersForStatues++;
+    }
+
+    // if we don't have enough voters then block
+    if (numNeededVoters == 0) {
+        printer.print(id, Voter::Complete);
+
+        numNeededVoters++; // unmark the number of needed voters
+
+        // determine the winner
+        winner = votersForPictures > votersForStatues;
+
+        // reset the votes
+        votersForPictures = 0;
+        votersForStatues = 0;
+        signalDone = true;
+    } else {
+        signalDone = false;
+    }
+
     WAITUNTIL(
-        totalVotes() >= nessesaryTotalVotes,
-        numWaiting++;
-        printer.print(id, Voter::Block, (unsigned int) numWaiting),
-        numWaiting--;
-        printer.print(id, Voter::Unblock, (unsigned int) totalVotes() - 2)
+        signalDone,
+        printer.print(id, Voter::Block, group - numNeededVoters),
+        printer.print(id, Voter::Unblock, group - (++numNeededVoters))
     );
 
-    RETURN(false);
+    RETURN(winner);
 }

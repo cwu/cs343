@@ -29,7 +29,7 @@ void TallyVotes::main() {
 
         // dequeue the work
         pair<int, bool> work = workQueue.front();
-        workQueue.pop_front();
+        workQueue.pop();
 
         int id = work.first;
         bool ballot = work.second;
@@ -70,7 +70,7 @@ void TallyVotes::main() {
 bool TallyVotes::vote( unsigned int id, bool ballot ) {
 
     // enqueue the work
-    workQueue.push_back(make_pair(id, ballot));
+    workQueue.push(make_pair(id, ballot));
 
     // signal that there is work to do and block until all voters are in
     serverNeedsWork.signal();

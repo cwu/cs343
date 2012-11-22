@@ -51,7 +51,8 @@ void uMain::main() {
     if ((argc >= 2 && (!convert(V, argv[1]) || V <= 0)) ||
         (argc >= 3 && (!convert(G, argv[2]) || G <= 0)) ||
         (argc >= 4 && (!convert(seed, argv[3]) || seed <= 0)) ||
-        V % G != 0) {
+        G % 2 != 1 || // odd group sizes
+        V % G != 0) { // even groups
         usage(argv);
     }
 
