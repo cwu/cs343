@@ -12,7 +12,7 @@ Printer::Printer( unsigned int voters )
     }
     cout << endl;
     for (unsigned int voter = 0; voter < voters ; voter++) {
-        cout << "======" << '\t';
+        cout << "=======" << '\t';
     }
     cout << endl;
 }

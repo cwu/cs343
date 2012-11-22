@@ -1,0 +1,408 @@
+Script started on Wed 21 Nov 2012 09:26:57 PM EST
+e2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test too many parameters"
+2;echo "test too many parameters"1;echotest too many parameters
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 1 1 1 1
+2;./vote 1 1 1 11;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test invalid V"
+2;echo "test invalid V"1;echotest invalid V
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote a
+2;./vote a1;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote -1
+2;./vote -11;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 0
+2;./vote 01;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test invalid G"
+2;echo "test invalid G"1;echotest invalid G
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 a
+2;./vote 6 a1;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 -1
+2;./vote 6 -11;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 0
+2;./vote 6 01;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test invalid Seed"
+2;echo "test invalid Seed"1;echotest invalid Seed
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 3 a
+2;./vote 6 3 a1;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 3 -1
+2;./vote 6 3 -11;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 3 0
+2;./vote 6 3 01;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ 
+
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test bad V and G pairs"
+2;echo "test bad V and G pairs"1;echotest bad V and G pairs
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 5 3
+2;./vote 5 31;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test even G"
+2;echo "test even G"1;echotest even G
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 6 2
+2;./vote 6 21;./voteUsage: ./vote  Voters (> 0 & V mod G = 0, default 6) Group (> 0 & odd, default 3)  Seed (> 0)
+2;c27wu@linux028: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ 
+
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test External Scheduling Solution."
+2;echo "Test External Scheduling Solution."1;echoTest External Scheduling Solution.
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test default case. watch for correct number of voters and the correct outcome based on the votes. Al sso that the last voter prints the completed message and the correct numbers for blocked/unblocked"
+2;echo 1;echoTest default case. watch for correct number of voters and the correct outcome based on the votes. Also that the last voter prints the completed message and the correct numbers for blocked/unblocked
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote
+2;./vote1;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S			
+			V 1			
+	V 1		B 1	S	S	
+V 0	B 2					
+C						
+F 1	...	...	...	...	...	
+	U 1					
+...	F 1	...	...	...	...	
+			U 0			
+...	...	...	F 1	...	...	
+					V 1	
+				V 0	B 1	
+		V 0		B 2		
+		C				
+...	...	F 0	...	...	...	
+				U 1		
+...	...	...	...	F 0	...	
+					U 0	
+...	...	...	...	...	F 0	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test medium case"
+2;echo "test medium case"1;echotest medium case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 15 5
+2;./vote 15 51;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14	
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	
+S	S	S	S												
+			V 1												
+			B 1	S	S	S	S	S	S	S	S	S	S	S	
+													V 0		
+	V 0												B 2		
+V 1	B 3														
+B 4														V 1	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+U 3															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+	U 2														
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+													U 1		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+			U 0		V 0				V 0						
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+					B 1	V 0		V 1	B 2						
+				V 0		B 3	V 1	B 4		V 0		V 0			
+							C								
+...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	
+								U 3							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+		V 1				U 2									
+...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	
+									U 1		V 0				
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+		B 4		B 3						B 1	C	B 2			
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+		U 3													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+				U 2											
+...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	
+										U 0					
+...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test large case, checking for deadlocking. results are omitted to /dev/null"
+2;echo 1;echoTest large case, checking for deadlocking. results are omitted to /dev/null
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 121 11 > /dev/null
+2;./vote 121 11 > /dev/null1;./vote2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo $?
+2;echo 01;echo0
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test Internal Scheduling Solution"
+2;echo "Test Internal Scheduling Solution"1;echoTest Internal Scheduling Solution
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "default small case"
+2;echo "default small case"1;echodefault small case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ make TYPE=INT
+2;make TYPE=INT1;makerm -f ImplType
+touch q1tallyVotes.h
+make vote TYPE="INT"
+make[1]: Entering directory `/u5/c27wu/cs343/a5'
+echo "IMPLTYPE=INT" > ImplType
+make[1]: Leaving directory `/u5/c27wu/cs343/a5'
+make[1]: Entering directory `/u5/c27wu/cs343/a5'
+u++										 -g -Wall -Wno-unused-label -MMD -DIMPLTYPE_INT   -c -o q1tallyVotesINT.o q1tallyVotesINT.cc
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+u++										 -g -Wall -Wno-unused-label -MMD -DIMPLTYPE_INT   -c -o q1voter.o q1voter.cc
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+u++										 -g -Wall -Wno-unused-label -MMD -DIMPLTYPE_INT   -c -o q1main.o q1main.cc
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+u++										 -g -Wall -Wno-unused-label -MMD -DIMPLTYPE_INT   -c -o q1printer.o q1printer.cc
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+u++										 q1tallyVotesINT.o q1voter.o q1main.o q1printer.o -o vote
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+make[1]: Leaving directory `/u5/c27wu/cs343/a5'
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote
+2;./vote1;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S			
+			V 1			
+	V 1		B 1	S	S	
+V 0	B 2					
+C						
+F 1	...	...	...	...	...	
+	U 1					
+...	F 1	...	...	...	...	
+			U 0			
+...	...	...	F 1	...	...	
+					V 1	
+				V 0	B 1	
+		V 0		B 2		
+		C				
+...	...	F 0	...	...	...	
+				U 1		
+...	...	...	...	F 0	...	
+					U 0	
+...	...	...	...	...	F 0	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test medium case"
+2;echo "test medium case"1;echotest medium case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 15 5
+2;./vote 15 51;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14	
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	
+S	S	S	S												
+			V 1												
+			B 1	S	S	S	S	S	S	S	S	S	S	S	
+													V 0		
+	V 0												B 2		
+V 1	B 3														
+B 4														V 1	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+U 3															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+	U 2														
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+													U 1		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+			U 0		V 0				V 0						
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+					B 1	V 0		V 1	B 2						
+				V 0		B 3	V 1	B 4		V 0		V 0			
+							C								
+...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	
+								U 3							
+...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	...	
+		V 1				U 2									
+...	...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	
+									U 1		V 0				
+...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	...	
+					U 0										
+...	...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	
+		B 4		B 3						B 1	C	B 2			
+...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	
+		U 3													
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+				U 2											
+...	...	...	...	F 0	...	...	...	...	...	...	...	...	...	...	
+												U 1			
+...	...	...	...	...	...	...	...	...	...	...	...	F 0	...	...	
+										U 0					
+...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test large case"
+2;echo "test large case"1;echotest large case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 121 11 > /dev/null
+2;./vote 121 11 > /dev/null1;./vote2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ 
+
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test Lock Solution"
+2;echo "Test Lock Solution"1;echoTest Lock Solution
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ make TYPE=LOCK > /dev/null
+2;make TYPE=LOCK > /dev/null1;makeuC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test small case"
+2;echo "test small case"1;echotest small case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote
+2;./vote1;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S			
+			V 1			
+	V 1		B 1	S	S	
+V 0	B 2					
+C						
+F 1	...	...	...	...	...	
+			U 1			
+...	...	...	F 1	...	...	
+	U 0					
+...	F 1	...	...	...	...	
+					V 1	
+				V 0	B 1	
+		V 0		B 2		
+		C				
+...	...	F 0	...	...	...	
+					U 1	
+...	...	...	...	...	F 0	
+				U 0		
+...	...	...	...	F 0	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test medium case"
+2;echo "test medium case"1;echotest medium case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 15 5
+2;./vote 15 51;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14	
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	
+S	S	S	S												
+			V 1												
+			B 1	S	S	S	S	S	S	S	S	S	S	S	
+													V 0		
+	V 0												B 2		
+V 1	B 3														
+B 4														V 1	
+														C	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+			U 3												
+...	...	...	F 1	...	...	...	...	...	...	...	...	...	...	...	
+													U 2		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+	U 1														
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+U 0					V 0				V 0						
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+					B 1	V 0		V 1	B 2						
+				V 0		B 3	V 1	B 4		V 0		V 0			
+							C								
+.... results ommited ....
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test large case"
+2;echo "test large case"1;echotest large case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 121 11 > /dev/null
+2;./vote 121 11 > /dev/null1;./vote2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo $?
+2;echo 01;echo0
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test Automatic Scheduling Solution"
+2;echo "Test Automatic Scheduling Solution"1;echoTest Automatic Scheduling Solution
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ make TYPE=AUTO > /dev/null
+2;make TYPE=AUTO > /dev/null1;makeuC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test small case"
+2;echo "test small case"1;echotest small case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote
+2;./vote1;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S			
+			V 1			
+	V 1		B 1	S	S	
+V 0	B 2					
+C						
+F 1	...	...	...	...	...	
+			U 1			
+...	...	...	F 1	...	...	
+	U 0					
+...	F 1	...	...	...	...	
+					V 1	
+				V 0	B 1	
+		V 0		B 2		
+		C				
+...	...	F 0	...	...	...	
+					U 1	
+...	...	...	...	...	F 0	
+				U 0		
+...	...	...	...	F 0	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test medium case"
+2;echo "test medium case"1;echotest medium case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 15 5
+2;./vote 15 51;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14	
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	
+S	S	S	S												
+			V 1												
+			B 1	S	S	S	S	S	S	S	S	S	S	S	
+													V 0		
+V 1	V 0												B 2		
+B 4	B 3				V 0	V 0			V 0					V 1	
+		U 0													
+... results ommited ....
+...	...	F 0	...	...	...	...	...	...	...	...	...	...	...	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test large case"
+2;echo "test large case"1;echotest large case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 121 11 > /dev/null ; echo $?
+2;./vote 121 11 > /dev/null; echo 01;./vote0
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "Test Task Solution"
+2;echo "Test Task Solution"1;echoTest Task Solution
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ make TYPE=TASK > /dev/null
+2;make TYPE=TASK > /dev/null1;makeuC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+uC++ Version 6.0.0 (single processor) (debug) (no yield) (no verify) (no profile)
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test small case"
+2;echo "test small case"1;echotest small case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote
+2;./vote1;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	
+=======	=======	=======	=======	=======	=======	
+S	S	S	S			
+			V 1	S	S	
+V 0	V 1		B 1			
+B 3	B 2					
+C						
+U 2						
+F 1	...	...	...	...	...	
+	U 1					
+...	F 1	...	...	...	...	
+			U 0			
+...	...	...	F 1	...	...	
+					V 1	
+				V 0	B 1	
+		V 0		B 2		
+		B 3				
+		C				
+		U 2				
+...	...	F 0	...	...	...	
+				U 1		
+...	...	...	...	F 0	...	
+					U 0	
+...	...	...	...	...	F 0	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test medium case"
+2;echo "test medium case"1;echotest medium case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 15 5
+2;./vote 15 51;./voteVoter0	Voter1	Voter2	Voter3	Voter4	Voter5	Voter6	Voter7	Voter8	Voter9	Voter10	Voter11	Voter12	Voter13	Voter14	
+=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	=======	
+S	S	S	S												
+			V 1	S	S	S	S	S	S	S	S	S	S	S	
+	V 0		B 1										V 0		
+V 1	B 3												B 2	V 1	
+B 4					V 0				V 0					B 5	
+						V 0								C	
+														U 4	
+...	...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	
+U 3															
+F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	...	
+	U 2							V 1							
+...	F 1	...	...	...	...	...	...	...	...	...	...	...	...	...	
+							V 1			V 0		V 0	U 1		
+...	...	...	...	...	...	...	...	...	...	...	...	...	F 1	...	
+			U 0	V 0											
+.... results ommited ....
+...	...	...	...	...	...	...	...	...	...	F 0	...	...	...	...	
+=================
+All tours started
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ echo "test large case"
+2;echo "test large case"1;echotest large case
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ ./vote 121 11 > /dev/null; echo $?
+2;./vote 121 11 > /dev/null; echo 01;./vote0
+2;c27wu@linux024: ~/cs343/a51;~/cs343/a5%                                                                                                                          ☁  a5 [master] ⚡ 
+
+Script done on Wed 21 Nov 2012 09:45:41 PM EST

@@ -15,7 +15,7 @@ using namespace std;
 
 MPRNG randomGen;
 
-bool convert(unsigned int &val, char *buffer ) {    // convert C string to integer
+bool convert(int &val, char *buffer ) {    // convert C string to integer
     std::stringstream ss( buffer );         // connect stream and buffer
     ss >> dec >> val;                       // convert integer from buffer
     return ! ss.fail() &&                   // conversion successful ?
@@ -45,9 +45,9 @@ void uMain::main() {
         usage(argv);
     }
 
-    unsigned int V = DEFAULT_VOTERS;
-    unsigned int G = DEFAULT_GROUPS;
-    unsigned int seed = getpid();
+    int V = DEFAULT_VOTERS;
+    int G = DEFAULT_GROUPS;
+    int seed = getpid();
     if ((argc >= 2 && (!convert(V, argv[1]) || V <= 0)) ||
         (argc >= 3 && (!convert(G, argv[2]) || G <= 0)) ||
         (argc >= 4 && (!convert(seed, argv[3]) || seed <= 0)) ||
@@ -59,11 +59,11 @@ void uMain::main() {
     Printer printer(V);
     TallyVotes tallier(G, printer);
     Voter *voters[V];
-    for (unsigned int voter = 0; voter < V; voter++) {
+    for (int voter = 0; voter < V; voter++) {
         voters[voter] = new Voter(voter, tallier, printer);
     }
 
-    for (unsigned int voter = 0; voter < V; voter++) {
+    for (int voter = 0; voter < V; voter++) {
         delete voters[voter];
     }
 }
