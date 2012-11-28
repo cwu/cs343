@@ -2,6 +2,7 @@
 #include "student.h"
 #include "config.h"
 #include "vendingmachine.h"
+#include "mprng.h"
 
 #define STARTING_WATCARD_AMOUNT 5
 
@@ -23,7 +24,7 @@ void Student::main() {
     // Find vending machine
     VendingMachine *machine = nameServer.getMachine(id);
     prt.print(Printer::Student, id, (char)SELECT_MACHINE, machine->getId());
-    VendingMachine::Status st = machine->buy(favouriteFlavour, watcard());
+    VendingMachine::Status st = machine->buy((VendingMachine::Flavours)favouriteFlavour, *(watcard()));
 
     // TODO finish
   }
