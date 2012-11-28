@@ -1,6 +1,8 @@
 #ifndef __A6CONFIG_H__
 #define __A6CONFIG_H__
 
+#define NUM_FLAVOURS 4
+
 struct ConfigParms {
     unsigned int sodaCost;                      // MSRP per bottle
     unsigned int numStudents;                   // number of students to create
