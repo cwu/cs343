@@ -7,11 +7,17 @@
 #include "watcard.h"
 
 _Task WATCardOffice {
+  private:
     struct Job {				// marshalled arguments and return future
       Args args;				// call arguments (YOU DEFINE "Args")
       FWATCard result;			// return future
       Job( Args args ) : args( args ) {}
     };
+
+    Printer &prt;
+    Bank &bank;
+    unsigned int numCouriers;
+
     _Task Courier { ... };			// communicates with bank
 
     void main();
