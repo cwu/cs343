@@ -10,8 +10,8 @@ Bank::Bank( unsigned int numStudents ) : students(numStudents) {
 }
 
 Bank::~Bank() {
-  delete accounts;
-  delete account_conds;
+  delete [] accounts;
+  delete [] account_conds;
 }
 
 // Single parent drops money off for all the children of UWaterloo
