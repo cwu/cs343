@@ -72,7 +72,7 @@ void WATCardOffice::Courier::main() {
     if (job == NULL) break;
 
     // Chance to drop card
-    if (rng(1, INV_LOSE_CARD_CHANCE) == 1) {
+    if (rng(INV_LOSE_CARD_CHANCE - 1) == 0) {
       job->result.exception(new Lost);
       if (args.card != NULL) delete args.card;
       continue;
