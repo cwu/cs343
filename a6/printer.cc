@@ -1,8 +1,8 @@
 #include "printer.h"
 #include <iostream>
 
-#define SUM_OF_SINGLE_KINDS 5
-#define NO_VALUE -1
+const unsigned int SUM_OF_SINGLE_KINDS = 5;
+const int NO_VALUE = -1;
 
 using namespace std;
 
@@ -71,8 +71,7 @@ void Printer::print( Kind kind, char state, int value1 ) {
 }
 
 void Printer::print( Kind kind, char state, int value1, int value2 ) {
-  assert(kind <= BottlingPlant);
-  print((unsigned int)kind, state, value1, value2);
+  print(kind, 0, state, value1, value2);
 }
 
 void Printer::print( Kind kind, unsigned int lid, char state ) {
@@ -84,7 +83,6 @@ void Printer::print( Kind kind, unsigned int lid, char state, int value1 ) {
 }
 
 void Printer::print( Kind kind, unsigned int lid, char state, int value1, int value2 ) {
-  assert(kind >= Student);
   int offset = 0;
   switch (kind) {
     case Student:
@@ -96,9 +94,12 @@ void Printer::print( Kind kind, unsigned int lid, char state, int value1, int va
     case Courier:
       offset = SUM_OF_SINGLE_KINDS + students + machines;
       break;
+    default:
+      offset = (unsigned int) kind;
+      break;
   }
 
-  print((unsigned int)kind + offset + lid, state, value1, value2);
+  print(offset + lid, state, value1, value2);
 }
 
 // Flush buffered data to console output
