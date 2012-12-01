@@ -72,7 +72,7 @@ void uMain::main() {
     }
     BottlingPlant *plant = new BottlingPlant(printer, *nameserver, params.numVendingMachines, params.maxShippedPerFlavour, params.maxStockPerFlavour, params.timeBetweenShipments);
 
-    Student *students[params.numVendingMachines];
+    Student *students[params.numStudents];
     for (unsigned int student = 0; student < params.numStudents; student++) {
         students[student] = new Student(printer, *nameserver, *office, student, params.maxPurchases);
     }
