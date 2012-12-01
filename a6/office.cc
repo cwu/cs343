@@ -5,7 +5,7 @@
 #define INV_LOSE_CARD_CHANCE 6
 
 WATCardOffice::WATCardOffice( Printer &prt, Bank &bank, unsigned int numCouriers ) :
-  prt(prt), bank(bank), numCouriers(numCouriers), isDone(false), pJob(NULL)
+  prt(prt), bank(bank), numCouriers(numCouriers), pJob(NULL), isDone(false)
 {
   couriers = new Courier*[numCouriers];
   for (unsigned int i = 0; i < numCouriers; i++) {
@@ -26,7 +26,7 @@ WATCardOffice::~WATCardOffice() {
   for (unsigned int i = 0; i < numCouriers; i++) {
     delete couriers[i];
   }
-  delete couriers;
+  delete [] couriers;
 }
 
 
@@ -72,7 +72,7 @@ void WATCardOffice::Courier::main() {
     if (job == NULL) break;
 
     // Chance to drop card
-    if (rng(INV_LOSE_CARD_CHANCE - 1) == 0) {
+    if (rng(1, INV_LOSE_CARD_CHANCE) == 1) {
       job->result.exception(new Lost);
       if (args.card != NULL) delete args.card;
       continue;

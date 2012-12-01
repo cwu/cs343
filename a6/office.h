@@ -15,7 +15,7 @@ _Task WATCardOffice {
       unsigned int amount;
 
       Args(Bank &bank, unsigned int sid, WATCard *card, unsigned int amount) :
-        bank(bank), sid(sid), card(card), amount(amount) {}
+        sid(sid), bank(bank), card(card), amount(amount) {}
     };
 
     struct Job {				// marshalled arguments and return future

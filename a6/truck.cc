@@ -19,7 +19,7 @@ Truck::Truck( Printer &prt, NameServer &nameServer, BottlingPlant &plant,
 void Truck::main() {
   while(true) {
     // Get coffee from timmies
-    yield(rng(9) + 1);
+    yield(rng(1, 10));
 
     // Get bottles produced from plant
     bool quit = plant.getShipment(cargo);

@@ -14,10 +14,10 @@ void Parent::main() {
       break;
     } else {
       yield(parentalDelay);
-      int student_id = rng(numStudents - 1);
-      int amount = rng(2) + 1;
-      prt.print(Printer::Parent, (char)DEPOSIT, student_id, amount);
-      bank.deposit(student_id, amount);
+      int studentId = rng(numStudents - 1);
+      int amount = rng(1, 3);
+      prt.print(Printer::Parent, (char)DEPOSIT, studentId, amount);
+      bank.deposit(studentId, amount);
     }
   }
 

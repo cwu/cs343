@@ -1,4 +1,3 @@
-#include <uC++.h>
 #include "bank.h"
 
 Bank::Bank( unsigned int numStudents ) : students(numStudents) {
