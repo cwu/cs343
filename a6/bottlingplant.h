@@ -19,6 +19,7 @@ _Task BottlingPlant {
     int numRegisteredMachines;
     bool isClosed;
     uCondition exitCond;
+    bool done;
 
     void main();
   public:
