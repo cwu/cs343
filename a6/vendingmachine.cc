@@ -5,14 +5,16 @@ VendingMachine::VendingMachine( Printer &prt, NameServer &nameServer, unsigned i
   unsigned int maxStockPerFlavour ) :
   prt(prt), nameServer(nameServer), id(id), sodaCost(sodaCost), isRestocking(false)
 {
-  prt.print(Printer::Vending, id, (char)STARTING, sodaCost);
-
   for (int i = 0; i < NUM_FLAVOURS; i++) {
     sodaInventory[i] = 0;
   }
 }
 
 void VendingMachine::main() {
+  prt.print(Printer::Vending, id, (char)STARTING, sodaCost);
+
+  nameServer.VMregister(this);
+
   while (true) {
     _Accept(~VendingMachine) {
       break;
