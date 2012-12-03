@@ -41,7 +41,7 @@ static void usage(char **argv) {
 
 void uMain::main() {
     // too many parameters
-    if (argc >= 4) {
+    if (argc > 3) {
         usage(argv);
     }
 
@@ -53,7 +53,7 @@ void uMain::main() {
 
     // parse seed
     int seed = getpid();
-    if (argc >= 3 && (!convert(seed, argv[3]) || seed <= 0)) {
+    if (argc >= 3 && (!convert(seed, argv[2]) || seed <= 0)) {
         usage(argv);
     }
     rng.seed(seed);
