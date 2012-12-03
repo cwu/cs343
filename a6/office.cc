@@ -14,9 +14,7 @@ WATCardOffice::WATCardOffice( Printer &prt, Bank &bank, unsigned int numCouriers
 }
 
 WATCardOffice::~WATCardOffice() {
-  //Stop couriers
-  pJob = NULL;
-
+  delete pJob;
   for (unsigned int i = 0; i < numCouriers; i++) {
     delete couriers[i];
   }
@@ -61,7 +59,9 @@ FWATCard WATCardOffice::transfer( unsigned int sid, unsigned int amount, WATCard
 
 WATCardOffice::Job *WATCardOffice::requestWork() {
   if (isDone) return NULL;
-  return pJob;
+  Job* temp = pJob;
+  pJob = NULL;
+  return temp;
 }
 
 void WATCardOffice::Courier::main() {
@@ -78,20 +78,20 @@ void WATCardOffice::Courier::main() {
     if (rng(INV_LOSE_CARD_CHANCE - 1) == 0) {
       job->result.exception(new Lost);
       if (args.card != NULL) delete args.card;
-      continue;
+    } else {
+      prt.print(Printer::Courier, id, (char) START_XFER, args.sid, args.amount);
+
+      // Withdraw from bank (block if necessary) then
+      // add funds to card (create new if necessary)
+      args.bank.withdraw(args.sid, args.amount);
+      if (args.card == NULL) args.card = new WATCard();
+      args.card->deposit(args.amount);
+      prt.print(Printer::Courier, id, (char) END_XFER, args.sid, args.amount);
+
+      job->result.delivery(args.card);
     }
 
-    prt.print(Printer::Courier, id, (char) START_XFER, args.sid, args.amount);
-
-    // Withdraw from bank (block if necessary) then
-    // add funds to card (create new if necessary)
-    args.bank.withdraw(args.sid, args.amount);
-    if (args.card == NULL) args.card = new WATCard();
-    args.card->deposit(args.amount);
-    prt.print(Printer::Courier, id, (char) END_XFER, args.sid, args.amount);
-
-    job->result.delivery(args.card);
-
+    delete job;
   }
   prt.print(Printer::Courier, id, (char)FINISHED);
 }
