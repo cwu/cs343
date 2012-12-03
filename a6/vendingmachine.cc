@@ -10,6 +10,8 @@ VendingMachine::VendingMachine( Printer &prt, NameServer &nameServer, unsigned i
   }
 }
 
+VendingMachine::~VendingMachine() {}
+
 void VendingMachine::main() {
   prt.print(Printer::Vending, id, (char)STARTING, sodaCost);
 
@@ -19,7 +21,6 @@ void VendingMachine::main() {
     _Accept(~VendingMachine) break;
     or _When(!isRestocking) _Accept(buy, inventory);
     or _When(isRestocking)  _Accept(restocked);
-
   }
 
   prt.print(Printer::Vending, id, (char)FINISHED);

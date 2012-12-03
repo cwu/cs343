@@ -77,6 +77,7 @@ void uMain::main() {
         students[student] = new Student(printer, *nameserver, *office, student, params.maxPurchases);
     }
 
+
     // delete tasks in reverse order
     for (unsigned int student = 0; student < params.numStudents; student++) {
         delete students[student];

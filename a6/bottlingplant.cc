@@ -31,7 +31,9 @@ void BottlingPlant::main() {
   while (true) {
     _Accept(~BottlingPlant) {
       isClosed = true;
-      exitCond.wait();
+
+      // accept one more getShipment to tell the truck its done
+      _Accept(getShipment);
       break;
     } or _Accept(getShipment) {
       // Start production run after truck picks up current run
@@ -57,7 +59,6 @@ void BottlingPlant::produce() {
 
 bool BottlingPlant::getShipment( unsigned int cargo[] ) {
   if (isClosed) {
-    exitCond.signal();
     return true;
   }
 

@@ -15,7 +15,6 @@ WATCardOffice::WATCardOffice( Printer &prt, Bank &bank, unsigned int numCouriers
 
 WATCardOffice::~WATCardOffice() {
   //Stop couriers
-  isDone = true;
   pJob = NULL;
 
   for (unsigned int i = 0; i < numCouriers; i++) {
@@ -29,7 +28,14 @@ void WATCardOffice::main() {
   prt.print(Printer::WATCardOffice, (char)STARTING);
 
   while(true) {
-    _Accept(~WATCardOffice) break;
+    _Accept(~WATCardOffice) {
+      // accept requestWork for all the courier to signal completion
+      isDone = true;
+      for (unsigned int i = 0; i < numCouriers; i++) {
+        _Accept(requestWork);
+      }
+      break;
+    }
     or _When (pJob == NULL) _Accept(create, transfer);
     or _When (pJob != NULL)  _Accept(requestWork);
   }
@@ -63,10 +69,11 @@ void WATCardOffice::Courier::main() {
   prt.print(Printer::Courier, id, (char)STARTING);
   while (true) {
     Job *job = office->requestWork();
-    Args args = job->args;
 
     // Check for exit
     if (job == NULL) break;
+
+    Args args = job->args;
 
     // Chance to drop card
     if (rng(INV_LOSE_CARD_CHANCE - 1) == 0) {
