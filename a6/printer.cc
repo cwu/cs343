@@ -38,7 +38,7 @@ Printer::Printer( unsigned int numStudents, unsigned int numVendingMachines, uns
 // Print footer, free memory
 Printer::~Printer () {
   cout << "***********************" << endl;
-  delete entries;
+  delete [] entries;
 }
 
 _Mutex void Printer::print( unsigned int id, char state, int value1, int value2) {
