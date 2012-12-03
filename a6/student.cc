@@ -25,7 +25,6 @@ void Student::main() {
     VendingMachine *machine = nameServer.getMachine(id);
     prt.print(Printer::Student, id, (char)SELECT_MACHINE, machine->getId());
 
-    // TODO finish
     bool bought = false;
     while (!bought) {
         try {

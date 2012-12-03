@@ -16,9 +16,10 @@ void VendingMachine::main() {
   nameServer.VMregister(this);
 
   while (true) {
-    _Accept(~VendingMachine) {
-      break;
-    } or _When(!isRestocking) _Accept(buy);
+    _Accept(~VendingMachine) break;
+    or _When(!isRestocking) _Accept(buy, inventory);
+    or _When(isRestocking)  _Accept(restocked);
+
   }
 
   prt.print(Printer::Vending, id, (char)FINISHED);
@@ -26,10 +27,15 @@ void VendingMachine::main() {
 
 VendingMachine::Status VendingMachine::buy( Flavours flavour, WATCard &card ) {
   // Check stock
-  if (sodaInventory[flavour] == 0) return STOCK;
+  if (sodaInventory[flavour] == 0) {
+    return STOCK;
+  }
 
   // Check funds
-  if (sodaCost > card.getBalance()) return FUNDS;
+  if (sodaCost > card.getBalance()) {
+    return FUNDS;
+  }
+
 
   // Sucessful purchase!
   prt.print(Printer::Vending, id, (char)SODA_BOUGHT, flavour, --sodaInventory[flavour]);

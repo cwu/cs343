@@ -17,7 +17,6 @@ WATCardOffice::~WATCardOffice() {
   //Stop couriers
   isDone = true;
   pJob = NULL;
-  while (!jobQ.empty()) jobQ.signal();
 
   for (unsigned int i = 0; i < numCouriers; i++) {
     delete couriers[i];
@@ -31,7 +30,8 @@ void WATCardOffice::main() {
 
   while(true) {
     _Accept(~WATCardOffice) break;
-    or _When (!jobQ.empty()) _Accept(create, transfer);
+    or _When (pJob == NULL) _Accept(create, transfer);
+    or _When (pJob != NULL)  _Accept(requestWork);
   }
 
   prt.print(Printer::WATCardOffice, (char)FINISHED);
@@ -41,7 +41,6 @@ FWATCard WATCardOffice::create( unsigned int sid, unsigned int amount ) {
   // TODO: so wtf deletes the jobs?
   pJob = new Job(Args(bank, sid, NULL, amount));
 
-  jobQ.signal();
   prt.print(Printer::WATCardOffice, (char)CREATION_COMPLETE, sid, amount);
 
   return pJob->result;
@@ -50,7 +49,6 @@ FWATCard WATCardOffice::create( unsigned int sid, unsigned int amount ) {
 FWATCard WATCardOffice::transfer( unsigned int sid, unsigned int amount, WATCard *card ) {
   pJob = new Job(Args(bank, sid, card, amount));
 
-  jobQ.signal();
   prt.print(Printer::WATCardOffice, (char)XFER_COMPLETE, sid, amount);
 
   return pJob->result;
@@ -58,7 +56,6 @@ FWATCard WATCardOffice::transfer( unsigned int sid, unsigned int amount, WATCard
 
 WATCardOffice::Job *WATCardOffice::requestWork() {
   if (isDone) return NULL;
-  jobQ.wait();
   return pJob;
 }
 

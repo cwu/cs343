@@ -40,14 +40,14 @@ void Truck::main() {
       // Stock each flavour up to maxStockPerFlavour and update counts
       int unstocked_sum = 0;
       for (unsigned int f = 0; f < NUM_FLAVOURS; f++) {
-        int transfer = maxStockPerFlavour - inventory[i];
-        if (transfer > cargo[i]) {
-          transfer = cargo[i];
-          unstocked_sum += transfer - cargo[i];
+        int transfer = maxStockPerFlavour - inventory[f];
+        if (transfer > cargo[f]) {
+          transfer = cargo[f];
+          unstocked_sum += transfer - cargo[f];
         }
         numBottles -= transfer;
-        inventory[i] += transfer;
-        cargo[i] -= transfer;
+        inventory[f] += transfer;
+        cargo[f] -= transfer;
       }
 
       if (unstocked_sum > 0) {

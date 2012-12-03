@@ -44,7 +44,6 @@ _Task WATCardOffice {
     Bank &bank;
     unsigned int numCouriers;
     Courier **couriers;
-    uCondition jobQ;
     Job *pJob;
     bool isDone;
 

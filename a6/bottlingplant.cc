@@ -33,7 +33,7 @@ void BottlingPlant::main() {
       isClosed = true;
       exitCond.wait();
       break;
-    } _Accept(getShipment) {
+    } or _Accept(getShipment) {
       // Start production run after truck picks up current run
       yield(timeBetweenShipments);
       produce();
