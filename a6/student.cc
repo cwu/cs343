@@ -12,11 +12,12 @@ Student::Student( Printer &prt, NameServer &nameServer, WATCardOffice &cardOffic
 {
   numPurchases = rng(1, maxPurchases);
   favouriteFlavour = rng(NUM_FLAVOURS - 1);
-  prt.print(Printer::Student, id, (char)STARTING, favouriteFlavour, numPurchases);
-  watcard = office.create(id, STARTING_WATCARD_AMOUNT);
 }
 
 void Student::main() {
+  prt.print(Printer::Student, id, (char)STARTING, favouriteFlavour, numPurchases);
+  watcard = office.create(id, STARTING_WATCARD_AMOUNT);
+
   for (unsigned int purchaseNum = 0; purchaseNum < numPurchases; purchaseNum++) {
     yield(rng(1, 10));
 
