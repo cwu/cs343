@@ -13,16 +13,15 @@ NameServer::NameServer( Printer &prt, unsigned int numVendingMachines, unsigned 
 }
 
 NameServer::~NameServer() {
-  delete assignments;
-  delete machines;
+  delete [] assignments;
+  delete [] machines;
 }
 
 void NameServer::main() {
   prt.print(Printer::NameServer, (char)STARTING);
 
   while (true) {
-    _Accept(~NameServer)
-      break;
+    _Accept(~NameServer) break;
     or _When(numRegisteredMachines == numMachines) _Accept(getMachine, getMachineList);
     or _When(numRegisteredMachines < numMachines) _Accept(VMregister);
   }
