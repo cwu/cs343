@@ -58,11 +58,11 @@ void uMain::main() {
     }
     rng.seed(seed);
 
-    cout << "seed : " << seed << endl;
-
+    // parse the config file
     ConfigParms params;
     processConfigFile(configFile.c_str(), params);
 
+    // setup the tasks
     Printer printer(params.numStudents, params.numVendingMachines, params.numCouriers);
     Bank bank(params.numStudents);
     Parent *parent = new Parent(printer, bank, params.numStudents, params.parentalDelay);
@@ -93,6 +93,4 @@ void uMain::main() {
     delete nameserver;
     delete office;
     delete parent;
-
-    cout << "seed : " << seed << endl;
 }
