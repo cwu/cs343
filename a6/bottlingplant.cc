@@ -11,20 +11,23 @@ BottlingPlant::BottlingPlant( Printer &prt, NameServer &nameServer, unsigned int
   timeBetweenShipments(timeBetweenShipments),
   isClosed(false)
 {
-  prt.print(Printer::BottlingPlant, (char)STARTING);
-  for (int i = 0; i < NUM_FLAVOURS; i++) stock[i] = 0;
-  produce();
+  for (int i = 0; i < NUM_FLAVOURS; i++) {
+    stock[i] = 0;
+  }
 
   // Create truck
   theTruck = new Truck(prt, nameServer, *this, numVendingMachines, maxStockPerFlavour);
 }
 
 BottlingPlant::~BottlingPlant() {
-  prt.print(Printer::BottlingPlant, (char)FINISHED);
   delete theTruck;
 }
 
 void BottlingPlant::main() {
+  prt.print(Printer::BottlingPlant, (char)STARTING);
+
+  produce();
+
   while (true) {
     _Accept(~BottlingPlant) {
       isClosed = true;
@@ -36,6 +39,8 @@ void BottlingPlant::main() {
       produce();
     }
   }
+
+  prt.print(Printer::BottlingPlant, (char)FINISHED);
 }
 
 void BottlingPlant::produce() {

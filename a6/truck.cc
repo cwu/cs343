@@ -8,15 +8,15 @@ Truck::Truck( Printer &prt, NameServer &nameServer, BottlingPlant &plant,
   prt(prt), nameServer(nameServer), plant(plant), numVendingMachines(numVendingMachines),
   maxStockPerFlavour(maxStockPerFlavour)
 {
-  prt.print(Printer::Truck, (char)STARTING);
-  machines = nameServer.getMachineList();
-
   for (int i = 0; i < NUM_FLAVOURS; i++) {
     cargo[i] = 0;
   }
 }
 
 void Truck::main() {
+  prt.print(Printer::Truck, (char)STARTING);
+  machines = nameServer.getMachineList();
+
   while(true) {
     // Get coffee from timmies
     yield(rng(1, 10));

@@ -11,13 +11,9 @@ WATCardOffice::WATCardOffice( Printer &prt, Bank &bank, unsigned int numCouriers
   for (unsigned int i = 0; i < numCouriers; i++) {
     couriers[i] = new Courier(i, this, prt);
   }
-
-  prt.print(Printer::WATCardOffice, (char)STARTING);
 }
 
 WATCardOffice::~WATCardOffice() {
-  prt.print(Printer::WATCardOffice, (char)FINISHED);
-
   //Stop couriers
   isDone = true;
   pJob = NULL;
@@ -31,10 +27,14 @@ WATCardOffice::~WATCardOffice() {
 
 
 void WATCardOffice::main() {
+  prt.print(Printer::WATCardOffice, (char)STARTING);
+
   while(true) {
     _Accept(~WATCardOffice) break;
     or _When (!jobQ.empty()) _Accept(create, transfer);
   }
+
+  prt.print(Printer::WATCardOffice, (char)FINISHED);
 }
 
 FWATCard WATCardOffice::create( unsigned int sid, unsigned int amount ) {
