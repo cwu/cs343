@@ -16,7 +16,7 @@ Student::Student( Printer &prt, NameServer &nameServer, WATCardOffice &cardOffic
 
 void Student::main() {
   prt.print(Printer::Student, id, (char)STARTING, favouriteFlavour, numPurchases);
-  watcard = office.create(id, STARTING_WATCARD_AMOUNT);
+  FWATCard watcard = office.create(id, STARTING_WATCARD_AMOUNT);
 
   for (unsigned int purchaseNum = 0; purchaseNum < numPurchases; purchaseNum++) {
     yield(rng(1, 10));
@@ -50,6 +50,9 @@ void Student::main() {
         }
     }
   }
+
+  // cleanup the watcard
+  delete watcard();
 
   prt.print(Printer::Student, id, (char)FINISHED);
 }
