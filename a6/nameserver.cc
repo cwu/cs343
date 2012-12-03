@@ -32,8 +32,7 @@ void NameServer::main() {
 void NameServer::VMregister( VendingMachine *vendingmachine ) {
   int id = vendingmachine->getId();
   prt.print(Printer::NameServer, (char)REGISTER_MACHINE, id);
-  numRegisteredMachines++;
-  machines[id] = vendingmachine;
+  machines[numRegisteredMachines++] = vendingmachine;
 }
 
 VendingMachine *NameServer::getMachine( unsigned int id ) {
