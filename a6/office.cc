@@ -44,7 +44,6 @@ void WATCardOffice::main() {
 }
 
 FWATCard WATCardOffice::create( unsigned int sid, unsigned int amount ) {
-  // TODO: so wtf deletes the jobs?
   pJob = new Job(Args(bank, sid, NULL, amount));
 
   prt.print(Printer::WATCardOffice, (char)CREATION_COMPLETE, sid, amount);
@@ -92,6 +91,7 @@ void WATCardOffice::Courier::main() {
     prt.print(Printer::Courier, id, (char) END_XFER, args.sid, args.amount);
 
     job->result.delivery(args.card);
+
   }
   prt.print(Printer::Courier, id, (char)FINISHED);
 }

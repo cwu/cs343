@@ -58,6 +58,8 @@ void uMain::main() {
     }
     rng.seed(seed);
 
+    cout << "seed : " << seed << endl;
+
     ConfigParms params;
     processConfigFile(configFile.c_str(), params);
 
@@ -91,4 +93,6 @@ void uMain::main() {
     delete nameserver;
     delete office;
     delete parent;
+
+    cout << "seed : " << seed << endl;
 }
