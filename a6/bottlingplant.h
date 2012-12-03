@@ -18,8 +18,6 @@ _Task BottlingPlant {
     Truck *theTruck;
     int numRegisteredMachines;
     bool isClosed;
-    uCondition exitCond;
-    bool done;
 
     void main();
   public:
