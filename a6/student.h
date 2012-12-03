@@ -12,7 +12,6 @@ _Task Student {
     Printer &prt;
     NameServer &nameServer;
     WATCardOffice &office;
-    FWATCard watcard;
     unsigned int id, numPurchases, favouriteFlavour;
 
     void main();
