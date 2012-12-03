@@ -31,19 +31,21 @@ void Student::main() {
             VendingMachine::Status st = machine->buy((VendingMachine::Flavours)favouriteFlavour, *(watcard()));
             switch (st) {
                 case VendingMachine::STOCK:
-                    machine = nameServer.getMachine(id);
-                    prt.print(Printer::Student, id, (char)SELECT_MACHINE, machine->getId());
-                    break;
+                  // try a new machine
+                  machine = nameServer.getMachine(id);
+                  prt.print(Printer::Student, id, (char)SELECT_MACHINE, machine->getId());
+                  break;
                 case VendingMachine::FUNDS:
-                    watcard = office.transfer(id, STARTING_WATCARD_AMOUNT + machine->cost(), watcard());
-                    break;
+                  // transfer funds
+                  watcard = office.transfer(id, STARTING_WATCARD_AMOUNT + machine->cost(), watcard());
+                  break;
                 case VendingMachine::BUY:
-                    bought = true;
-                    prt.print(Printer::Student, id, (char)BUY, machine->getId());
-                    break;
+                  bought = true;
+                  prt.print(Printer::Student, id, (char)BUY, machine->getId());
+                  break;
             }
         } catch (WATCardOffice::Lost &ex) {
-            office.create(id, STARTING_WATCARD_AMOUNT);
+            watcard = office.create(id, STARTING_WATCARD_AMOUNT);
             prt.print(Printer::Student, id, (char)WATCARD_LOST, machine->getId());
         }
     }
