@@ -41,7 +41,7 @@ static void usage(char **argv) {
 
 void uMain::main() {
     // too many parameters
-    if (argc >= 3) {
+    if (argc >= 4) {
         usage(argv);
     }
 
