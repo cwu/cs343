@@ -42,19 +42,29 @@ Printer::~Printer () {
 }
 
 _Mutex void Printer::print( unsigned int id, char state, int value1, int value2) {
-  if (entries[id].filled) flush();
-
   if (state == 'F') {
-    flush();
-    for (unsigned int i = 0; i < total_size; i++) {
-      if (id != i)
-        cout << "...";
-      else
-        cout << state;
-      cout << "\t";
-    }
-    cout << endl;
-  } else {
+      // check if we need to flush beforehand
+      for (unsigned int i = 0; i < total_size; i++) {
+          if (entries[id].filled) {
+            flush();
+            break;
+          }
+      }
+
+      // print the finished state
+      for (unsigned int i = 0; i < total_size; i++) {
+        if (id != i)
+            cout << "...";
+        else
+            cout << state;
+        cout << "\t";
+      }
+      cout << endl;
+  } else if (entries[id].filled) {
+      flush();
+  }
+
+  if (state != 'F') {
     entries[id].state  = state;
     entries[id].value1 = value1;
     entries[id].value2 = value2;
