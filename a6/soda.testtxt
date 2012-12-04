@@ -1,9 +1,23 @@
+test invalid number of parameters
+$ ./soda soda.config 12345 1
+Usage: ./soda [ config-file [ random-seed (> 0) ] ]
+
+test invalid seed
+$ ./soda soda.config a
+Usage: ./soda [ config-file [ random-seed (> 0) ] ]
+$ ./soda soda.config -1
+Usage: ./soda [ config-file [ random-seed (> 0) ] ]
+
+test non existant file
+$ ./soda lkajdsflkjsalfdkj
+Error: could not open input file "lkajdsflkjsalfdkj"
+
 ************************************************************************************************************************
 First we tested the base case. This output was visually inspected to follow assignment guidelines.
 It should also not deadlock.
 command:
 ************************************************************************************************************************
-./soda
+$./soda
 
 Parent  WATOff  Names   Truck   Plant   Stud0   Stud1   Stud2   Mach0   Mach1   Mach2   Cour0   Cour1   Cour2   
 ======= ======= ======= ======= ======= ======= ======= ======= ======= ======= ======= ======= ======= ======= 
@@ -354,7 +368,7 @@ assignment guidelines. It should also not deadlock. The config was as follows:
   ParentalDelay             20    # length of time between new deposits of funds
   NumCouriers                1    # maximum number of couriers in the pool
 ************************************************************************************************************************
-./soda small-soda.config
+$ ./soda small-soda.config
 
 Parent  WATOff  Names   Truck   Plant   Stud0   Mach0   Cour0   
 ======= ======= ======= ======= ======= ======= ======= ======= 
