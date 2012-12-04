@@ -18,9 +18,13 @@ void VendingMachine::main() {
   nameServer.VMregister(this);
 
   while (true) {
-    _Accept(~VendingMachine) break;
-    or _When(!isRestocking) _Accept(buy, inventory);
-    or _When(isRestocking)  _Accept(restocked);
+    _Accept(~VendingMachine) {
+      break;
+    } or _When(!isRestocking) _Accept(buy, inventory) {
+      prt.print(Printer::Vending, id, (char)START_RESTOCK);
+    } or _When(isRestocking)  _Accept(restocked) {
+      prt.print(Printer::Vending, id, (char)END_RESTOCK);
+    }
   }
 
   prt.print(Printer::Vending, id, (char)FINISHED);
@@ -46,13 +50,11 @@ VendingMachine::Status VendingMachine::buy( Flavours flavour, WATCard &card ) {
 
 unsigned int *VendingMachine::inventory() {
   isRestocking = true;
-  prt.print(Printer::Vending, id, (char)START_RESTOCK);
   return sodaInventory;
 }
 
 void VendingMachine::restocked() {
   isRestocking = false;
-  prt.print(Printer::Vending, id, (char)END_RESTOCK);
 }
 
 _Nomutex unsigned int VendingMachine::cost() {
